@@ -4,12 +4,19 @@ https://codeforces.com/problemset/problem/4/A
 
 Dado el peso de una sandía (w), determina si la puedes partir en dos de tal manera que cada parte pese una cantidad par y positiva
 
-## Lógica para resolución
+## Input
+Un número entero (1 <= w <= 100) -- El peso de la sandía
 
+## Output
+Imprime 'YES' si la sandía puede partirse en partes pares, de lo contrario imprime 'NO'
+
+## Ejemplos
+a) 8 = (2,6),(4,4) = **YES**
+b) 7 = (1,6),(2,5),(3,4) = **NO**
+
+## Forma de resolverlo
 ### a) Dividir en pares
-Si el peso de la sandía es **par**, entonces se puede partir en partes pares.
-Ej. 8 = (2,6),(4,4) = YES
-Ej. 7 = (1,6),(2,5),(3,4) = NO
+Si el peso de la sandía es **par**, entonces se puede partir en partes pares (como se ve en el ejemplo).
 
 Sin embargo, **esto no aplica** para una sandía de peso igual a **2**, puesto que la única forma de partirla es (1,1), lo cual hace que las partes sean impares.
 
