@@ -1,7 +1,10 @@
 https://codeforces.com/problemset/problem/231/A
 
+# 231A - Team
+
 ## Resumen del problema
-Petya, Vasya y Tonya van a participar en un concurso de programación. Deciden que si 2 de ellos saben la solución de un problema, entonces lo pueden implementar. \
+Petya, Vasya y Tonya van a participar en un concurso de programación. \
+Deciden que si 2 de ellos saben la solución de un problema, entonces lo pueden implementar. \
 El concurso tiene N problemas, y sabemos quién de los 3 amigos sabe la solución para cada uno de ellos. \
 Determina el número de problemas que los amigos podrán implementar.
 
