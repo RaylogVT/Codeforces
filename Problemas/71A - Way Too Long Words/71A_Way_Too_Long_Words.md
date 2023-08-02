@@ -1,5 +1,7 @@
 https://codeforces.com/problemset/problem/71/A
 
+# 71A - Way Too Long Words
+
 ## Resumen del problema
 Un string que tenga más de 10 caracteres debe abreviarse de la siguiente forma: Toma el 1° y último carácter, y en medio escribe el número de caracteres que hay entre estos.
 
