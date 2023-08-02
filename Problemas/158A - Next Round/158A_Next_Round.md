@@ -1,10 +1,10 @@
 https://codeforces.com/problemset/problem/158/A
 
 ## Resumen del problema
-Dado una lista de N concursantes, determina cuántos tienen una puntuación positiva y mayor o igual a la del k-ésimo concursante para pasar a la siguiente ronda.
+Dado una lista de N concursantes, determina cuántos tienen una puntuación positiva y mayor o igual a la del k-ésimo concursante.
 
 ## Input
-La primera línea tiene dos números enteros N y K (1 <= N <= K <= 50) -- El número de concursantes, El K-ésimo participante a comparar \
+La primera línea tiene dos números enteros N y K (1 <= N <= K <= 50) -- El número de concursantes, El número del K-ésimo participante \
 La segunda línea tiene N números enteros A1, A2, ..., An (0 <= Ai <= 100) -- Las puntuaciones de cada participante (de mayor a menor)
 
 ## Output
