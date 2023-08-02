@@ -1,5 +1,7 @@
 https://codeforces.com/problemset/problem/50/A
 
+# 50A - Domino Piling
+
 ## Resumen del problema
 Tienes un tablero de tamaño M x N que quieres llenar con fichas de dominó de tamaño 2 x 1. \
 Las fichas no se pueden solapar ni salir del tablero. \
@@ -13,16 +15,16 @@ Imprime el número de fichas de dominó necesarias para llenar el tablero.
 
 ## Ejemplos
 2 4 \
-4   \
+Resultado = **4**   
 
 3 3 \
-4
+Resultado = **4**
 
 ## Forma de resolverlo
 El área del tablero es M x N cuadrados \
 El área de una ficha de dominó es 2 cuadrados (2 x 1) \
 
-Conclusión: **Número de fichas = (M * N) / 2**
+**Conclusión:** Número de fichas = **(M * N) / 2**
 
 Independientemente de cómo acomodes las fichas, el resultado es el mismo. \
 En aquellos tableros cuya área es **impar**, siempre quedará **un cuadrado que las fichas no podrán cubrir**. \
