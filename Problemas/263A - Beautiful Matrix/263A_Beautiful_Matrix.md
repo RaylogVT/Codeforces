@@ -43,7 +43,7 @@ Imprime el número de inversiones necesarias para hacer la matriz bonita
 5 | 0 0 0 0 0 \
 **| 1 2 5 3 4 
               
-Resultado = **3**
+Output = **3**
 
 ## Forma de resolverlo
 En vez de llevar manualmente las inversiones para llegar a la posición adecuada, podemos contar por cuántas filas (x) y columnas (y) el 1 está desfasado de su posición objetivo. \

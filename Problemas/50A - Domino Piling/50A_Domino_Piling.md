@@ -15,6 +15,7 @@ Imprime el número de fichas de dominó necesarias para llenar el tablero.
 
 ## Ejemplos
 | Input | Razonamiento          | Output    |
+| :---- | :-------------------  | --------- |
 | 2 4   | (2 * 4) / (2 * 1) = 4 | **4**     |
 | 3 3   | (3 * 3) / (2 * 1) = 4 | **4**     |
 

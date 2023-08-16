@@ -10,7 +10,8 @@ Un string de longitud N (1 <= N <= 1000) con mayúsculas y minúsculas.
 Imprime la palabra capitalizada.
 
 ## Ejemplos
-| Input  | Razonamiento | Output        
+| Input  | Razonamiento | Output        |
+| :----- | :----------  | :------------ |   
 | konjac | **K**onjac   | **K**onjac    |
 | aPplE  | **A**PplE    | **A**PplE     |
 

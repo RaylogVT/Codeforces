@@ -16,7 +16,6 @@ Las siguientes N líneas tienen 3 números enteros -- Petya, Vasya, Tonya, respe
 Imprime el número de problemas que los 3 amigos pueden implementar
 
 ## Ejemplos
-Input
 3 \
 1 1 0 = **Sí se implementa** \
 1 1 1 = **Sí se implementa** \

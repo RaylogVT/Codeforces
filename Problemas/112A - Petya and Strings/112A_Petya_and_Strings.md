@@ -22,12 +22,14 @@ AaaA**B** (2°)
 
 Según la tabla ASCII, B = 66 y A = 65, entonces el 2° string es el más grande. \
 Output = **-1**
+___________________
 
 AB**D** (1°) \
 AB**C** (2°)
 
 Según la tabla ASCII, D = 68 y C = 67, entonces el 1° string es el más grande. \
 Output = **1**
+___________________
 
 AaaA**A** (1°) \
 AaaA**A** (2°)

@@ -14,6 +14,7 @@ Imprime N líneas, donde la i-ésima línea es la abreviación de la i-ésima pa
 
 ## Ejemplos
 | Input         | Razonamiento                                  | Output        |
+| :------------ | :-------------------------------------------- | :------------ |
 | word          | word (4 letras) = Sin cambio                  | **word**      |
 | localization  | localization (12 letras) = l**ocalizatio**n   | **l10n**      |
 

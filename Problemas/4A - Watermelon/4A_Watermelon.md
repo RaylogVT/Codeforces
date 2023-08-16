@@ -13,6 +13,7 @@ Imprime 'YES' si la sandía puede partirse en partes pares, de lo contrario impr
 
 ## Ejemplos
 | Input | Razonamiento              | Output    |
+| ----- | :-----------------------  | --------- |
 | 8     | 8 = (2,6),(4,4)           | **YES**   |
 | 7     | 7 = (1,6),(2,5),(3,4)     | **NO**    |
 

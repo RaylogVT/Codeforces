@@ -13,7 +13,6 @@ La segunda línea tiene N números enteros A1, A2, ..., An (0 <= Ai <= 100) -- L
 Imprime el número de participantes cuya puntuación es mayor o igual a la del k-ésimo participante
 
 ## Ejemplos
-Input
 8 5 \
 10 9 8 7 7 7 5 5
 
