@@ -25,7 +25,7 @@ La forma más sencilla de resolver este problema es checando si las letras de la
 Pero, ¿cómo hacemos eso? \
 Dependiendo del lenguaje, podemos usar funciones integradas dentro del mismo o usar las propiedades de los caracteres.
 
-Python tiene dos funciones llamadas isupper() e islower(), las cuales detectan si un caracter está en mayúsculas o minúsculas, respectivamente. Si las usamos, entonces podemos checar las letras y realizar el conteo para la normalización
+Python tiene dos funciones llamadas **isupper()** e **islower()**, las cuales detectan si un caracter está en mayúsculas o minúsculas, respectivamente. Si las usamos, entonces podemos checar las letras y realizar el conteo para la normalización
 
 C++ no tiene funciones isupper() o islower() como Python, así que aquí tenemos que usar el valor **ASCII** de las letras. \
 Si consultamos la tabla ASCII (https://elcodigoascii.com.ar/), observamos que las mayúsculas tienen un valor de 65-90, mientras que las minúsculas tienen uno de 97-122. Si nuestra letra está en alguno de estos dos rangos, entonces podemos saber si es mayúscula o minúscula y de ahí hacer el conteo para la normalización
