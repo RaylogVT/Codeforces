@@ -21,18 +21,18 @@ Imprime 'YES' si el número es casi-de-la-suerte, de lo contrario, imprime 'NO'
 | 1000 | 0 números de la suerte (1000)          | **NO**    |
 
 ## Forma de resolverlo
-Para este problema, lo fácil es contar cuántos dígitos son 4 o 7. Sin embargo, ¿cómo sabemos si dicha cantidad de dígitos es un número de la suerte? \
-Pensemos lo siguiente: ¿Cuántos dígitos tiene el número más grande posible como nuestro input? 10^18 tiene 19 dígitos (Un 1, 18 0s). Entre el 0-19, los únicos números de la suerte que hay son el 4 y 7. Entonces, si nuestro número tiene 4 o 7 dígitos de la suerte, entonces es un número casi-de-la-suerte.
+Para este problema, lo fácil es contar cuántos dígitos son 4 o 7. Sin embargo, **¿cómo sabemos si dicha cantidad de dígitos es un número de la suerte?** \
+Pensemos lo siguiente: ¿Cuántos dígitos tiene el número más grande posible como nuestro input? 10^18 tiene **19 dígitos** (Un 1, 18 0s). Entre el 0-19, los únicos números de la suerte que hay son el **4 y 7**. Entonces, si nuestro número tiene 4 o 7 dígitos de la suerte, entonces es un número casi-de-la-suerte.
 
 Sabiendo esto, ¿cómo extraemos los dígitos del número?
 ### a) String (Python)
-En lenguajes con conversiones de tipos de datos como Python, podemos convertir nuestro número entero a string, y con ello revisar cada dígito de **izquierda a derecha** mediante un ciclo para saber si es un 4 o 7.
+En lenguajes con conversiones de tipos de datos como Python, podemos convertir nuestro número entero a **string**, y así revisar cada dígito de **izquierda a derecha** mediante un ciclo para saber si es un 4 o 7.
 
 ### b) Matemático (C++)
 Una manera tradicional de extraer dígitos de un número es de la siguiente manera:
-1) Realiza Número (N) % 10 para extraer el último dígito
-2) Divide el Número (N) / 10 para eliminar el último dígito
-3) Repite los pasos 1 y 2 hasta quedarte sin dígitos (i.e. Número (N) / 10 = 0)
+1) Realiza **Número (N) % 10** para extraer el último dígito
+2) Divide el **Número (N) / 10** para eliminar el último dígito
+3) **Repite los pasos 1 y 2** hasta quedarte sin dígitos (i.e. Número (N) / 10 = 0)
 
 Veámoslo con un ejemplo:
 | Módulo | Dígito          | División           |
