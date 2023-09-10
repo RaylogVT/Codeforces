@@ -3,11 +3,13 @@ https://codeforces.com/problemset/problem/116/A
 # 116A - Tram
 
 ## Resumen del problema
-Un tren atraviesa N estaciones para mover pasajeros. En cada estación salen A pasajeros del tren y entran B al mismo. ¿Cuál es el número máximo de pasajeros que el tren tiene dentro durante su viaje?
+Un tren atraviesa N estaciones para mover pasajeros. En cada estación salen A pasajeros del tren y entran B al mismo. \
+¿Cuál es el número máximo de pasajeros que el tren tiene dentro durante su viaje?
 
 ## Input
-La 1° línea contiene un número entero N (2 <= N <= 1000) - El número de estaciones que el tren cruza
-Las siguientes N líneas contienen dos números enteros (0 <= A,B <= 1000) - El número de pasajeros que salen del tren en la n-ésima estación, el número de pasajeros que entran al tren en la n-ésima estación. \
+La 1° línea contiene un número entero N (2 <= N <= 1000) - El número de estaciones que el tren cruza \
+Las siguientes N líneas contienen dos números enteros (0 <= A,B <= 1000) -- El número de pasajeros que salen del tren en la n-ésima estación, el número de pasajeros que entran al tren en la n-ésima estación. 
+
 Está garantizado que:
 - 0 pasajeros salen del tren en la 1° estación
 - 0 pasajeros entran al tren en la última estación
