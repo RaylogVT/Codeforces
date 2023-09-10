@@ -10,7 +10,7 @@ La primera línea tiene dos números enteros N y K (1 <= N <= K <= 50) -- El nú
 La segunda línea tiene N números enteros A1, A2, ..., An (0 <= Ai <= 100) -- Las puntuaciones de cada participante (de mayor a menor)
 
 ## Output
-Imprime el número de participantes cuya puntuación es mayor o igual a la del k-ésimo participante
+Imprime un número entero -- El número de participantes cuya puntuación es mayor o igual a la del k-ésimo participante
 
 ## Ejemplos
 8 5 \
@@ -24,4 +24,4 @@ Output = **6**
 ## Algoritmo
 1) Guarda las puntuaciones en una lista/arreglo
 2) Extrae la puntuación del k-ésimo participante
-3) Compara las puntuaciones de cada participante contra la del k-ésimo participante, asegúrate de que sean igualmente mayores a 0.
+3) Compara las puntuaciones de cada participante contra la del k-ésimo participante, asegúrate de que sean igualmente mayores a 0
