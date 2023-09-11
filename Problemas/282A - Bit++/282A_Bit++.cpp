@@ -8,18 +8,24 @@ using namespace std;
 
 int main() {
 
-    int statements;     // Número de statements
-    int x = 0;          // X
-    string operacion;   // Statement individual
-
+    // Inputs:
+    // 1) Número de statements
+    int statements; 
     cin >> statements;
+
+    // Variable X    
+    int x = 0;           
 
     // Lee cada statement
     while(statements--) {
+
+        // Inputs:
+        // 2) Statement (X++, X--, ++X, --X)
+        string operacion; 
         cin >> operacion;
 
-        // Si el statement tiene en medio un +, entonces suma 1
-        // Si el statement tiene en medio un -, entonces resta 1
+        // Si el statement tiene en medio un +, entonces suma 1 a x
+        // Si el statement tiene en medio un -, entonces resta 1 a x
         if(operacion[1] == '+') {
             x++;
         } else if(operacion[1] == '-') {

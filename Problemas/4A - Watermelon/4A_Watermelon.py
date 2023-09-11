@@ -1,11 +1,13 @@
 # 4A - Watermelon
 # https://codeforces.com/problemset/problem/4/A
 
-# Peso de sandía (w)
-w = int(input())
+# Inputs
+# 1) Peso de sandía (w)
+peso_sandia = int(input())
 
-# Si el peso de la sandia es par y mayor a 2, entonces se puede partir en dos trozos pares
-if w % 2 == 0 and w > 2:
+# Revisa si la sandía se puede partir en partes pares
+# Si el peso de la sandia es par y mayor a 2, entonces imprime 'YES', de lo contrario, imprime 'NO'
+if peso_sandia % 2 == 0 and peso_sandia > 2:
     print("YES")
 else:
     print("NO")

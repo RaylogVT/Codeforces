@@ -9,11 +9,13 @@ using namespace std;
 
 int main(){
 
-    // Input #1 - Número de partidas de ajedrez jugadas
+    // Inputs:
+    // 1) Número de partidas de ajedrez jugadas
     int partidas;
     cin >> partidas;
 
-    // Input #2 - Quién ganó cada partida
+    // Inputs:
+    // 2) Quién ganó cada partida
     string victorias;
     cin >> victorias;
 

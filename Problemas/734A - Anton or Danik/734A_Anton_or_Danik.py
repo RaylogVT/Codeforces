@@ -1,7 +1,7 @@
 # 734A - Anton or Danik
 # https://codeforces.com/problemset/problem/734/A
 
-# Input:
+# Inputs:
 # 1) Número de partidas de ajedrez jugadas
 # 2) Quién ganó cada partida
 partidas = int(input())

@@ -8,12 +8,14 @@ using namespace std;
 
 int main(){
 
-    // Peso de sandía (w)
-    int w;
-    cin >> w;
+    // Inputs:
+    // 1) Peso de sandía (w)
+    int peso_sandia;
+    cin >> peso_sandia;
 
-    // Si el peso de la sandia es par y mayor a 2, entonces se puede partir en dos trozos pares
-    if(w % 2 == 0 && w > 2) {
+    // Revisa si la sandía se puede partir en partes pares
+    // Si el peso de la sandia es par y mayor a 2, entonces imprime 'YES', de lo contrario, imprime 'NO'
+    if(peso_sandia % 2 == 0 && peso_sandia > 2) {
         cout << "YES" << endl;
     } else {
         cout << "NO" << endl;

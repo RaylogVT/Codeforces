@@ -8,7 +8,8 @@ using namespace std;
 
 int main(){
 
-    // Input - Username a evaluar
+    // Inputs:
+    // 1) Username a evaluar
     string username;
     cin >> username;
 

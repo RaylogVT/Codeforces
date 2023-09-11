@@ -8,18 +8,19 @@ using namespace std;
 
 int main(){
 
-    // Número a checar los dígitos
+    // Inputs:
+    // 1) Número a analizar
     long long int numero;
     cin >> numero;
 
     // Contador de dígitos de la suerte
     int contador_suerte = 0;
 
-    // Mientras tu numero sea positivo
+    // Mientras tu número sea positivo
     while(numero > 0) {
 
         // Realiza módulo 10 para sacar el último dígito del número
-        // Si el dígito es 4 o 7, añade 1 al contador
+        // Si el dígito es 4 o 7, añade 1 al contador de dígitos de la suerte
         if(numero % 10 == 4 || numero % 10 == 7) {
             contador_suerte++;
         }

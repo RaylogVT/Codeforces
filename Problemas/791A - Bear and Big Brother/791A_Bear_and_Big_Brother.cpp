@@ -8,13 +8,16 @@ using namespace std;
 
 int main(){
 
-    // Input - Peso de Limak (a) y Bob (b)
+    // Inputs:
+    // 1) Peso de Limak (a) 
+    // 2) Peso de Bob (b)
     int limak, bob;
     cin >> limak >> bob;
 
     // Numero de años pasados
     int anios = 0;
 
+    // Mientras Limak pese menos que Bob:
     // Suma 1 año, multiplica x3 el peso de Limak y x2 el de Bob
     while(limak <= bob) {
         anios++;

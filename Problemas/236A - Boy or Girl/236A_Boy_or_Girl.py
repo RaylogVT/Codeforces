@@ -1,7 +1,8 @@
 # 236A - Boy or Girl
 # https://codeforces.com/problemset/problem/236/A
 
-# Input - Username a evaluar
+# Inputs:
+# 1) Username a evaluar
 username = input()
 
 # Cuenta el número de letras únicas en el username

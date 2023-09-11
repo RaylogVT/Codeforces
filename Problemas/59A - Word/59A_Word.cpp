@@ -9,7 +9,8 @@ using namespace std;
 
 int main(){
 
-    // Input - Palabra
+    // Inputs:
+    // 1) Palabra a normalizar
     string palabra;
     cin >> palabra;
 
@@ -32,12 +33,12 @@ int main(){
     // Si hay más mayúsculas que minúsculas, convierte a mayúsculas
     // Si hay menos o el mismo número de mayúsculas que minúsculas, convierte a minúsculas
     if(mayusculas > minusculas) {
-        for(int i = 0; i < tamano; i++) {
-            palabra[i] = toupper(palabra[i]);
+        for(int letra = 0; letra < tamano; letra++) {
+            palabra[letra] = toupper(palabra[letra]);
         }
     } else if(mayusculas <= minusculas) {
-        for(int i = 0; i < tamano; i++) {
-            palabra[i] = tolower(palabra[i]);
+        for(int letra = 0; letra < tamano; letra++) {
+            palabra[letra] = tolower(palabra[letra]);
         }
     }
 

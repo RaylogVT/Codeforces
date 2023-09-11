@@ -9,13 +9,14 @@ using namespace std;
 
 int main(){
 
-    // Posición del amigo
+    // Inputs:
+    // 1) Posición del amigo
     int posicion_amigo;
     cin >> posicion_amigo;
 
     // Avanza en posiciones de 5 en 5
     // Redondea hacia arriba para contemplar el último paso (si en este avanzar menos de 5 posiciones)
-    int pasos = ceil(posicion_amigo/5.0);
+    int pasos = ceil(posicion_amigo / 5.0);
     cout << pasos << endl;
 
     return 0;

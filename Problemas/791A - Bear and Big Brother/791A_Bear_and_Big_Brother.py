@@ -1,7 +1,9 @@
 # 791A - Bear and Big Brother
 # https://codeforces.com/problemset/problem/791/A
 
-# Input - Peso de Limak (a) y Bob (b)
+# Inputs:
+# 1) Peso de Limak (a) 
+# 2) Peso de Bob (b)
 limak, bob = map(int, input().split())
 
 # Numero de años pasados

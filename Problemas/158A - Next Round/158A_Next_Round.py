@@ -1,8 +1,9 @@
 # 158A - Next Round
 # https://codeforces.com/problemset/problem/158/A
 
-# n = Numero de participantes
-# k = K-esimo participante
+# Inputs:
+# 1) Número de participantes
+# 2) K-esimo participante
 num_participantes, k_participante = input().split()
 num_participantes = int(num_participantes)
 k_participante = int(k_participante)
@@ -21,5 +22,5 @@ for i in range(0, num_participantes):
     if(int(lista_puntuaciones[i]) >= k_puntuacion and int(lista_puntuaciones[i]) > 0):
         ronda_participantes += 1
 
-# Imprimir numero de participantes que pasan a la siguiente ronda
+# Imprime el número de participantes que pasan a la siguiente ronda
 print(ronda_participantes)

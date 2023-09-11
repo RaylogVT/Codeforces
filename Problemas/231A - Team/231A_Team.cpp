@@ -8,7 +8,8 @@ using namespace std;
 
 int main(){
 
-    // Número de problemas
+    // Inputs:
+    // 1) Número de problemas
     int problemas;
     cin >> problemas;
 
@@ -18,20 +19,21 @@ int main(){
     // Procesa cada problema
     while(problemas--) {
 
-        // El amigo sabe o sabe el problema? (1 = Sí sabe, 0 = No sabe)
+        // Inputs
+        // 2) ¿El amigo sabe o sabe el problema? (1 = Sí sabe, 0 = No sabe)
         int petya, vasya, tonya;
         cin >> petya >> vasya >> tonya;
 
-        // Suma de amigos que saben el problema
+        // ¿Cuantos amigos saben el problema?
         int saben = petya + vasya + tonya;
         
-        // Si 2 o más amigos saben el problema, entonces lo implementan
+        // Si 2 o más amigos saben el problema, entonces suma uno al número de problemas implementados
         if (saben >= 2) {
             problemas_implementados++;
         } 
     }
 
-    // Imprime el número de problemas implementados
+    // Imprime el numero de problemas implementados
     cout << problemas_implementados << endl;
 
     return 0;

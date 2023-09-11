@@ -1,15 +1,25 @@
 # 282A - Bit++
 # https://codeforces.com/problemset/problem/282/A
 
-# Número de statements
+# Inputs:
+# 1) Número de statements
 statements = int(input())
+
+# Variable X
 x = 0
 
 for i in range(0, statements):
-    line = input() # X++, X--, ++X, --X
+    
+    # Inputs:
+    # 2) Statement (X++, X--, ++X, --X)
+    line = input()
+
+    # Si el statement tiene ++, suma 1 a x
+    # Si el statement tiene --, resta 1 a x
     if('++' in line):
         x += 1
     if('--' in line):
         x -= 1
 
+# Imprime el valor final de x
 print(x)

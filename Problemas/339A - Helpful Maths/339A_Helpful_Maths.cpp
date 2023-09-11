@@ -9,7 +9,8 @@ using namespace std;
 
 int main(){
 
-    // Suma a ordenar
+    // Inputs:
+    // 1) Suma a ordenar
     string suma;
     cin >> suma;
 
@@ -20,9 +21,9 @@ int main(){
     int longitud_suma = suma.length();
 
     // Extrae los números de la suma
-    for(int i = 0; i < longitud_suma; i++){
-        if(suma[i] != '+') {
-            numeros.push_back(suma[i]-48);
+    for(int elemento = 0; elemento < longitud_suma; elemento++){
+        if(suma[elemento] != '+') {
+            numeros.push_back(suma[elemento]-48);
         }
     }
 
@@ -36,10 +37,10 @@ int main(){
     int conteo_numeros = 0;
 
     // Recorre el arreglo de números de la suma
-    for(int i: numeros) {
+    for(int num: numeros) {
 
         // Imprime el número 
-        cout << i;
+        cout << num;
 
         // Si el número actual no es el último del arreglo, imprime un '+'
         if(conteo_numeros != cantidad_numeros - 1) {

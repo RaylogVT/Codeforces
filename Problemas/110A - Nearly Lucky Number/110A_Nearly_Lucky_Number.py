@@ -1,7 +1,8 @@
 # 110A - Nearly Lucky Number
 # https://codeforces.com/problemset/problem/110/A
 
-# Número a checar los dígitos
+# Inputs:
+# 1) Número a analizar
 numero = int(input())
 
 # Convierte el número a string

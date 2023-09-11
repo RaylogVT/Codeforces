@@ -8,7 +8,8 @@ using namespace std;
 
 int main() {
 
-    // Matriz de 0s
+    // Inputs:
+    // 1) Matriz de 0s y 1
     int matriz[5][5];
 
     // Rellena la matriz con los 0s y 1
@@ -34,6 +35,8 @@ int main() {
 
     // Calcula el número de movimientos para mover el 1 al centro de la matriz
     int movimientos = abs(fila1-2) + abs(columna1-2);
+
+    // Imprime el número de movimientos
     cout << movimientos << endl;
 
     return 0;

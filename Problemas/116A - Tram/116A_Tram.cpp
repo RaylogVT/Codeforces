@@ -8,7 +8,8 @@ using namespace std;
 
 int main(){
 
-    // Input - Número de estaciones
+    // Inputs:
+    // 1) Número de estaciones
     int estaciones;
     cin >> estaciones;
 
@@ -18,8 +19,12 @@ int main(){
     // Número de pasajeros que el tren tiene actualmente
     int pasajeros_actuales = 0;
 
+    // Recorre cada estación
     for(int estacion = 0; estacion < estaciones; estacion++) {
-        // Input - Número de pasajeros que salen y entran del tren
+
+        // Inputs:
+        // 2) Número de pasajeros que salen del tren
+        // 3) Número de pasajeros que entran al tren
         int pasajeros_salientes, pasajeros_entrantes;
         cin >> pasajeros_salientes >> pasajeros_entrantes;
 
@@ -27,11 +32,13 @@ int main(){
         pasajeros_actuales = pasajeros_actuales - pasajeros_salientes + pasajeros_entrantes;
 
         // ¿El tren tiene más pasajeros del máximo que se ha registrado hasta el momento?
-        // Si sí, acutaliza el valor del máximo registrado, de lo contrario, no se actualiza nada
+        // Si sí, acutaliza el valor del máximo registrado, de lo contrario, no se actualiza 
         if(pasajeros_actuales > maximo_pasajeros) {
             maximo_pasajeros = pasajeros_actuales;
         }
     }
+
+    // Imprime el número máximo de pasajeros que albergó el tren durante su viaje
     cout << maximo_pasajeros << endl;
 
     return 0;

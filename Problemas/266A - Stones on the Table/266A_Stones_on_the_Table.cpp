@@ -8,22 +8,23 @@ using namespace std;
 
 int main(){
 
-    // Input - Número de piedras
-    int piedras;
-    cin >> piedras;
-
-    // Input - Colores de las piedras   
+    // Inputs:
+    // 1) Número de piedras
+    // 2) Colores de piedras
+    int num_piedras;
+    cin >> num_piedras;
+  
     string RGB;
     cin >> RGB;
 
-    // Output - Número de piedras nuevas a añadir
+    // Número de piedras nuevas a añadir
     int nuevas_piedras = 0;
 
     // Compara dos piedras vecinas
-    for(int i = 1; i <= piedras; i++) {
+    for(int piedra = 1; piedra <= num_piedras; piedra++) {
 
-        // Si son iguales, añadirás una nueva piedra
-        if(RGB[i] == RGB[i-1]) {
+        // Si son iguales, añade una nueva piedra
+        if(RGB[piedra] == RGB[piedra-1]) {
             nuevas_piedras++;
         }
     }

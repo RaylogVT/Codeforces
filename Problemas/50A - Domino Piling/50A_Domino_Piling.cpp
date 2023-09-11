@@ -9,10 +9,16 @@ using namespace std;
 
 int main(){
 
-    int m, n;  // m = Ancho, n = Alto
+    // Inputs:
+    // m = Ancho
+    // n = Alto
+    int m, n;  
     cin >> m >> n;
 
+    // Calcula el número de dominós 
     int dominos = floor((m*n)/2);
+
+    // Imprime el número de dominós
     cout << dominos << endl;
 
     return 0;

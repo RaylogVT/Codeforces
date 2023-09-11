@@ -1,7 +1,8 @@
 # 59A - Word
 # https://codeforces.com/problemset/problem/59/A
 
-# Palabra
+# Inputs:
+# 1) Palabra a normalizar
 palabra = input()
 
 # Contadores de letras de mayúsculas y minúsculas
