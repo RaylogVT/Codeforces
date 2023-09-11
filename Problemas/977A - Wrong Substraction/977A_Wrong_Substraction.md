@@ -22,7 +22,7 @@ Para este problema simplemente checamos en cada resta el último dígito del nú
 Una manera tradicional de sacar los dígitos de un número es con el uso de **módulos (%)**. **Cuando divides un número entre 10, el residuo es su último dígito** (Ej. 512 / 10 = 51 R 2), así que podemos hacer **módulo 10** para sacarlo.
 
 ## Algoritmo
-1) Checa el último dígito (d) del número \
+1) Checa el último dígito (d) del número mediante Número % 10 \
 Si d != 0, entonces resta -1 \
 Si d == 0, entonces divide entre 10
 3) Repite el Paso #1 *K* veces (el número de restas a realizar)
