@@ -22,12 +22,12 @@ Imprime "IGNORE HIM!" si el usuario es hombre
 ## Forma de resolverlo
 Para este problema, debemos buscar la manera de llevar un registro de las letras que vayamos leyendo del username para saber si son distintas o repetidas. Si bien podemos hacer dicha labor manualmente con una lista/arreglo, existe una estructura de datos que puede hacer el trabajo por nosotros.
 
-La estructura set() es un arreglo que guarda valores únicos de un input, así que es perfecta para registrar las letras únicas del username. \
+La estructura **set()** es un arreglo que guarda valores únicos de un input, así que es perfecta para registrar las letras únicas del username. \
 Para más información sobre los sets, consulta las siguientes páginas: \
 Python - https://www.w3schools.com/python/python_sets.asp \
 C++ - https://www.geeksforgeeks.org/set-in-cpp-stl/
 
 ## Algoritmo
-1) Mete el username en una estructura set 
+1) Mete el username en un set 
 2) Calcula el tamaño del set 
-3) Si el tamaño es impar, entonces el usuario es hombre, de lo contrario es mujer, imprime el mensaje correspondiente
+3) Si el tamaño es impar, entonces imprime que el usuario es hombre, de lo contrario imprime que es mujer
