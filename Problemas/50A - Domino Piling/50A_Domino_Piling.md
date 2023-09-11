@@ -21,7 +21,7 @@ Imprime el número de fichas de dominó necesarias para llenar el tablero.
 
 ## Forma de resolverlo
 El área del tablero es M x N cuadrados \
-El área de una ficha de dominó es 2 cuadrados (2 x 1) \
+El área de una ficha de dominó es 2 cuadrados (2 x 1) 
 
 Por lo tanto, el número de fichas es **(M * N) / 2**
 
