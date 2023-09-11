@@ -9,7 +9,7 @@ Una matriz se considera **bonita** si tiene el 1 en su centro (fila #3, columna 
 
 ## Input
 Recibe 5 líneas con 5 números, donde las líneas representan las filas y los números las columnas.  \
-Está garantizado que vas a lee 24 ceros y 1 uno.
+Está garantizado que lees 24 ceros y 1 uno.
 
 ## Output
 Imprime el número de inversiones necesarias para hacer la matriz bonita
@@ -54,5 +54,5 @@ Una vez hecho esto, simplemente sumamos las restas para obtener el total.
 El número de inversiones a realizar es igual a **abs(x-2) + abs(y-2)**, donde (x,y) son los índices de fila y columna iniciales del 1
 
 ## Algoritmo
-1) Extrae el número de fila y columna donde se ubica el 1 \
+1) Extrae el número de fila y columna donde se ubica el 1 
 2) Calcula **abs(fila-2) + abs(columna-2)**
