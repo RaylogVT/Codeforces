@@ -18,11 +18,13 @@ Imprime N líneas, donde la i-ésima línea es la abreviación de la i-ésima pa
 | word          | word (4 letras) = Sin cambio                  | **word**      |
 | localization  | localization (12 letras) = l**ocalizatio**n   | **l10n**      |
 
+## Forma de resolverlo
+Para resolver este problema, debemos buscar una manera de calcular el número de letras que hay entre la primera y última letra de una palabra con más de 10 caracteres. \
+Pensemos en lo siguiente: Al descartar la primera y última letra de una palabra, estamos restando **2 letras** a la misma, lo cual nos da las letras que están en medio. \
+Con base en esto, podemos concluir que el número de letras en medio de una palabra es **(Longitud de palabra - 2)**
+
 ## Algoritmo
 1) Determina si la palabra tiene más de 10 caracteres. En caso de que no, la palabra no se abrevia 
 2) Extrae el 1° y último carácter de la palabra 
-3) Extrae el número de caracteres entre el 1° y último carácter \
-Esto se calcula sacando la longitud total de la palabra y restarle 2 (el 1° y último caracter) \
-**Caracteres en medio** = Longitud de palabra - 2 
-4) Imprime el 1° carácter, el número de caracteres en medio y el último carácter
-
+3) Calcula el número de letras en medio (Longitud de palabra - 2)
+4) Imprime el 1° carácter, el número de letras en medio y el último carácter
