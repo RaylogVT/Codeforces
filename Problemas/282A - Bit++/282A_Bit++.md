@@ -16,34 +16,17 @@ Las siguientes N líneas son los statements del programa, los cuales contienen l
 Imprime el valor final de X
 
 ## Ejemplos
-3   \
-X++ \
-++X \
---X 
-
-| Statement | Resultado |
-| :--- | :------------- |
-| X++ | X = 0 + 1 = 1 |
-| ++X | X = 1 + 1 = 2 |
-| --X | X = 2 - 1 = 1 |
-
-Resultado = **1**
+| Input   | Razonamiento                                   | Output |
+| :----   | :--------------------------------------------  | -----  |
+| 3 <br> X++ <br> ++X <br> --X | <br> X = 0 + 1 = 1 <br> X = 1 + 1 = 2 <br> X = 2 - 1 = 1 | **1** |
 
 ## Forma de resolverlo
 ### a) Secuencial 
 Lees cada statement y vas sumando y restando conforme vas detectando ++ o --
 
-3   \
-X++ \
-++X \
---X 
-
-| Statement | Resultado |
-| :--- | :------------- |
-| X++ | X = 0 + 1 = 1 |
-| ++X | X = 1 + 1 = 2 |
-| --X | X = 2 - 1 = 1 |
-|     | **X = 1**     |
+| Statement   | Razonamiento                               | 
+| :----   | :--------------------------------------------  | 
+| X++ <br> ++X <br> --X | X = 0 + 1 = 1 <br> X = 1 + 1 = 2 <br> X = 2 - 1 = 1 <br> **x = 1** |
 
 Existen dos maneras de leer los statements: 
 
@@ -59,12 +42,6 @@ Si los analizamos, vemos que **el caracter de en medio siempre es + o -, por lo 
 ### b) Integradora
 Cuenta cuántos statements tienen ++ y -- y resta el conteo de los dos
 
-3   \
-X++ \
-++X \
---X 
-
-Número de statements (++) = 2 \
-Número de statements (--) = 1 \
-2 - 1 = 1 \
-**X = 1**           
+| Statement   | Cálculos                               | 
+| :----   | :--------------------------------------------  | 
+| 3 <br> X++ <br> ++X <br> --X | Número de statements (++) = 2 <br> Número de statements (--) = 1 <br> 2 - 1 = 1 <br> **X = 1** |  
