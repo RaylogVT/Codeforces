@@ -29,5 +29,4 @@ Guarda en un contador el número de dormitorios en los cuales la anterior condic
 1) Itera sobre cada dormitorio
 2) Inicia un contador de dormitorios disponibles en 0
 3) Si el número de personas que viven el dormitorio (P) + 2 es menor o igual a la capacidad del dormitorio (Q), entonces suma +1 al contador de dormitorios disponibles
-4) Si el número de personas que viven el dormitorio (P) + 2 es mayor a la capacidad del dormitorio (Q), entonces no realizas ninguna operación
-5) Devuelve el número de dormitorios disponibles
+4) Devuelve el número de dormitorios disponibles
