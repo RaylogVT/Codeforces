@@ -8,7 +8,7 @@ Si al menos una de las personas considera que el problema es difícil, entonces 
 Dada las opiniones de la gente, determina si el problema es fácil o difícil.
 
 ## Input
-La 1° línea contiene un número entero N (1 <= N <= 100) - El número de personas encuestadas \
+La 1° línea contiene un número entero N (1 <= N <= 100) -- El número de personas encuestadas \
 La 2° línea contiene N números enteros - La respuesta de cada persona \
 Si el número es igual a 0, entonces la persona considera que el problema es fácil \
 Si el número es igual a 1, entonces la persona considera que el problema es difícil
