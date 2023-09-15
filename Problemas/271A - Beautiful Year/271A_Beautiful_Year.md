@@ -6,7 +6,7 @@ https://codeforces.com/problemset/problem/271/A
 Un año es hermoso si tiene todos sus dígitos distintos. Determina el próximo año hermoso después de un año dado.
 
 ## Input
-Un número entero N (1000 <= N <= 9000) - El año de inicio para buscar un año hermoso
+Un número entero N (1000 <= N <= 9000) -- El año de inicio para buscar un año hermoso
 
 ## Output
 Imprime el próximo año hermoso después del año dado
