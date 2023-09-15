@@ -20,12 +20,12 @@ Imprime "HARD" si alguien considera que el problema es difícil
 ## Ejemplos
 | Input         | Razonamiento  | Output    |
 | ------------- | :------------ | --------- |
-| 3 <br> 0 0 1  | 0 0 **1** = 1 persona considera que el problema es difícil        | **HARD**          |
+| 3 <br> 0 0 1  | 0 0 **1** = **1 persona** considera que el problema es difícil        | **HARD**          |
 | 3 <br> 0 0 0  | 0 0 0 = Nadie considera que el problema es difícil                | **EASY**          |
-| 3 <br> 1 0 1  | **1** 0 **1** = 2 personas consideran que el problema es difícil  | **HARD**          |
+| 3 <br> 1 0 1  | **1** 0 **1** = **2 personas** consideran que el problema es difícil  | **HARD**          |
 
 ## Forma de resolverlo
-Para este problema simplemente debemos revisar si en nuestra serie de respuestas hay un 1. Si lo hay, entonces el problema es difícil. Si hay puros 0s, entonces el problema es fácil. \
+Para este problema simplemente debemos revisar si en nuestra serie de respuestas hay un **1**. Si lo hay, entonces el problema es difícil. Si hay puros 0s, entonces el problema es fácil. \
 Esto lo podemos hacer con una lista/arreglo o conforme leemos las respuestas. La manera dependerá del lenguaje de programación que utilices.
 
 ## Algoritmo
