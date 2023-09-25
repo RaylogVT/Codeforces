@@ -21,8 +21,22 @@ Imprime el próximo año hermoso después del año dado
 ## Forma de resolverlo
 Para este problema simplemente debemos checar si el año tiene **4 dígitos distintos.** \
 Si no los tiene, entonces pasa al siguiente año hasta encontrar uno que tenga 4 dígitos distintos. \
-Ojo: Tienes que empezar a partir del **año después del dado**, de lo contrario puedes detectar erróneamente el input como output.\
-Para ello podemos utilizar la función **set()** de Python y C++ para sacar los dígitos del año. Como el set() sólo registra instancias únicas de una variable, si el año tiene 4 dígitos distintos, entonces su **tamaño será igual a 4**. En cambio, si el año tiene algún dígito repetido (Ej. 1988), entonces su tamaño será menor a 4.
+Ojo: Tienes que empezar a partir del **año después del dado**, de lo contrario puedes detectar erróneamente el input como output.
+
+Sabiendo esto, **¿cómo extraemos los dígitos del número?**
+### a) Set
+Podemos utilizar la función **set()** de Python y C++ para sacar los dígitos del año. Como el set() sólo registra instancias únicas de una variable, si el año tiene 4 dígitos distintos, entonces su **tamaño será igual a 4**. En cambio, si el año tiene algún dígito repetido (Ej. 1988), entonces su tamaño será menor a 4.
+
+### b) Matemático
+Podemos utilizar divisiones y módulos para extraer cada dígito dependiendo de su posición. \
+La fórmula es **(Año // 10^P) % 10**, donde **P** es la localidad de dígito leyendo el número de derecha a izquierda. Esto lo hacemos para saber en qué **posición está con respecto al sistema decimal** (unidad, decena, centena, mil, millón, etc...)
+
+1° dígito (miles) = (Año // 10^3) % 10 \
+2° dígito (miles) = (Año // 10^2) % 10 \
+3° dígito (miles) = (Año // 10^1) % 10 \
+4° dígito (miles) = (Año // 10^0) % 10
+
+Una vez que tienes los 4 dígitos, simplemente los comparas entre sí. Si detectas que dos de ellos son iguales, entonces el año tiene dígitos repetidos, de lo contrario tiene sus 4 dígitos distintos.
 
 ## Algoritmo
 1) Empieza a iterar sobre el año posterior al del input

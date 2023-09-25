@@ -1,5 +1,5 @@
-// Problema
-// https://codeforces.com/problemset/problem/Número/Letra
+// XXXA - 
+// https://codeforces.com/problemset/problem/XXX/A
 
 #include <stdio.h>
 #include <stdlib.h>
