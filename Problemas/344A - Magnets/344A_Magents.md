@@ -6,8 +6,8 @@ https://codeforces.com/problemset/problem/344/A
 Tienes unos imanes que deseas acomodar en una fila. Dependiendo de cómo los pongas, los polos se atraerán o repelerán. Cuando se repelen, forman un nuevo grupo de imanes. Dado el acomodo de los imanes en la fila, determina el número de grupos de imanes formados.
 
 ## Input
-La 1° línea contiene un número entero N (1 <= N <= 100000) - El número de imanes
-Las siguientes N líneas contienen el string '01' o '10', la forma en la que cada imán fue puesta en la fila, \
+La 1° línea contiene un número entero N (1 <= N <= 100000) - El número de imanes \
+Las siguientes N líneas contienen el string '01' o '10', la forma en la que cada imán fue puesta en la fila
 0 representa el polo positivo y 1 respresenta el número negativo
 
 ## Output
