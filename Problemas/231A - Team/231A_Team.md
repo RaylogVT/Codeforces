@@ -30,7 +30,3 @@ Si la suma da **0 o 1**, entonces **no** pueden resolver el problema.
 1) Por cada problema, suma los 0s y 1s para saber cuántos amigos saben la solución de este. 
 2) Si la suma es mayor o igual a 2, entonces suma 1 al número de problemas que pueden implementar. 
 3) Si la suma es menor a 2, entonces el problema se omite.
-
-
-
-
