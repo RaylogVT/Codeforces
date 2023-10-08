@@ -7,7 +7,7 @@ Tienes 4 herraduras de un color determinado. El color está determinado por su n
 ¿Cuántas herraduras necesitas comprar para que tengas 4 de distinto color?
 
 ## Input
-Una sola línea contiene 4 números enteros N1, N2, N3, N4 (1 <= N1,N2,N3,N4 <= 1000) -- El índice del color de cada herradura \
+Una sola línea contiene 4 números enteros N1, N2, N3, N4 (1 <= N1, N2, N3, N4 <= 1000) -- El índice del color de cada herradura
 
 ## Output
 Imprime un número entero -- El número de herraduras que necesitas comprar
