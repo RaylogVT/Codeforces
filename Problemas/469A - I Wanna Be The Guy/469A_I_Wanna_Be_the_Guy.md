@@ -30,14 +30,14 @@ Podemos insertar los niveles que X y Y pueden pasarse en un **set()**. Dado que 
 ## Algoritmo
 ### a) Iteración por fuerza bruta
 1) Empieza por el Nivel 1
-2) Checa si X y Y no pueden pasarse el nivel actual
-a) Si no pueden, entonces imprime 'Oh, my keyboard!' (Aquí termina el proceso)
-b) Si pueden, entonces pasa al siguiente nivel
+2) Checa si X y Y no pueden pasarse el nivel actual \
+a) Si no pueden, entonces imprime 'Oh, my keyboard!' (Aquí termina el proceso) \
+b) Si pueden, entonces pasa al siguiente nivel \
 3) Repite el Paso 2 hasta llegar al último nivel
 4) Si X y Y pasaron todos los niveles, entonces imprime 'I become the guy.'
 
 ### b) Set de niveles
 1) Inserta los niveles de X y Y en un set
-2) Revisa el tamaño del set
-a) Si el tamaño del set es igual al número de niveles, entonces X y Y pueden pasarse todos los niveles, imprime 'I become the guy.'
+2) Revisa el tamaño del set \
+a) Si el tamaño del set es igual al número de niveles, entonces X y Y pueden pasarse todos los niveles, imprime 'I become the guy.' \
 b) Si el tamaño del set es distinto al número de niveles, entonces X y Y no pueden pasarse todos los niveles, imprime 'Oh, my keyboard!'
