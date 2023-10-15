@@ -15,7 +15,7 @@ Por cada caso imprime el número de veces que debes sumar +1 para que A sea divi
 ## Ejemplos
 | Input         | Razonamiento  | Output    |
 | ------------- | :------------ | --------- |
-| 4 <br> 10 4 <br> 13 9 <br> 100 13 <br> 12 6 | 10 + 2 = 12 % 4 = 0 --> +2 <br> 13 + 5 = 18 % 9 = 0 --> +5 <br> 100 + 4 = 104 % 13 = 0 --> +4 <br> 12 + 0 = 12 % 6 = 0 --> +0 | **2** <br> **5** <br> **4** <br> **0** |
+| 4 <br> 10 4 <br> 13 9 <br> 100 13 <br> 12 6 | <br> 10 + 2 = 12 % 4 = 0 --> +2 <br> 13 + 5 = 18 % 9 = 0 --> +5 <br> 100 + 4 = 104 % 13 = 0 --> +4 <br> 12 + 0 = 12 % 6 = 0 --> +0 | <br> **2** <br> **5** <br> **4** <br> **0** |
 
 ## Forma de resolverlo
 Para este problema podríamos iterar sobre cada caso sumando +1 a A, contando cuántas veces lo hemos hecho y sacando el módulo de A y B hasta que este sea 0. Sin embargo, realizar estas operaciones **excederá el tiempo permitido por Codeforces**, considerando que A y B pueden ser hasta 10^9 y con valores muy cercanos que puede llevar a B-1 operaciones por caso (suponiendo que A = B-1), así que necesitamos otra aproximación.
