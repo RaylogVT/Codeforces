@@ -6,7 +6,7 @@ https://codeforces.com/problemset/problem/520/A
 Una string es un pangrama si tiene todas las letras del abedecario. Determina si el string es un pangrama.
 
 ## Input
-La 1° línea contiene un número entero N (1 <= N <= 100) - La longitud del string
+La 1° línea contiene un número entero N (1 <= N <= 100) - La longitud del string \
 La 2° línea contiene un string con mayúsculas y minúsculas - El string a revisar
 
 ## Output
