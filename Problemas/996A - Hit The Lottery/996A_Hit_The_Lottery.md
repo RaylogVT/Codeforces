@@ -19,8 +19,7 @@ Imprime el mínimo número de billetes que necesitas para sacar el dinero del ba
 | 1728               | 1728 <br> **17** x $100 <br> **1** x $20 <br> **1** x $5 <br> **3** x $1 <br> R = 22 | **22**          |
 
 ## Forma de resolverlo
-Para resolver este problema, debemos ir sacando el dinero poco a poco para contar los billetes que necesitamos de cada denominación. Puesto que queremos la menor cantidad de billetes, empezamos sacando con las denominaciones más grandes (es decir, $100, $20, $10, $5, $1, en ese orden). \
-Calcula cuántos billetes de $100 puedes sacar, luego calcula cuánto dinero estás sacando con estos y réstalo a la cantidad de dinero del banco. Repite los mismos pasos con los billetes de $20, $10, $5 y $1 hasta que la cantidad de dinero en el banco se igual a 0.
+Para resolver este problema, debemos ir sacando el dinero poco a poco para contar los billetes que necesitamos de cada denominación. Puesto que queremos la menor cantidad de billetes, empezamos sacando con las denominaciones más grandes (es decir, $100, $20, $10, $5, $1, en ese orden). Calcula cuántos billetes de $100 puedes sacar, luego calcula cuánto dinero estás sacando con estos y réstalo a la cantidad de dinero del banco. Repite los mismos pasos con los billetes de $20, $10, $5 y $1 hasta que la cantidad de dinero en el banco se igual a 0.
 
 ## Algoritmo
 1) Guarda las denominaciones en una lista/arreglo de mayor a menor
