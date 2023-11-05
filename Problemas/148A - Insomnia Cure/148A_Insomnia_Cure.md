@@ -18,8 +18,8 @@ Imprime un número entero - El número de dragones atacados
 ## Ejemplos
 | Input                          | Razonamiento  | Output    |
 | -----------------              | :------------ | --------- |
-| 1 <br> 2 <br> 3 <br> 4 <br> 12 | K = X X X X X X X X X X  X  X <br> L = - X - X - X - X - X - X <br> M = - - X - - X - - X - - X <br> N = - - - X - - - X - - - X <br> D = 1 2 3 4 5 6 7 8 9 10 11 12 <br> T = X X X X X X X X X X  X  X   | **12** |
-| 2 <br> 3 <br> 4 <br> 5 <br> 24 | K = - X - X - X - X - X - X - X - X - X - X - X - X <br> L = - - X - - X - - X - - X - - X - - X - - X - - X <br> M = - - - X - - - X - - - X - - - X - - - X - - - X <br> N = - - - - X - - - - X - - - - X - - - - X - - - - <br> D = 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 <br> T = - X X X X X - X X X - X - X X X - X - X X X - X | **17** |
+| 1 <br> 2 <br> 3 <br> 4 <br> 12 | ![image](https://github.com/RaylogVT/Codeforces/assets/129716395/3a90490b-9de8-4a65-b63a-b503973fc679) | **12** |
+| 2 <br> 3 <br> 4 <br> 5 <br> 24 | ![image](https://github.com/RaylogVT/Codeforces/assets/129716395/fca4c047-d03d-47e3-861c-9af070f55c60) | **17** |
 
 ## Forma de resolverlo
 ### a) Set de dragones atacados
