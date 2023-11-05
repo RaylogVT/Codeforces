@@ -9,6 +9,7 @@ Anton tiene varios poliedros. Estos se clasifican en:
 3) Octaedro (Octahedron) = 8 caras
 4) Dodecaedro (Dodecahedron) = 12 caras
 5) Icosaedro (Icosahedron) = 20 caras
+   
 Anton quiere saber cuántas caras tienen sus poliedros en total. ¿Cuántas caras tiene?
 
 ## Input
