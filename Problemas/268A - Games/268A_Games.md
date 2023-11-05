@@ -20,9 +20,9 @@ Imprime el número de juegos en los que el equipo local tendrá que ponerse su u
 | 4 <br> 100 42 <br> 42 100 <br> 5 42 <br> 100 5 | **(100,100)**, (100,42), (100,5), **(42,42)**, **(42,42)**, (42,5), (5,42), (5,100), **(5,5)**, (100,42), **(100,100)**, (100,42) | **5**          |
 
 ## Forma de resolverlo
-Para resolver este problema, debemos **simular todos los partidos e identificar en cuáles los colores del uniforme de ambos equipos son iguales**. Para ello podemos agrupar los colores del uniforme local y visitante de los equipos en **dos listas/arreglos**, y compararlos entre sí para detectar las equivalencias. \
+Para resolver este problema, debemos **simular todos los partidos e identificar en cuáles los colores del uniforme de ambos equipos son iguales**. Para ello podemos agrupar los colores del uniforme local y visitante de los equipos en **dos listas/arreglos**, y compararlos entre sí para detectar las equivalencias. 
 
-Usando el 1° ejemplo: (1,2), (2,4), (3,4), los arreglos quedarán tal que **(1,2,3)** y **(2,4,4)**. De aquí, probamos todas las combinaciones de pares: (1,2), (1,4), (1,4), **(2,2)**, (2,4), (2,4), (3,2), (3,4), (3,4). \
+Usando el 1° ejemplo: (1,2), (2,4), (3,4), los arreglos quedarán tal que **(1,2,3)** y **(2,4,4)**. De aquí, probamos todas las combinaciones de pares: (1,2), (1,4), (1,4), **(2,2)**, (2,4), (2,4), (3,2), (3,4), (3,4). 
 
 Esta aproximación asume que un equipo jugará contra sí mismo. Afortunadamente, como está garantizado que todos los equipos tienen uniformes con colores de local y visitante distintos, entonces estas permutaciones jamás formarán parte de nuestro resultado.
 
