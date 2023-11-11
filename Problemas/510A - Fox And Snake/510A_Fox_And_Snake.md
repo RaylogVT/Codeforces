@@ -16,9 +16,9 @@ Imprime la serpiente, la cual consta de N líneas con M caracteres.
 ## Ejemplos
 | Input  | Razonamiento                                                                 | Output    |
 | ------ | :------------                                                                | --------- |
-| 3 3    | (1,1) --> (1,3) --> (3,3) --> (3,1)                                          | ### <br> ..# <br> ###         |
-| 5 4    | (1,1) --> (1,4) --> (3,4) --> (3,1) --> (5,1) --> (5,4)                      | #### <br> ...# <br> #### <br> #... <br> ####         |
-| 9 7    | (1,1) --> (1,7) --> (3,7) --> (3,1) --> (5,1) --> (5,7) --> (7,7) --> (7,1) --> (9,1) --> (9,7) | ####### <br> ......# <br> ####### <br> #...... <br> ####### <br> ......# <br> ####### <br> #...... <br> #######                 |
+| 3 3    | (1,1) --> (1,3) --> (3,3) --> (3,1)                                          | ![image](https://github.com/RaylogVT/Codeforces/assets/129716395/9af9478e-7f3f-485d-b627-346a4be66013) |
+| 5 4    | (1,1) --> (1,4) --> (3,4) --> (3,1) --> (5,1) --> (5,4)                      | ![image](https://github.com/RaylogVT/Codeforces/assets/129716395/03625100-43b4-4612-bf37-13505f437a3a) |
+| 9 7    | (1,1) --> (1,7) --> (3,7) --> (3,1) --> (5,1) --> (5,7) --> (7,7) --> (7,1) --> (9,1) --> (9,7) | ![image](https://github.com/RaylogVT/Codeforces/assets/129716395/5f02a8fd-d1af-4b71-80a9-185b7f24a489) |
 
 ## Forma de resolverlo
 Para resolver este problema, debemos identificar las acciones que realiza la serpiente en cada fila del tablero. Del resumen y los ejemplos podemos ver que la serpiente recorre la fila completa en las filas que son **impares**, mientras que cambia de fila en las filas **pares**. Sin embargo, en dónde cambia de fila no es igual entre filas pares. Si expandes el tablero, notarás que la serpiente cambia de filas **al inicio** de esta en las filas **4,8,12,16,...**, mientras que lo hacer **al final** de esta en las filas **2,6,10,14,...** . Si generalizamos esta sucesión, podemos que el cambio de filas al inicio se realiza en filas que son **múltiplos de 4**, mientras que el cambio al final se realiza en filas que son **pares pero no múltiplos de 4**. 
