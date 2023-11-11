@@ -26,7 +26,7 @@ Dado que la **1° puntuación jamás dará un concurso asombroso, entonces podem
 ## Algoritmo
 1) Inserta las puntuaciones en una lista
 2) Define la puntuación máxima y mínima como la del 1° concurso
-3) Itera sobre las puntuaciones
+3) Itera sobre las puntuaciones \
 a) Si la puntuación actual es mayor a la puntuación máxima, entonces acutaliza la puntuación máxima y suma +1 a los concursos asombrosos \
-b) Si la puntuación actual es menor a la puntuación mínima, entonces acutaliza la puntuación mínima y suma +1 a los concursos asombrosos \
+b) Si la puntuación actual es menor a la puntuación mínima, entonces acutaliza la puntuación mínima y suma +1 a los concursos asombrosos 
 4) Devuelve la cantidad de concursos asombrosos
