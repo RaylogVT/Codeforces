@@ -13,7 +13,7 @@ La 1° línea contiene un número enteno T (1 <= T <= 10000) - La cantidad de n�
 Las siguientes T líneas contienen un número entero N (1 <= N <= 10000) - El número actual a representar con números redondos
 
 ## Output
-Por cada número N: \
+Por cada número N: 
 1) Imprime la cantidad de números redondos que necesitas para representar el número
 2) Imprime los números redondos que suman N (con espacios entre sí, sin importar el orden)
 
@@ -32,14 +32,14 @@ Ambas tareas están garantizadas que terminen siempre y cuando al **dividir el n
 
 ## Algoritmo
 1) Define elun contador de números redondos (CNR) en 0 y la Posición Decimal (PD) en 1
-2) Calcula número (N) % 10
+2) Calcula número (N) % 10 \
 a) Si N % 10 != 0, entonces suma +1 al CNR \
-b) Si N % 10 == 0, entonces no se realiza alguna acción \
+b) Si N % 10 == 0, entonces no se realiza alguna acción 
 3) Divide el número entre 10
 4) Repite los Pasos 2-3 hasta que N / 10 = 0
-5) Calcula número (N) % 10
+5) Calcula número (N) % 10 \
 a) Si N % 10 != 0, entonces calcula (N % 10) * PD e imprime el número redondo resultante \
-b) Si N % 10 == 0, entonces no se realiza alguna acción \
+b) Si N % 10 == 0, entonces no se realiza alguna acción 
 6) Divide el número entre 10
 7) Multiplica la PD por 10
 8) Repite los Pasos 5-7 hasta que N / 10 = 0
