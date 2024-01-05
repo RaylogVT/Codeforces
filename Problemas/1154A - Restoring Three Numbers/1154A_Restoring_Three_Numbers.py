@@ -2,10 +2,10 @@
 # https://codeforces.com/problemset/problem/1154/A
 
 # Input:
-# 1) x1, x2, x3, x4
+# 1) x1, x2, x3, x4 = Resultados de sumas
 x1, x2, x3, x4 = map(int, input().split())
 
-# Pon las X's en una lista
+# Pon las sumas en una lista
 x = [x1, x2, x3, x4]
 
 # Ordena la lista de menor a mayor
