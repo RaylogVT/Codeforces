@@ -6,7 +6,7 @@
 # 2) l = l-ésimo dragón arrojado al balcón 
 # 3) m = m-ésimo dragón aplastado con tacón 
 # 4) n = n-ésimo dragón que huyó
-# 5) Número de dragones
+# 5) dragones = Número de dragones
 k = int(input())
 l = int(input())
 m = int(input())
