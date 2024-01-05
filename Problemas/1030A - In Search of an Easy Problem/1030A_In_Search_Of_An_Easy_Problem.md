@@ -25,10 +25,11 @@ Imprime "HARD" si alguien considera que el problema es difícil
 | 3 <br> 1 0 1  | **1** 0 **1** = **2 personas** consideran que el problema es difícil  | **HARD**          |
 
 ## Forma de resolverlo
-Para este problema simplemente debemos revisar si en nuestra serie de respuestas hay un **1**. Si lo hay, entonces el problema es difícil. Si hay puros 0s, entonces el problema es fácil. \
+Para este problema, simplemente debemos revisar si en nuestra serie de respuestas hay un **1**. Si lo hay, entonces el problema es **difícil**. Si hay **puros 0s**, entonces el problema es **fácil**. \
 Esto lo podemos hacer con una lista/arreglo o conforme leemos las respuestas. La manera dependerá del lenguaje de programación que utilices.
 
 ## Algoritmo
-1) Checa las respuestas de las personas
-2) Si detectas un 1 al leer las respuestas, entonces imprime "HARD"
-3) Si no detectas un 1 tras leer todas las respuetas, entonces imprime "EASY"
+1) Itera sobre las respuestas de las personas
+2) Revisa las respuestas \
+a) Si hay algún 1, entonces imprime "HARD" \
+b) Si no hay un 1, entonces imprime "EASY"
