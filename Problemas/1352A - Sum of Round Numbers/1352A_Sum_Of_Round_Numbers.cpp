@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de pruebas
+    // 1) prueba = Número de pruebas
     int pruebas;
     cin >> pruebas;
 
@@ -18,7 +18,7 @@ int main(){
     for(int prueba_actual = 0; prueba_actual < pruebas; prueba_actual++) {
 
         // Input:
-        // 2) Número a descomponer
+        // 2) numero = Número a descomponer
         int numero;
         cin >> numero;
         
