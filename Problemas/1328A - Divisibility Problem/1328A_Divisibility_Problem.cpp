@@ -1,5 +1,5 @@
-// XXXA - 
-// https://codeforces.com/problemset/problem/XXX/A
+// 1328A - Divisibility Problem 
+// https://codeforces.com/problemset/problem/1328/A
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,15 +10,15 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de casos
-    int casos;
-    cin >> casos;
+    // 1) pruebas = Número de pruebas
+    int pruebas;
+    cin >> pruebas;
 
-    // Resuelve cada caso
-    for(int num_caso = 0; num_caso < casos; num_caso++) {
+    // Realiza cada caso de prueba
+    for(int prueba_actual = 0; prueba_actual < pruebas; prueba_actual++) {
 
-        // Inputs:
-        // 2) a, b - Números a dividir
+        // Input:
+        // 2) a, b = Números a dividir
         int a, b;
         cin >> a >> b;
 
