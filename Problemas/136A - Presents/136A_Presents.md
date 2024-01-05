@@ -3,7 +3,8 @@ https://codeforces.com/problemset/problem/136/A
 # 136A - Presents
 
 ## Resumen del problema
-Petya observa cómo sus amigos se dan regalos entre sí. Para monitorearlos, decide asignarle un número a cada amigo. Sabiendo quién le dió a quién, encuentra de qué amigo cada quién recibió regalo
+Petya observa cómo sus amigos se dan regalos entre sí. Para monitorearlos, decide asignarle un número a cada amigo. \ 
+Sabiendo quién le dió a quién, encuentra de qué amigo cada quién recibió regalo
 
 ## Input
 La 1° línea contiene un número entero N (1 <= N <= 100) - El número de amigos de Petya \
