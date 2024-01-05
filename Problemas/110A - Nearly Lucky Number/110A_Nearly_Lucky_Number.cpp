@@ -8,8 +8,8 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Número a analizar
+    // Input:
+    // 1) numero = Número a analizar
     long long int numero;
     cin >> numero;
 
