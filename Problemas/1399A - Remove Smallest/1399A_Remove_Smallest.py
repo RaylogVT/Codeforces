@@ -2,18 +2,18 @@
 # https://codeforces.com/problemset/problem/1399/A
 
 # Input:
-# 1) Número de pruebas
+# 1) pruebas = Número de pruebas
 pruebas = int(input())
 
 # Itera sobre cada prueba
 for prueba in range(0, pruebas):
 
     # Input:
-    # 2) Número de elementos en el arreglo
+    # 2) elementos = Número de elementos en el arreglo
     elementos = int(input())
 
     # Input:
-    # 3) Elementos del arreglo
+    # 3) numeros = Elementos del arreglo
     numeros = list(map(int, input().split()))
 
     # Ordena los números de menor a mayor
