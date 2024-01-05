@@ -10,14 +10,14 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de casos
-    int casos;
-    cin >> casos;
+    // 1) pruebas - Número de casos de prueba
+    int pruebas;
+    cin >> pruebas;
 
-    for(int caso = 0; caso < casos; caso++) {
+    for(int prueba_actual = 0; prueba_actual < pruebas; prueba_actual++) {
         
         // Input:
-        // 2) Número de dulces
+        // 2) dulces - Número de dulces
         int dulces;
         cin >> dulces;
 
