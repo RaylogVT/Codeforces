@@ -8,7 +8,7 @@ Un número casi-de-la-suerte es aquél que tiene un número de dígitos igual a 
 Determina si un número es un número casi-de-la-suerte.
 
 ## Input
-Una línea con un número entero N (1 <= N <= 10^18) - El número a evaluar
+Una línea con un número entero N (1 <= N <= 10^18) -- El número a evaluar
 
 ## Output
 Imprime 'YES' si el número es casi-de-la-suerte, de lo contrario, imprime 'NO'
@@ -52,5 +52,5 @@ Como vemos en la tabla, realizando módulo 10 y diviendo entre 10, podemos sacar
 1) Extrae cada dígito del número
 2) Revisa si el dígito es igual a 4 o 7 \
 Si lo es, suma 1 a un contador de dígitos de la suerte
-3) Revisa si el contador de dígitos de la suerte es un número de la suerte \
+3) Revisa si el contador de dígitos de la suerte es un número de la suerte (4 o 7) \
 Si lo es, entonces imprime 'YES', de lo contario, imprime 'NO'
