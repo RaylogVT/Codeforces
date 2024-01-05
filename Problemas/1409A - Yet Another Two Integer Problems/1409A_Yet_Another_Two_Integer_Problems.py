@@ -2,15 +2,15 @@
 # https://codeforces.com/problemset/problem/1409/A
 
 # Input:
-# 1) Número de pruebas
+# 1) pruebas = Número de pruebas
 pruebas = int(input())
 
 # Itera sobre cada prueba
 for prueba in range(0, pruebas):
 
     # Input:
-    # A = Valor a convertir
-    # B = Valor de referencia
+    # a = Valor a convertir
+    # b = Valor de referencia
     a, b = map(int, input().split())
 
     # Diferencia entre A y B 
