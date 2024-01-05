@@ -10,12 +10,12 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de soldados
+    // 1) soldados = Número de soldados
     int soldados;
     cin >> soldados;
 
     // Input:
-    // 2) Altura de soldados
+    // 2) alturas = Altura de soldados
     int alturas[soldados];
     for(int soldado_actual = 0; soldado_actual < soldados; soldado_actual++) {
         cin >> alturas[soldado_actual];
