@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/144/A
 
 # Inputs:
-# 1) Número de soldados
-# 2) Altura de soldados
+# 1) soldados = Número de soldados
+# 2) alturas = Altura de soldados
 soldados = int(input())
 alturas = list(map(int, input().split()))
 
