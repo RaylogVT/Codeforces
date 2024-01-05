@@ -2,14 +2,14 @@
 # https://codeforces.com/problemset/problem/1352/A
 
 # Input:
-# 1) Número de pruebas
+# 1) pruebas = Número de pruebas
 pruebas = int(input())
 
 # Realiza cada prueba
 for prueba_actual in range(0,pruebas):
 
     # Input:
-    # 2) Número a descomponer
+    # 2) numero = Número a descomponer
     numero = int(input())
 
     # Dígito actual (derecha a izquierda)
