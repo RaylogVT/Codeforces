@@ -10,14 +10,13 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) x1, x2, x3, x4
-    // Pon las X's en un arreglo
+    // 1) x1, x2, x3, x4 = Resultados de sumas
     int x[4];
     for(int i = 0; i < 4; i++) {
         cin >> x[i];
     }
     
-    // Ordena la lista de menor a mayor
+    // Ordena los números de menor a mayor
     sort(x, x+4);
 
     // Calcula a,b,c
