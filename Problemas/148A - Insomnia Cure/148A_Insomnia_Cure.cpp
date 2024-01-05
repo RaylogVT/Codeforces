@@ -14,7 +14,7 @@ int main(){
     // 2) l = l-ésimo dragón arrojado al balcón 
     // 3) m = m-ésimo dragón aplastado con tacón 
     // 4) n = n-ésimo dragón que huyó
-    // 5) Número de dragones
+    // 5) dragones = Número de dragones
     int k,l,m,n,dragones;
     cin >> k;
     cin >> l;
