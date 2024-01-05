@@ -14,8 +14,8 @@ Las siguientes T líneas contienen un número entero N (1 <= N <= 10000) -- El n
 
 ## Output
 Por cada número N: 
-1) Imprime la cantidad de números redondos que necesitas para representar el número
-2) Imprime los números redondos que suman N (con espacios entre sí, sin importar el orden)
+1) Imprime un número entero N - La cantidad de números redondos que necesitas para representar el número
+2) Imprime N números enteros - Los números redondos que suman N (con espacios entre sí, sin importar el orden)
 
 
 ## Ejemplos
