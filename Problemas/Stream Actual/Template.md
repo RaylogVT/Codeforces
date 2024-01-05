@@ -1,4 +1,4 @@
-https://codeforces.com/problemset/problem/Número/Letra
+https://codeforces.com/problemset/problem/XXX/A
 
 # Problema
 
