@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Casos de prueba
+    // 1) prueba = Casos de prueba
     int pruebas;
     cin >> pruebas;
 
@@ -18,8 +18,8 @@ int main(){
     for(int prueba = 0; prueba < pruebas; prueba++) {
 
         // Input:
-        // 2) A = Valor a convertir
-        // 2) B = Valor de referencia
+        // 2) a = Valor a convertir
+        // 3) b = Valor de referencia
         int a,b;
         cin >> a >> b;
 
