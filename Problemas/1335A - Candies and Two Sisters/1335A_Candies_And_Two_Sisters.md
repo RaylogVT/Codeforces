@@ -7,14 +7,15 @@ Alice y Betty tienen dulces. Quieren repartirlos de tal manera que:
 1) Alice tenga mínimo 1 dulce
 2) Betty tenga mínimo 1 dulce
 3) Alice tenga más dulces que Betty
+   
 ¿De cuántas maneras puedes repartir N dulces entre Alice y Betty de tal forma que se cumplas las condiciones anteriores? 
 
 ## Input
-La 1° línea contiene un número entero T (1 <= T <= 10^4) - El número de casos a probar
-Las siguientes N línea contienen un número entero N (1 <= N <= 2*10^9) - El número de dulces a repartir
+La 1° línea contiene un número entero T (1 <= T <= 10^4) -- El número de casos a probar \
+Las siguientes N líneas contienen un número entero N (1 <= N <= 2*10^9) -- El número de dulces a repartir
 
 ## Output
-Por cada caso, imprime el número de formas de repartir los dulces entre Alice y Betty
+Por cada caso de prueba, imprime el número de formas de repartir los dulces entre Alice y Betty
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |
