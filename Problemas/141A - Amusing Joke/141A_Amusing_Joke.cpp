@@ -1,5 +1,5 @@
-// XXXA - 
-// https://codeforces.com/problemset/problem/XXX/A
+// 141A - Amusing Joke
+// https://codeforces.com/problemset/problem/141/A
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,10 +9,10 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Nombre del invitado
-    // 2) Nombre del huesped
-    // 3) Pila de letras
+    // Input:
+    // 1) letras_invitado = Nombre del invitado
+    // 2) letras_huesped = Nombre del huesped
+    // 3) pila_letras = Pila de letras
     string letras_invitado, letras_huesped, pila_letras;
     cin >> letras_invitado;
     cin >> letras_huesped;
