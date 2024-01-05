@@ -2,11 +2,11 @@
 # https://codeforces.com/problemset/problem/1335/A
 
 # Input:
-# 1) Número de casos
-casos = int(input())
+# 1) Número de casos de pruebas
+pruebas = int(input())
 
-# Itera sobre cada caso
-for caso in range(0,casos):
+# Itera sobre cada caso de prueba
+for prueba in range(0,pruebas):
 
     # Input:
     # 2) Número de dulces
