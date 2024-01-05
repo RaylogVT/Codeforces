@@ -35,8 +35,8 @@ C++ -- **toupper()** o **tolower()**
 Una vez solucionado el tema de las mayúsculas y minúsculas, podemos plantear un algoritmo para sacar el resultado.
 
 ## Algoritmo
-1) Convertir ambos strings a mayúsculas o minúsculas (a elección)
-2) Recorrer los strings a la par letra por letra
-3) Comparar las letras
-4) Si un par de letras es distinta, sacas sus ASCIIs
+1) Convierte ambos strings a mayúsculas o minúsculas (a elección)
+2) Recorre los dos strings letra por letra
+3) Compara las letras
+4) Si un par de letras es distinta, saca sus ASCIIs
 5) Determina cuál string tiene la letra con el valor ASCII más grande e imprime el valor correspondiente
