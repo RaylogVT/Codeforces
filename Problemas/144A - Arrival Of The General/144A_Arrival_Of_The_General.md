@@ -3,14 +3,16 @@ https://codeforces.com/problemset/problem/144/A
 # 144A - Arrival Of The General
 
 ## Resumen del problema
-Tienes una fila de soldados. Puedes intercambiar de lugar a dos soldados adyacentes en un segundo. Deseas ordenarlos de tal forma que el primero en la fila sea el más alto y el último el más bajo (no importa de qué manera están ordenados los de en medio).¿Cuántos segundos necesitas para ello?
+Tienes una fila de soldados. Puedes intercambiar de lugar a dos soldados adyacentes en un segundo. Deseas ordenarlos de tal forma que el primero en la fila sea el más alto y el último el más bajo (no importa de qué manera están ordenados los de en medio).
+
+¿Cuántos segundos necesitas para ello?
 
 ## Input
-La 1° linea contiene un número N (2 <= N <= 100) - El número de soldados en fila \
-La 2° línea contiene N números enteros A1, ..., An (1 <= Ai <= 100) - Las alturas de los soldados
+La 1° linea contiene un número N (2 <= N <= 100) -- El número de soldados en fila \
+La 2° línea contiene N números enteros A1, ..., An (1 <= Ai <= 100) -- Las alturas de los soldados
 
 ## Output
-Imprime un número entero - El mínimo número de segundos necesario para ordenar a los soldados
+Imprime un número entero -- El mínimo número de segundos necesario para ordenar a los soldados
 
 ## Ejemplos
 | Input                       | Razonamiento  | Output    |
