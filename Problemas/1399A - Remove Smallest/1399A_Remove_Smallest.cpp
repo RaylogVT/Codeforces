@@ -10,20 +10,20 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Casos de prueba
+    // 1) pruebas - Casos de prueba
     int pruebas;
     cin >> pruebas;
 
     // Realiza cada caso de prueba
-    for(int prueba = 0; prueba < pruebas; prueba++) {
+    for(int prueba_actual = 0; prueba_actual < pruebas; prueba_actual++) {
 
         // Input
-        // 2) Número de elementos en el arreglo
+        // 2) elementos - Número de elementos en el arreglo
         int elementos;
         cin >> elementos;
 
         // Input
-        // 3) Arreglo de elementos
+        // 3) numeros - Arreglo de elementos
         int numeros[50];
         for(int indice = 0; indice < elementos; indice++) {
             cin >> numeros[indice];
