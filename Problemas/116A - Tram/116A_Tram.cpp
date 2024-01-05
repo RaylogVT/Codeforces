@@ -8,8 +8,8 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Número de estaciones
+    // Input:
+    // 1) estaciones = Número de estaciones
     int estaciones;
     cin >> estaciones;
 
@@ -22,9 +22,9 @@ int main(){
     // Recorre cada estación
     for(int estacion = 0; estacion < estaciones; estacion++) {
 
-        // Inputs:
-        // 2) Número de pasajeros que salen del tren
-        // 3) Número de pasajeros que entran al tren
+        // Input:
+        // 2) pasajeros_salientes = Número de pasajeros que salen del tren
+        // 3) pasajeros_entrantes = Número de pasajeros que entran al tren
         int pasajeros_salientes, pasajeros_entrantes;
         cin >> pasajeros_salientes >> pasajeros_entrantes;
 
