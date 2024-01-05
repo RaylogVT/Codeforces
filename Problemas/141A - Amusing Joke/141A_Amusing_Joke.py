@@ -2,9 +2,9 @@
 # https://codeforces.com/problemset/problem/141/A
 
 # Inputs:
-# 1) Nombre del invitado
-# 2) Nombre del huesped
-# 3) Pila de letras
+# 1) letras_invitado = Nombre del invitado
+# 2) letras_huesped = Nombre del huesped
+# 3) pila_letras = Pila de letras
 letras_invitado = input()
 letras_huesped = input()
 pila_letras = input()
