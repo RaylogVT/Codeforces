@@ -1,8 +1,8 @@
 # 110A - Nearly Lucky Number
 # https://codeforces.com/problemset/problem/110/A
 
-# Inputs:
-# 1) Número a analizar
+# Input:
+# 1) numero = Número a analizar
 numero = int(input())
 
 # Convierte el número a string
