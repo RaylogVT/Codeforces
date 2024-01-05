@@ -6,14 +6,14 @@ https://codeforces.com/problemset/problem/148/A
 Estás contando dragones para dormir, pero decides soñar que te estás enfrentando a ellos. Para ello, cada k-ésimo dragón es golpeado con una sartén, cada l-ésimo dragón tiene su cola aplastada por la puerta del balcón, cada m-ésimo dragón tiene sus patas pisoteadas con tacones y cada n-ésimo dragón huye desesperadamente. Después de soñar una cierta cantidad de dragones, ¿cuántos de estos fueron atacados de una u otra forma?
 
 ## Input
-La 1° linea contiene un número entero K (1 <= K <= 10) - El índice el K-ésimo dragón golpeado con una sartén \
-La 2° linea contiene un número entero L (1 <= L <= 10) - El índice el L-ésimo dragón aplastado por la puerta \
-La 3° linea contiene un número entero M (1 <= M <= 10) - El índice el M-ésimo dragón pisoteado con tacones \
-La 4° linea contiene un número entero N (1 <= N <= 10) - El índice el N-ésimo dragón que huyó \
-La 5° linea contiene un número entero D (1 <= D <= 10000) - El número de dragones soñados 
+La 1° linea contiene un número entero K (1 <= K <= 10) -- El índice el K-ésimo dragón golpeado con una sartén \
+La 2° linea contiene un número entero L (1 <= L <= 10) -- El índice el L-ésimo dragón aplastado por la puerta \
+La 3° linea contiene un número entero M (1 <= M <= 10) -- El índice el M-ésimo dragón pisoteado con tacones \
+La 4° linea contiene un número entero N (1 <= N <= 10) -- El índice el N-ésimo dragón que huyó \
+La 5° linea contiene un número entero D (1 <= D <= 10000) -- El número de dragones soñados 
 
 ## Output
-Imprime un número entero - El número de dragones atacados
+Imprime un número entero -- El número de dragones atacados
 
 ## Ejemplos
 | Input                          | Razonamiento  | Output    |
