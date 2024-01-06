@@ -24,4 +24,6 @@ Output = **6**
 ## Algoritmo
 1) Guarda las puntuaciones en una lista/arreglo
 2) Extrae la puntuación del k-ésimo participante
-3) Compara las puntuaciones de cada participante contra la del k-ésimo participante, asegúrate de que sean igualmente mayores a 0
+3) Itera sobre las puntuaciones de los participantes
+4) Compara la puntuación de cada participante contra la del k-ésimo participante, asegúrate de que sean igualmente mayores a 0 \
+a) Si la puntuación es mayor a la del k-ésimo participante, entonces suma +1 a la cantidad de participantes
