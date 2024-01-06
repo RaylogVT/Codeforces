@@ -7,7 +7,7 @@ Nuestro héroe ha determinado una manera de determinar si un usuario es hombre o
 Dado un username, ayúdale a determinar el género del usuario.
 
 ## Input
-Un string de longitud N (1 <= N <= 100) con letras minúsculas
+Un string de longitud N (1 <= N <= 100) con letras minúsculas -- El username a revisar
 
 ## Output
 Imprime "CHAT WITH HER!" si el usuario es mujer \
@@ -30,4 +30,4 @@ C++ - https://www.geeksforgeeks.org/set-in-cpp-stl/
 ## Algoritmo
 1) Mete el username en un set 
 2) Calcula el tamaño del set 
-3) Si el tamaño es impar, entonces imprime que el usuario es hombre, de lo contrario imprime que es mujer
+3) Si el tamaño del set es impar, entonces imprime "IGNORE HIM!", de lo contrario imprime "CHAT WITH HER!"
