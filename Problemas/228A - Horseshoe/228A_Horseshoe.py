@@ -2,7 +2,7 @@
 # https://codeforces.com/problemset/problem/228/A
 
 # Inputs:
-# 1) Índices de color de las herraduras 
+# 1) colores = Índices de color de las herraduras 
 colores = list(map(int, input().split()))
 
 # ¿Cuántos colores poseo actualmente?
