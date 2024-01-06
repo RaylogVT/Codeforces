@@ -8,13 +8,13 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Username a evaluar
+    // Input:
+    // 1) username = Username a evaluar
     string username;
     cin >> username;
 
     // Cuenta el número de letras únicas en el username
-    // La función set() se usa para sacar valores únicos de un input
+    // El set() guarda las letras únicas
     set<char> letras_unicas(username.begin(), username.end());
 
     // Si el número de letras distintas es par, entonces el usuario es hombre, de lo contrario, es mujer
