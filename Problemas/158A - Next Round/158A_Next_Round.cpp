@@ -1,7 +1,6 @@
-/*
-158A - Next Round
-https://codeforces.com/problemset/problem/158/A
-*/
+// 158A - Next Round
+// https://codeforces.com/problemset/problem/158/A
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,16 +9,15 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Número de participantes
-    // 2) K-esimo participante
+    // Input:
+    // 1) num_participantes = Número de participantes
+    // 2) k_participante = K-esimo participante
     int num_participantes, k_particpante;
     cin >> num_participantes >> k_particpante;
 
-    // Arreglo de participantes
+    // Input:
+    // 3) lista_participantes = Arreglo de puntuaciones de participantes
     int lista_participantes[100];
-
-    // Lee la puntuación de cada participante
     for(int i = 0; i < num_participantes; i++) {
         cin >> lista_participantes[i];
     }
