@@ -2,13 +2,14 @@
 # https://codeforces.com/problemset/problem/158/A
 
 # Inputs:
-# 1) Número de participantes
-# 2) K-esimo participante
+# 1) num_participantes = Número de participantes
+# 2) k_participante = K-esimo participante
 num_participantes, k_participante = input().split()
 num_participantes = int(num_participantes)
 k_participante = int(k_participante)
 
-# Lista de puntuaciones
+# Input:
+# 3) lista_participantes = Arreglo de puntuaciones de participantes
 lista_puntuaciones = input().split()
 
 # Puntuacion del k-esimo participante
