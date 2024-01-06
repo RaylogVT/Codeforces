@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de bebidas
+    // 1) bebidas = Número de bebidas
     int bebidas;
     cin >> bebidas;
 
@@ -21,7 +21,7 @@ int main(){
     for(int bebida_actual = 0; bebida_actual < bebidas; bebida_actual++) {
 
         // Input:
-        // 2) % de jugo de naranja en cada bebida
+        // 2) porcentaje_jugo_bebida = % de jugo de naranja en cada bebida
         int porcentaje_jugo_bebida;
         cin >> porcentaje_jugo_bebida;
 
