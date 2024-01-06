@@ -11,7 +11,7 @@ La 1° línea contiene un número entero N (1 <= N <= 1000) -- El número de con
 La 2° línea contiene N números enteros An (1 <= Ai <= 10000) -- La puntuación del i-ésimo concurso 
 
 ## Output
-Imprime el número de concursos asombrosos
+Imprime un número entero -- El número de concursos asombrosos
 
 ## Ejemplos
 | Input                                     | Razonamiento   | Output    |
