@@ -15,13 +15,14 @@ Imprime "YES" si el string es igual a alguna variación de "YES", de lo contrari
 ## Ejemplos
 | Input             | Razonamiento  | Output    |
 | ----------------- | :------------ | --------- |
-| 4 <br> yEs <br> YEs <br> YaS <br> Zed | <br> y E s -> yes = yes <br> Y E s -> yes = yes <br> Y a S -> yas != yes <br> Z e d -> zed = yes | **YES** <br> **YES** <br> **NO** <br> **NO** |
+| 4 <br> yEs <br> YEs <br> YaS <br> Zed | <br> y E s -> yes = yes <br> Y E s -> yes = yes <br> Y a S -> yas != yes <br> Z e d -> zed = yes |<br> **YES** <br> **YES** <br> **NO** <br> **NO** |
 
 ## Forma de resolverlo
-Para resolver este problema, simplemente podemos convertir el string a minúsculas o mayúsculas y ver si es igual al string **"yes/YES"**. De ser así, imprime "YES". Si no son iguales, entonces imprime "NO".
+Para resolver este problema, simplemente podemos convertir el string a minúsculas o mayúsculas y ver si es igual al string **"yes/YES"**. \
+De ser así, imprime "YES". Si no son iguales, entonces imprime "NO".
 
 ## Algoritmo
 1) Convierte el string a mayúsculas/minúsculas
-2) Compara el string con "yes" o "YES"
-a) Si son iguales, entonces imprime YES
-b) Si son distintas, entonces imprime NO
+2) Compara el string con "yes" o "YES" \
+a) Si son iguales, entonces imprime "YES" \
+b) Si son distintas, entonces imprime "NO"
