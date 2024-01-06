@@ -10,10 +10,10 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Colores de las 4 herraduras
+    // 1) color = Colores de las 4 herraduras
     int color;
     
-    // set() de índices de los sin repeticiones
+    // colores_distintos = Índices de los colores sin repeticiones
     set<int> colores_distintos;
 
     // Declara el índice de color de cada herradura
