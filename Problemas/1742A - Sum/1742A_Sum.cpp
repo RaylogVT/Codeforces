@@ -10,12 +10,12 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Casos de prueba
+    // 1) prueba = Casos de prueba
     int pruebas;
     cin >> pruebas;
 
     // Realiza cada caso de prueba
-    for(int prueba = 0; prueba < pruebas; prueba++) {
+    for(int prueba_actual = 0; prueba_actual < pruebas; prueba_actual++) {
 
         // Input
         // 2) a, b, c = Números a sumar
