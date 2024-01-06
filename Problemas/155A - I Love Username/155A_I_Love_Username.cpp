@@ -10,12 +10,12 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de concursos
+    // 1) concursos = Número de concursos
     int concursos;
     cin >> concursos;
 
     // Input:
-    // 2) Puntuación de cada concurso
+    // 2) puntuaciones = Puntuación de cada concurso
     int puntuaciones[1001];
     for(int puntuacion_actual = 0; puntuacion_actual < concursos; puntuacion_actual++) {
         cin >> puntuaciones[puntuacion_actual];
@@ -31,13 +31,13 @@ int main(){
     // Itera sobre las puntuaciones
     for(int puntuacion_actual = 0; puntuacion_actual < concursos; puntuacion_actual++) {
         
-        // Si la puntuación actual es mayor a la máxima actual, entonces se actualiza la puntuación máxima y suma +1 a número de concursos asombrosos
+        // Si la puntuación actual es mayor a la máxima actual, entonces se actualiza la puntuación máxima y suma +1 al número de concursos asombrosos
         if(puntuaciones[puntuacion_actual] > puntuacion_maxima) {
             puntuacion_maxima = puntuaciones[puntuacion_actual];
             concursos_asombrosos += 1;
         }
 
-        // Si la puntuación actual es menor a la mínima actual, entonces se actualiza la puntuación mínima y suma +1 a número de concursos asombrosos
+        // Si la puntuación actual es menor a la mínima actual, entonces se actualiza la puntuación mínima y suma +1 al número de concursos asombrosos
         if(puntuaciones[puntuacion_actual] < puntuacion_minima) {
             puntuacion_minima = puntuaciones[puntuacion_actual];
             concursos_asombrosos += 1;
