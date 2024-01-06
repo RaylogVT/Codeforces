@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de pruebas
+    // 1) pruebas = Número de pruebas
     int pruebas;
     cin >> pruebas;
 
@@ -18,7 +18,7 @@ int main(){
     for(int prueba = 0; prueba < pruebas; prueba++) {
 
         // Input
-        // 2) String de 3 caracteres
+        // 2) yes = String de 3 caracteres
         string yes;
         cin >> yes;
 
