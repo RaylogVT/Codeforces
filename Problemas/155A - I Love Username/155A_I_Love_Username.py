@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/155/A
 
 # Input
-# 1) Número de concursos
-# 2) Puntuación de cada concurso
+# 1) concursos = Número de concursos
+# 2) puntuaciones = Puntuación de cada concurso
 concursos = int(input())
 puntuaciones = list(map(int, input().split()))
 
