@@ -3,11 +3,12 @@ https://codeforces.com/problemset/problem/155/A
 # 155A - I Love Username
 
 ## Resumen del problema
-Vasya está monitoreando las puntuaciones de su programador favorito en concursos de programación. Él considera que un concurso fue asombroso si la puntuación del programador fue mayor o menor con respecto a sus puntuaciones anteriores. Dada la lista de puntuaciones por concurso, ¿cuántos concursos fueron asombrosos? (Nota: El 1° concurso nunca es considerado asombroso)
+Vasya está monitoreando las puntuaciones de su programador favorito en concursos de programación. Él considera que un concurso fue asombroso si la puntuación del programador fue mayor o menor con respecto a sus puntuaciones anteriores. \
+Dada la lista de puntuaciones por concurso, ¿cuántos concursos fueron asombrosos? (Nota: El 1° concurso nunca es considerado asombroso)
 
 ## Input
-La 1° línea contiene un número entero N (1 <= N <= 1000) - El número de concursos \
-La 2° línea contiene N números enteros An (1 <= Ai <= 10000) - La puntuación del i-ésimo concurso 
+La 1° línea contiene un número entero N (1 <= N <= 1000) -- El número de concursos \
+La 2° línea contiene N números enteros An (1 <= Ai <= 10000) -- La puntuación del i-ésimo concurso 
 
 ## Output
 Imprime el número de concursos asombrosos
@@ -27,6 +28,6 @@ Dado que la **1° puntuación jamás dará un concurso asombroso, entonces podem
 1) Inserta las puntuaciones en una lista
 2) Define la puntuación máxima y mínima como la del 1° concurso
 3) Itera sobre las puntuaciones \
-a) Si la puntuación actual es mayor a la puntuación máxima, entonces acutaliza la puntuación máxima y suma +1 a los concursos asombrosos \
-b) Si la puntuación actual es menor a la puntuación mínima, entonces acutaliza la puntuación mínima y suma +1 a los concursos asombrosos 
+a) Si la puntuación actual es mayor a la puntuación máxima, entonces actualiza la puntuación máxima y suma +1 a los concursos asombrosos \
+b) Si la puntuación actual es menor a la puntuación mínima, entonces actualiza la puntuación mínima y suma +1 a los concursos asombrosos 
 4) Devuelve la cantidad de concursos asombrosos
