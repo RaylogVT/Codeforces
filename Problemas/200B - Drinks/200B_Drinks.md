@@ -7,8 +7,8 @@ Tienes varias bebidas con distintos porcentajes de jugo de naranja. \
 Cuando las mezclas todas en un cóctel, ¿cuál es el porcentaje de jugo de naranja que tiene el cóctel?
 
 ## Input
-La 1° línea contiene un número entero N (1 <= N <= 100) - El número de bebidas \
-La 2° línea contiene N números enteros A1, A2, ..., An (0 <= Ai <= 100) - El porcentaje de jugo de naranja que tiene la i-ésima bebida.
+La 1° línea contiene un número entero N (1 <= N <= 100) -- El número de bebidas \
+La 2° línea contiene N números enteros A1, A2, ..., An (0 <= Ai <= 100) -- El porcentaje de jugo de naranja que tiene la i-ésima bebida.
 
 ## Output
 Imprime un número flotante -- El porcentaje de jugo de naranja que tiene el cóctel
@@ -20,7 +20,7 @@ Imprime un número flotante -- El porcentaje de jugo de naranja que tiene el có
 | 4 <br> 0 25 50 75 | (0 + 25 + 50 + 75) / 4 = 37.5000 | **37.5000** |
 
 ## Forma de resolverlo
-Para resolver este problema, simplemente debes sacar el **promedio** del procentaje de jugo de naranja de las bebidas. Solo saca la suma de los porcentajes y divídela entre el número de bebidas
+Para resolver este problema, simplemente debes sacar el **promedio** del procentaje de jugo de naranja de las bebidas. Solo saca la suma de los porcentajes y divídela entre el número de bebidas.
 
 ## Algoritmo
 1) Suma los porcentajes de las bebidas
