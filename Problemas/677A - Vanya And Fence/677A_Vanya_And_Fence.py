@@ -1,9 +1,9 @@
 # 677A - Vanya And Fence
 # https://codeforces.com/problemset/problem/677/A
 
-# Inputs:
-# 1) Número de amigos
-# 2) Altura de la valla
+# Input:
+# 1) amigos = Número de amigos
+# 2) altura_valla = Altura de la valla
 amigos, altura_valla = map(int, input().split())
 
 # Largo de la fila a crear para recorrer la valla sin ser visto
