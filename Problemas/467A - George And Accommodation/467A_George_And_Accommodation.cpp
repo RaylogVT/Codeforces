@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de cuartos
+    // 1) num_cuartos = Número de cuartos
     int num_cuartos;
     cin >> num_cuartos;
 
@@ -21,8 +21,8 @@ int main(){
     while(num_cuartos--){
 
         // Input:
-        // 1) Número de personas viviendo en el cuarto
-        // 2) Número de personas que puede albergar el cuarto
+        // 1) personas_viviendo = Número de personas viviendo en el cuarto
+        // 2) capacidad_cuarto = Número de personas que puede albergar el cuarto
         int personas_viviendo, capacidad_cuarto;
         cin >> personas_viviendo >> capacidad_cuarto;
 
