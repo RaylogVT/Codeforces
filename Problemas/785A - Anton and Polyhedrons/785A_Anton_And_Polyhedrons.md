@@ -13,11 +13,11 @@ Anton tiene varios poliedros. Estos se clasifican en:
 Anton quiere saber cuántas caras tienen sus poliedros en total. ¿Cuántas caras tiene?
 
 ## Input
-La primera línea contiene un número entero N (1 <= N <= 200000) - El número de poliedros que Anton tiene \
-Las siguientes N líneas contienen un string - El nombre del i-ésimo poliedro de Anton
+La primera línea contiene un número entero N (1 <= N <= 200000) -- El número de poliedros que Anton tiene \
+Las siguientes N líneas contienen un string -- El nombre del i-ésimo poliedro de Anton
 
 ## Output
-Imprime el total de caras que tienen los poliedros de Anton
+Imprime un número entero - El total de caras que tienen los poliedros de Anton
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |
@@ -33,4 +33,4 @@ Para resolver este problema, simplemente debemos establecer un contador de caras
 2) Itera sobre los poliedros
 3) Detecta el tipo de poliedro
 4) Suma las caras del poliedro al contador
-5) Devuelve el contador de caras
+5) Imprime el contador de caras
