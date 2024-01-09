@@ -9,9 +9,9 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Número de amigos
-    // 2) Altura de la valla
+    // Input:
+    // 1) amigos = Número de amigos
+    // 2) altura_valla = Altura de la valla
     int amigos, altura_valla;
     cin >> amigos >> altura_valla;
 
