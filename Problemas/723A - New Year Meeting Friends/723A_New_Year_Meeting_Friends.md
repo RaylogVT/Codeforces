@@ -3,13 +3,14 @@ https://codeforces.com/problemset/problem/723/A
 # 723A - New Year Meeting Friends
 
 ## Resumen del problema
-Tres amigos viven en la línea Ox de Lineland: El 1° amigo vive en x1, el 2° amigo vive en x2, el 3° amigo vive en x3. Piensan reunirse para Año Nuevo. ¿Cuál es la distancia mínima total que necesitan recorrer los 3 amigos para reunirse?
+Tres amigos viven en la línea O(x) de Lineland: El 1° amigo vive en x1, el 2° amigo vive en x2, el 3° amigo vive en x3. 
+Si piensan reunirse para Año Nuevo, ¿cuál es la distancia mínima total que necesitan recorrer los 3 amigos para reunirse?
 
 ## Input
-Una sola línea con 3 números enteros x1, x2, x3 (1 <= x1, x2, x3 <= 100) - La coordenada de cada uno de los amigos
+Una sola línea con 3 números enteros x1, x2, x3 (1 <= x1, x2, x3 <= 100) -- La coordenada de cada uno de los amigos
 
 ## Output
-Imprime la distancia mínima que los amigos necesitan recorrer para juntarse.
+Imprime un número entero - La distancia mínima que los amigos necesitan recorrer para juntarse
 
 ## Ejemplos
 | Input       | Razonamiento  | Output    |
@@ -31,4 +32,4 @@ Por el otro lado, si elegimos al amigo de en medio, entonces un amigo recorre un
 
 ## Algoritmo
 1) Ordena las coordenadas de los 3 amigos de menor a mayor (izquierda, medio, derecha)
-2) Calcula MAX(x1,x2,x3) - MIN(x1,x2,x3)
+2) Calcula MAX(x1, x2, x3) - MIN(x1, x2, x3)
