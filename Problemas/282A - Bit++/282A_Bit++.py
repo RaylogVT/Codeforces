@@ -8,7 +8,7 @@ statements = int(input())
 # Variable X
 x = 0
 
-for i in range(0, statements):
+for statement_actual in range(0, statements):
     
     # Inputs:
     # 2) Statement (X++, X--, ++X, --X)
