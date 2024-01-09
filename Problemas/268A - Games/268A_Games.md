@@ -7,8 +7,8 @@ Manao ha notado que cuando dos equipos de fútbol juegan entre sí, un equipo se
 El campeonato consta de N(N-1) juegos, cada equipo invita a los demás a jugar a su estadio de visitante. Sabiendo los colores del uniforme local y visitante de cada equipo, ¿en cuántas juegos el equipo local tendrá que ponerse su uniforme de visitante?
 
 ## Input
-La 1° línea contiene un número entero N (2 <= N <= 30) - El número de equipos \
-Las siguientes N líneas contienen dos números enteros A y B (1 <= A,B <= 100) - El índice del color del uniforme de local (A) y visitante (B) de cada equipo, respectivamente. Está garantizado que A y B tienen valores distintos.
+La 1° línea contiene un número entero N (2 <= N <= 30) -- El número de equipos \
+Las siguientes N líneas contienen dos números enteros A y B (1 <= A,B <= 100) -- El índice del color del uniforme de local (A) y visitante (B) de cada equipo, respectivamente. Está garantizado que A y B tienen valores distintos.
 
 ## Output
 Imprime el número de juegos en los que el equipo local tendrá que ponerse su uniforme de visitante.
