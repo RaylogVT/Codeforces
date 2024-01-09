@@ -8,16 +8,16 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Numero de palabras a abreviar
+    // Input:
+    // 1) palabras = Numero de palabras a abreviar
     int palabras;
     cin >> palabras;
 
-    // Procesa cada palabra
+    // Itera sobre cada palabra
     while(palabras--) {
 
-        // Inputs:
-        // 2) Palabra a abreviar
+        // Input:
+        // 2) palabra_abreviar = Palabra a abreviar
         string palabra_abreviar;
         cin >> palabra_abreviar;
 
@@ -25,7 +25,6 @@ int main(){
         if(palabra_abreviar.length() > 10) {
 
             // Abreviacion = Primera letra + (Longitud de palabra - 2) + Última palabra 
-            // Imprime la palabra abreviada
             cout << palabra_abreviar[0] << palabra_abreviar.length() - 2 << palabra_abreviar.back() << endl;
 
         } else {
@@ -37,6 +36,3 @@ int main(){
 
     return 0;
 }
-
-
-
