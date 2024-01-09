@@ -10,8 +10,8 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de calcetines rojos
-    // 2) Número de calcetines azules
+    // 1) calcetines_rojos = Número de calcetines rojos
+    // 2) calcetines_azules = Número de calcetines azules
     int calcetines_rojos, calcetines_azules;
     cin >> calcetines_rojos >> calcetines_azules;
 
