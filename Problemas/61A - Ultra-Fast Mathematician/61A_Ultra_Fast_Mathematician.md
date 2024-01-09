@@ -7,7 +7,7 @@ Vas a realizar una operación sobre dos números que consta de lo siguiente:
 1) Si el i-ésimo dígito de los 2 números es igual, entonces la respuesta es 0
 2) Si el i-ésimo dígito de los 2 números es distinto, entonces la respuesta es 1
 
-Dado dos números, determina el resultado de la operación
+Dado dos números, determina el resultado de la operación.
 
 ## Input
 La 1° línea consta de un string de 0s y 1s de hasta 100 dígitos -- El 1° número \
@@ -37,6 +37,5 @@ b) Dígitos distintos = 1
 ## Algoritmo
 1) Itera sobre los dígitos de los dos números
 2) SI el i-ésimo dígito de los dos números es: \
-a) Igual = 0 \
-b) Distinto = 1
-3) Construye el resultado con cada dígito al que vayas realizando la operación
+a) Igual = Añade '0' al resultado \
+b) Distinto = Añade '1' al resultado
