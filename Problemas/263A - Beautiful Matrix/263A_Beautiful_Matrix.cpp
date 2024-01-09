@@ -9,7 +9,7 @@ using namespace std;
 int main() {
 
     // Input:
-    // 1) Matriz de 0s y 1
+    // 1) matriz = Matriz de 0s y 1
     int matriz[5][5];
     for(int fila = 0; fila < 5; fila++) {
         for(int columna = 0; columna < 5; columna++) {
