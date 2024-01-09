@@ -2,7 +2,7 @@
 # https://codeforces.com/problemset/problem/4/A
 
 # Inputs
-# 1) Peso de sandía (w)
+# 1) peso_sandia = Peso de sandía
 peso_sandia = int(input())
 
 # Revisa si la sandía se puede partir en partes pares
