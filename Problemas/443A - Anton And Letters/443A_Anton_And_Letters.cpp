@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) String de letras escritas
+    // 1) str = String de letras escritas
     string str;
     cin.ignore();
     getline(cin, str, '\n');
