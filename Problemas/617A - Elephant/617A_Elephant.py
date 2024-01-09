@@ -3,8 +3,8 @@
 
 import math
 
-# Inputs:
-# 1) Posición del amigo
+# Input:
+# 1) posicion_amigo = Posición del amigo
 posicion_amigo = int(input())
 
 # Avanza en posiciones de 5 en 5
