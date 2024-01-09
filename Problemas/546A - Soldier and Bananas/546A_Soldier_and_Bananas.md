@@ -6,10 +6,10 @@ https://codeforces.com/problemset/problem/546/A
 Quieres comprar W bananas, cada una costando K dólares más que la anterior (i.e. La 1° banana cuesta K dólares, la 2° banana cuesta 2K dólares, y así sucesivamente). Si tengo N dólares, ¿entonces cuánto dinero tengo que pedirle prestado a mi amigo para comprar las bananas?
 
 ## Input
-Una línea con 3 números enteros K, N, W (1 <= K, W <= 1000, 0 <= N <= 1000000000) - El número de bananas a comprar, los dólares que tengo actualmente y el precio de la 1° banana.
+Una línea con 3 números enteros K, N, W (1 <= K, W <= 1000, 0 <= N <= 1000000000) -- El número de bananas a comprar, los dólares que tengo actualmente y el precio de la 1° banana.
 
 ## Output
-Imprime un número entero - La cantidad de dólares que necesito prestarle a mi amigo. \
+Imprime un número entero -- La cantidad de dólares que necesito prestarle a mi amigo. \
 Si tengo suficiente dinero para comprar las bananas, y no necesito pedir prestado, entonces imprime 0.
 
 ## Ejemplos
@@ -27,5 +27,5 @@ b) **Resta:** Si al restar el monto total menos el dinero actual el resultado es
 1) Saca el precio individual de cada banana y súmalo al monto total
 2) Saca el monto total de las bananas a comprar
 3) Calcula el dinero a pedir prestado \
-Si Monto Total > Dinero actual, entonces la respuesta es **Monto Total - Dinero Actual** \
-Si Monto Total <= Dinero actual, entonces la respuesta es **0**
+a) Si Monto Total > Dinero actual, entonces la respuesta es **Monto Total - Dinero Actual** \
+b) Si Monto Total <= Dinero actual, entonces la respuesta es **0**
