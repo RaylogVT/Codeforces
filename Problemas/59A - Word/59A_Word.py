@@ -1,15 +1,15 @@
 # 59A - Word
 # https://codeforces.com/problemset/problem/59/A
 
-# Inputs:
-# 1) Palabra a normalizar
+# Input:
+# 1) palabra = Palabra a normalizar
 palabra = input()
 
 # Contadores de letras de mayúsculas y minúsculas
 mayusculas = 0
 minusculas = 0
 
-# Checa cada letra para saber si es mayúsucula o minúscula
+# Itera sobre cada letra para saber si es mayúsucula o minúscula
 # Añade la letra al contador correspondiente
 for letra in palabra:
     if letra.isupper():
