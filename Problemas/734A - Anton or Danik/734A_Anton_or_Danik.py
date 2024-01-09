@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/734/A
 
 # Inputs:
-# 1) Número de partidas de ajedrez jugadas
-# 2) Quién ganó cada partida
+# 1) partidas = Número de partidas de ajedrez jugadas
+# 2) victorias = Quién ganó cada partida
 partidas = int(input())
 victorias = input()
 
@@ -18,7 +18,7 @@ for partida in victorias:
     if partida == 'A':
         victorias_anton += 1
 
-    # Si la letra es igual a 'D', entonces ganó Anton la partida
+    # Si la letra es igual a 'D', entonces ganó Danik la partida
     if partida == 'D':
         victorias_danik += 1
 
