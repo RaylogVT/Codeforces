@@ -9,10 +9,15 @@ using namespace std;
 
 int main(){
 
+    // Input:
+    // 1) palabra = Palabra a capitalizar
     string palabra;
     cin >> palabra;
 
+    // Capitaliza la 1° letra de la palabra
     palabra[0] = toupper(palabra[0]);
+
+    // Imprime la palabra capitalizada
     cout << palabra << endl;
     
     return 0;
