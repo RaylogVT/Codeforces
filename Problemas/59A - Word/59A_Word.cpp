@@ -9,8 +9,8 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Palabra a normalizar
+    // Input:
+    // 1) palabra = Palabra a normalizar
     string palabra;
     cin >> palabra;
 
@@ -19,7 +19,7 @@ int main(){
     int mayusculas = 0;
     int minusculas = 0;
 
-    // Checa cada letra para saber si es mayúsucula o minúscula a través de su ASCII
+    // Itera sobre cada letra para saber si es mayúsucula o minúscula a través de su ASCII
     // Añade la letra al contador correspondiente
     for(int letra = 0; letra < tamano; letra++) {
         if(palabra[letra] >= 'A' && palabra[letra] <= 'Z') {
@@ -30,8 +30,8 @@ int main(){
         }
     }
 
-    // Si hay más mayúsculas que minúsculas, convierte a mayúsculas
-    // Si hay menos o el mismo número de mayúsculas que minúsculas, convierte a minúsculas
+    // Si hay más mayúsculas que minúsculas, entonces convierte a mayúsculas
+    // Si hay menos o el mismo número de mayúsculas que minúsculas, entonces convierte a minúsculas
     if(mayusculas > minusculas) {
         for(int letra = 0; letra < tamano; letra++) {
             palabra[letra] = toupper(palabra[letra]);
