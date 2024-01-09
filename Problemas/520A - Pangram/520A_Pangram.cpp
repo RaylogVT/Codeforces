@@ -10,12 +10,12 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Longitud del string
+    // 1) longitud = Longitud del string
     int longitud;
     cin >> longitud;
 
     // Input:
-    // 2) String a revisar
+    // 2) frase = String a revisar
     string frase;
     cin >> frase;
 
