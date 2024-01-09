@@ -10,8 +10,8 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Filas del tablero
-    // 2) Columnas del tablero
+    // 1) n_filas = Número de filas en el tablero
+    // 2) m_columnas = Número de columnas en el tablero
     int n_filas, m_columnas;
     cin >> n_filas >> m_columnas;
 
@@ -30,7 +30,7 @@ int main(){
         // Imprime la serpiente moviéndose del lado derecho
         if(fila % 2 == 0 && fila % 4 != 0) {
 
-            // Llena la fila de . excepto la última columna
+            // Llena la fila de puntos excepto en la última columna
             for(int columna = 1; columna <= m_columnas; columna++) {
                 if(columna == m_columnas) {
                     cout << "#";
@@ -43,7 +43,7 @@ int main(){
         // Imprime la serpiente moviéndose del lado derecho
         if(fila % 4 == 0) {
 
-            // Llena la fila de . excepto la última columna
+            // Llena la fila de puntos excepto en la última columna
             for(int columna = 1; columna <= m_columnas; columna++) {
                 if(columna == 1) {
                     cout << "#";
