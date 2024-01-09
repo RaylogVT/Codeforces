@@ -5,11 +5,11 @@ https://codeforces.com/problemset/problem/263/A
 ## Resumen del problema
 Tienes una matriz 5x5 con 24 ceros y 1 uno, donde las filas y columnas están enumeradas del 1-5 \
 Puedes invertir dos filas o columnas adyacentes entre sí. \
-Una matriz se considera **bonita** si tiene el 1 en su centro (fila #3, columna #3). ¿Cuántas inversiones necesitas para hacer una matriz bonita?
+Una matriz se considera **bonita** si tiene el 1 en su centro (Fila 3, Columna 3). ¿Cuántas inversiones necesitas para hacer una matriz bonita?
 
 ## Input
 Recibe 5 líneas con 5 números, donde las líneas representan las filas y los números las columnas.  \
-Está garantizado que lees 24 ceros y 1 uno.
+Está garantizado que el input consta de 24 ceros y 1 uno.
 
 ## Output
 Imprime el número de inversiones necesarias para hacer la matriz bonita
