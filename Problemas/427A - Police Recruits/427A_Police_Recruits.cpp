@@ -1,5 +1,5 @@
-// XXXA - 
-// https://codeforces.com/problemset/problem/XXX/A
+// 427A - Police Recruits
+// https://codeforces.com/problemset/problem/427/A
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,12 +10,12 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de eventos
+    // 1) eventos = Número de eventos
     int eventos;
     cin >> eventos;
 
     // Input:
-    // 2) Lista de eventos
+    // 2) lista_eventos = Lista de eventos
     int lista_eventos[10001];
     for(int evento_actual = 0; evento_actual < eventos; evento_actual++) {
         cin >> lista_eventos[evento_actual];
