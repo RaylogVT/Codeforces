@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/732/A
 
 # Input:
-# 1) Precio de pala
-# 2) Denominacion de moneda de R pesos
+# 1) precio_pala = Precio de pala
+# 2) r_omeda = Denominacion de moneda de R pesos
 precio_pala, r_moneda = map(int, input().split())
 
 # Itera sobre la cantidad de palas a comprar
