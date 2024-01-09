@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/977/A
 
 # Input:
-# 1) Número a restar
-# 2) Números de restas a realizar
+# 1) numero = Número a restar
+# 2) cantidad_restas = Números de restas a realizar
 numero, cantidad_restas = map(int, input().split())
 
 # Calcula el resultado de cada resta
