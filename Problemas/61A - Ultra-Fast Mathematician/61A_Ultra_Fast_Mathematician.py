@@ -13,11 +13,11 @@ resultado = ''
 # Itera sobre los dígitos de los dos números
 for digito in range(0,len(numero1)):
 
-    # Si los dígitos son iguales, entonces la respuesta es 0
+    # Si los dígitos son iguales, entonces la respuesta es 0, añádelo al resultado
     if numero1[digito] == numero2[digito]:
         resultado += '0'
 
-    # Si los dígitos son distintos, entonces la respuesta es 1
+    # Si los dígitos son distintos, entonces la respuesta es 1, añádelo al resultado
     else:
         resultado += '1'
 
