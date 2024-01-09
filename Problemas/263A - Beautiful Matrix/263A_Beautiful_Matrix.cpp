@@ -8,11 +8,9 @@ using namespace std;
 
 int main() {
 
-    // Inputs:
+    // Input:
     // 1) Matriz de 0s y 1
     int matriz[5][5];
-
-    // Rellena la matriz con los 0s y 1
     for(int fila = 0; fila < 5; fila++) {
         for(int columna = 0; columna < 5; columna++) {
             cin >> matriz[fila][columna];
