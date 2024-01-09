@@ -9,11 +9,11 @@ Un programa en Bit++ es una serie de statements en las que se ejecuta la operaci
 Dado un programa y siendo X = 0, ejecuta los statements y obtén el valor final de X.
 
 ## Input
-La primera línea tiene un número N (1 <= N <= 150), el número de statements del programa \
-Las siguientes N líneas son los statements del programa, los cuales contienen la variable X y alguna de las dos operaciones (++ o --)
+La 1° línea tiene un número N (1 <= N <= 150) -- El número de statements del programa \
+Las siguientes N líneas tienen un string S -- Los statements del programa, los cuales contienen la variable X y alguna de las dos operaciones (++ o --)
 
 ## Output
-Imprime el valor final de X
+Imprime un número entero -- El valor final de X
 
 ## Ejemplos
 | Input   | Razonamiento                                   | Output |
