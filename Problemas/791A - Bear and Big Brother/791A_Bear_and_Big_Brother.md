@@ -11,7 +11,7 @@ Una línea con dos números A y B (1 <= A <= B <= 10) -- El peso de Limak y Bob,
 Está garantizado que Limak (A) pesa menos o igual que Bob (B)
 
 ## Output
-Imprime el número que años que Limak tardará para pesar más que Bob
+Imprime un número entero -- La cantidad de años que Limak tardará para pesar más que Bob
 
 ## Ejemplos
 | Input | Razonamiento | Output    |
