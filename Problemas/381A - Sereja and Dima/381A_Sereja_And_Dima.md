@@ -8,11 +8,11 @@ Sereja y Dima juegan un juego: Hay N cartas en una fila, cada una con un número
 Inna nota que Sereja y Dima siempre toman la carta más grande de las dos en los extremos en sus respectivos turnos. Concociendo esta estrategia, ¿Cuál será la puntuación de Sereja y Dima al final del juego?
 
 ## Input
-La 1° línea contiene un número entero N (1 <= N <= 1000) - El número de cartas en la fila
-La 2° línea contiene N números enteros K (1 <= K <= 1000) - El número de cada carta
+La 1° línea contiene un número entero N (1 <= N <= 1000) -- El número de cartas en la fila \
+La 2° línea contiene N números enteros K (1 <= K <= 1000) -- El número de cada carta
 
 ## Output
-Imprime la punutuación final de Sereja y Dima, respectivamente.
+Imprime 2 números enteros -- La punutuación final de Sereja y Dima, respectivamente.
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |
@@ -29,7 +29,7 @@ Ahora, ¿cómo sabemos cuándo es turno de quién? Bueno, considerando que Serej
 1) Inicia los puntos de Sereja y Dima en 0
 2) Simula los turnos del juego
 3) En cada turno, saca el número mayor entre las dos cartas de los dos extremos
-4) Suma el número a la puntuación del jugador cuyo turno es el actual
+4) Suma el número a la puntuación del jugador cuyo turno es el actual \
 a) Si el turno es par, entonces es turno de Sereja, suma el número a su puntuación \
 b) Si el turno es impar, entonces es turno de Dima, suma el número a su puntuación
 5) Elimina la carta de la fila
