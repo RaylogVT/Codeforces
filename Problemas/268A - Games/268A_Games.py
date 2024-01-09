@@ -10,7 +10,8 @@ colores_casa = []
 colores_visitante = []
 
 # Input:
-# 2) Colores de uniformes de casa y visitante de los equipos
+# 2) Colores de uniformes de casa de los equipos
+# 3) Colores de uniformes de visitante de los equipos
 for equipo_actual in range(0, equipos):
     casa, visitante = map(int, input().split())
     colores_casa.append(casa)
