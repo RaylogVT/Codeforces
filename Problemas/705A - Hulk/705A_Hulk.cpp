@@ -10,28 +10,28 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) N - Número de capas
-    int n;
-    cin >> n;
+    // 1) capas = Número de capas
+    int capas;
+    cin >> capas;
 
     // Construye la frase
     string frase = "";
 
     // Construye la frase
-    for(int capa = 1; capa <= n; capa++) {
+    for(int capa_actual = 1; capa <= capas; capa_actual++) {
 
         // Si la capa es impar, entonces añade 'I hate'
-        if(capa % 2 == 1) {
+        if(capa_actual % 2 == 1) {
             frase = frase + "I hate ";
         }
 
         // Si la capa es par, entonces añade 'I love'
-        if(capa % 2 == 0) {
+        if(capa_actual % 2 == 0) {
             frase = frase + "I love ";
         }
 
         // Si es la última capa, entonces termina la frase con 'it'
-        if(capa == n) {
+        if(capa_actual == n) {
             frase = frase + "it";
             break;
         }
