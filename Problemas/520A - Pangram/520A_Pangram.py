@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/520/A
 
 # Inputs:
-# 1) Longitud del string
-# 2) String a revisar
+# 1) longitud = Longitud del string
+# 2) frase = String a revisar
 longitud = int(input())
 frase = input()
 
