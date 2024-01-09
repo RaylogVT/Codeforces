@@ -3,7 +3,8 @@ https://codeforces.com/problemset/problem/581/A
 # 581A - Vasya The Hipster
 
 ## Resumen del problema
-Vasya tiene A calcetines rojos y B calcetines azules. Cada día decide usar 1 calcetín rojo y 1 calcetín azul (es decir, calcetines distintos), y los tira al final del mismo. Si se le acaban los calcetines de un color, entonces procede a usar 2 calcetines del otro color (es decir, calcetines iguales) de ahora en adelante. ¿Cuántos días Vasya puede durar usando 1 calcetín de cada color (distintos) y 2 calcetines del mismo color (iguales) hasta que se le acaben?
+Vasya tiene A calcetines rojos y B calcetines azules. Cada día decide usar 1 calcetín rojo y 1 calcetín azul (es decir, calcetines distintos), y los tira al final del mismo. Si se le acaban los calcetines de un color, entonces procede a usar 2 calcetines del otro color (es decir, calcetines iguales) de ahora en adelante. \
+¿Cuántos días Vasya puede durar usando 1 calcetín de cada color (distintos) y 2 calcetines del mismo color (iguales) hasta que se le acaben?
 
 ## Input
 Una sola línea que contiene dos números enteros A y B (1 <= A,B <= 100) - El número de calcetines rojos y azules, respectivamente.
