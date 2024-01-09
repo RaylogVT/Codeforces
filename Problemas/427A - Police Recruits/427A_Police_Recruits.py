@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/427/A
 
 # Inputs:
-# 1) Número de eventos
-# 2) Lista de eventos
+# 1) eventos = Número de eventos
+# 2) lista_eventos = Lista de eventos
 eventos = int(input())
 lista_eventos = list(map(int, input().split()))
 
