@@ -3,12 +3,14 @@ https://codeforces.com/problemset/problem/469/A
 # 469A - I Wanna Be The Guy
 
 ## Resumen del problema
-X y Y quieren pasarse el juego 'I Wanna Be The Guy'. X puede pasarse unos niveles, mientras que Y puede pasarse otros. Trabajando juntos, ¿podrían pasarse el juego?
+X y Y quieren pasarse el juego 'I Wanna Be The Guy'. \
+X puede pasarse unos niveles, mientras que Y puede pasarse otros. \
+Trabajando juntos, ¿podrían pasarse el juego?
 
 ## Input
 La 1° línea contiene un número entero N (1 <= N <= 100) -- El número de niveles del juego \
 La 2° línea contiene un número entero P (0 <= P <= N), seguido de P números enteros distintos (1 <= P1, P2, ..., Pn <= N) -- El número de niveles que X puede pasarse, seguido de los índices de los niveles que X puede pasarse \
-La 3° línea contiene un número entero Q (0 <= Q <= N), seguido de Q números enteros distintos (1 <= Q1, Q2, ..., Qn <= N) -- El número de niveles que Y puede pasarse, seguido de los índices de los niveles que y puede pasarse \
+La 3° línea contiene un número entero Q (0 <= Q <= N), seguido de Q números enteros distintos (1 <= Q1, Q2, ..., Qn <= N) -- El número de niveles que Y puede pasarse, seguido de los índices de los niveles que y puede pasarse 
 
 ## Output
 Imprime 'I become the guy.' si X y Y pueden pasarse todos los niveles del juego. \
@@ -32,7 +34,7 @@ Podemos insertar los niveles que X y Y pueden pasarse en un **set()**. Dado que 
 1) Empieza por el Nivel 1
 2) Checa si X y Y no pueden pasarse el nivel actual \
 a) Si no pueden, entonces imprime 'Oh, my keyboard!' (Aquí termina el proceso) \
-b) Si pueden, entonces pasa al siguiente nivel \
+b) Si pueden, entonces pasa al siguiente nivel 
 3) Repite el Paso 2 hasta llegar al último nivel
 4) Si X y Y pasaron todos los niveles, entonces imprime 'I become the guy.'
 
