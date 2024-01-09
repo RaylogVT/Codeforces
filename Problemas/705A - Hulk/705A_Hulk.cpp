@@ -14,18 +14,18 @@ int main(){
     int capas;
     cin >> capas;
 
-    // Construye la frase
+    // Frase a generar
     string frase = "";
 
-    // Construye la frase
+    // Itera sobre las capas
     for(int capa_actual = 1; capa <= capas; capa_actual++) {
 
-        // Si la capa es impar, entonces añade 'I hate'
+        // Si la capa es impar, entonces añade 'I hate' a la frase
         if(capa_actual % 2 == 1) {
             frase = frase + "I hate ";
         }
 
-        // Si la capa es par, entonces añade 'I love'
+        // Si la capa es par, entonces añade 'I love' a la frase
         if(capa_actual % 2 == 0) {
             frase = frase + "I love ";
         }
@@ -36,7 +36,7 @@ int main(){
             break;
         }
 
-        // Entre capas, escribe 'that'
+        // Entre capas, añade 'that' a la frase
         frase = frase + "that ";
     }
 
