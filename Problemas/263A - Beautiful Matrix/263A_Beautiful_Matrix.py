@@ -3,7 +3,7 @@
 
 for i in range(0,5): 
 
-    # Inputs:
+    # Input:
     # 1) Matriz de 0s y 1
     # Rellena cada fila
     fila = input().split() 
