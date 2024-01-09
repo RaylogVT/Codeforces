@@ -8,12 +8,13 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
+    // Input:
     // 1) Número de piedras
-    // 2) Colores de piedras
     int num_piedras;
     cin >> num_piedras;
-  
+
+    // Input:
+    // 2) Colores de piedras
     string RGB;
     cin >> RGB;
 
