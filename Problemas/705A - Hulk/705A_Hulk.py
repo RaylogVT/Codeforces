@@ -1,30 +1,30 @@
 # 705A - Hulk
 # https://codeforces.com/problemset/problem/705/A
 
-# Inputs:
-# 1) N - Número de capas
-n = int(input())
+# Input:
+# 1) capas = Número de capas
+capas = int(input())
 
 # Frase de Hulk
 frase = ''
 
-# Construye la frase
-for capa in range(1,n+1):
+# Itera sobre cada capa
+for capa_actual in range(1, capas+1):
 
-    # Si la capa es impar, entonces añade 'I hate'
-    if capa % 2 == 1:
+    # Si la capa es impar, entonces añade 'I hate' a la frase
+    if capa_actual % 2 == 1:
         frase += 'I hate '
     
-    # Si la capa es par, entonces añade 'I love'
-    if capa % 2 == 0:
+    # Si la capa es par, entonces añade 'I love' a la frase
+    if capa_actual % 2 == 0:
         frase += 'I love '
 
     # Si es la última capa, entonces termina la frase con 'it'
-    if capa == n:
+    if capa_actual == n:
         frase += 'it'
         break
 
-    # Entre capas, escribe 'that'
+    # Entre capas, añade 'that' a la frase
     frase += 'that '
 
 # Imprime la frase resultante
