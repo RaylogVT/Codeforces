@@ -9,7 +9,7 @@ using namespace std;
 int main() {
 
     // Inputs:
-    // 1) Número de statements
+    // 1) statements = Número de statements
     int statements; 
     cin >> statements;
 
@@ -17,10 +17,10 @@ int main() {
     int x = 0;           
 
     // Lee cada statement
-    while(statements--) {
+    for(int statement_actual = 0; statement_actual < statements; statement_actual++) {
 
         // Inputs:
-        // 2) Statement (X++, X--, ++X, --X)
+        // 2) operacion = Statement (X++, X--, ++X, --X)
         string operacion; 
         cin >> operacion;
 
