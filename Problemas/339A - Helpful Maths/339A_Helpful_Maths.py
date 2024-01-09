@@ -2,7 +2,7 @@
 # https://codeforces.com/problemset/problem/339/A
 
 # Inputs:
-# 1) Suma a ordenar
+# 1) suma = Suma a ordenar
 suma = input()
 
 # Lista de sumandos (números)
@@ -16,7 +16,7 @@ for elemento in suma:
 # Ordena los números de menor a mayor
 numeros_ordenados = sorted(numeros)
 
-# Recorre la lista de números de la suma
+# Itera sobre la lista de números de la suma
 for numero in range(0, len(numeros_ordenados)):
 
     # Imprime el número 
