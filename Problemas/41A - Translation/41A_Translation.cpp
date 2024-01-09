@@ -10,8 +10,8 @@ using namespace std;
 int main(){
 
     // Inputs
-    // 1) Palabra en Berland
-    // 2) Palabra en Birland
+    // 1) berland = Palabra en Berland
+    // 2) birland = Palabra en Birland
     string berland, birland;
     cin >> berland >> birland;
 
