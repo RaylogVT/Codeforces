@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/61/A
 
 # Inputs:
-# 1) Número 1
-# 2) Número 2
+# 1) numero1 = Número 1
+# 2) numero2 = Número 2
 numero1 = input()
 numero2 = input()
 
