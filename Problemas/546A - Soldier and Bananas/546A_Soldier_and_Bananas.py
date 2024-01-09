@@ -2,9 +2,9 @@
 # https://codeforces.com/problemset/problem/564/A
 
 # Inputs:
-# 1) Precio de la 1° banana
-# 2) Dólares que el soldado tiene
-# 3) Número de bananas a comprar
+# 1) precio_banana = Precio de la 1° banana
+# 2) dolares_actuales = Dólares que el soldado tiene
+# 3) numero_bananas = Número de bananas a comprar
 precio_banana, dolares_actuales, numero_bananas = map(int, input().split())
 
 # Monto total a pagar por las bananas
