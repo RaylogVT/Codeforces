@@ -1,8 +1,8 @@
 # 271A - Beautiful Year 
 # https://codeforces.com/problemset/problem/271/A
 
-# Inputs:
-# 1) Año inicial
+# Input:
+# 1) anio = Año inicial
 anio = int(input())
 
 # Empieza a buscar a partir del próximo año
