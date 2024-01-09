@@ -10,7 +10,7 @@ La 1° línea contiene un número entero N (1 <= N <= 100) -- El número de dorm
 Las siguientes N líneas contienen 2 números enteros P y Q (1 <= P <= Q <= 100) -- El número de personas que viven en el n-ésimo dormitorio, la capacidad del dormitorio
 
 ## Output
-Imprime un número entero N -- El número de dormitorios en los que George y Alex pueden mudarse
+Imprime un número entero -- El número de dormitorios en los que George y Alex pueden mudarse
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |
@@ -26,7 +26,7 @@ Por otro lado, si no nos excedemos o alcanzamos la capacidad del dormitorio, ent
 Guarda en un contador el número de dormitorios en los cuales la anterior condición se cumple y al final devuelve valor resultante.
 
 ## Algoritmo
-1) Itera sobre cada dormitorio
-2) Inicia un contador de dormitorios disponibles en 0
-3) Si el número de personas que viven el dormitorio (P) + 2 es menor o igual a la capacidad del dormitorio (Q), entonces suma +1 al contador de dormitorios disponibles
+1) Inicia un contador de dormitorios disponibles en 0
+2) Itera sobre cada dormitorio \
+a) Si el número de personas que viven el dormitorio (P) + 2 es menor o igual a la capacidad del dormitorio (Q), entonces suma +1 al contador de dormitorios disponibles
 4) Devuelve el número de dormitorios disponibles
