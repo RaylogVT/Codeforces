@@ -1,7 +1,7 @@
 # 486A - Calculating Function
 # https://codeforces.com/problemset/problem/486/A
 
-# Inputs:
+# Input:
 # 1) Número (N)
 n = int(input())
 
