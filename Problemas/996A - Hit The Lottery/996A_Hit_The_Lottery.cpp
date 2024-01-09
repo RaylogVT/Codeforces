@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Dinero a sacar
+    // 1) dinero - Dinero a sacar
     int dinero;
     cin >> dinero;
 
@@ -24,16 +24,16 @@ int main(){
     int billetes_total = 0;
 
     // Itera sobre las denominaciones
-    for(int denom_indice = cantidad_denominaciones-1; denom_indice >= 0; denom_indice--) {
+    for(int denominacion_indice = cantidad_denominaciones-1; denom_indice >= 0; denominacion_indice--) {
 
         // Cantidad de billetes a sacar con la denominación actual
-        int billetes_actual = dinero / denominaciones[denom_indice];
+        int billetes_actual = dinero / denominaciones[denominacion_indice];
         
         // Añade los nuevos billetes a tu cantidad final
         billetes_total = billetes_total + billetes_actual;
 
         // Calcula el dinero que te queda por sacar con otras denominaciones
-        dinero = dinero - (denominaciones[denom_indice] * billetes_actual);
+        dinero = dinero - (denominaciones[denominacion_indice] * billetes_actual);
     }
 
     // Imprime la cantidad de billetes total que necesitas para sacar el dinero
