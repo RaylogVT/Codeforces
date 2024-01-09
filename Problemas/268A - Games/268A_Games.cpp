@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de equipos
+    // 1) equipos = Número de equipos
     int equipos;
     cin >> equipos;
 
@@ -19,7 +19,8 @@ int main(){
     int colores_visitante[31];
 
     // Input:
-    // 2) Colores de uniformes de casa y visitante de los equipos
+    // 2) colores_casa = Colores de uniformes de casa de los equipos
+    // 3) colores_visitante = Colores de uniformes de visitante de los equipos
     for(int equipo_actual = 0; equipo_actual < equipos; equipo_actual++) {
         cin >> colores_casa[equipo_actual] >> colores_visitante[equipo_actual];
     }
