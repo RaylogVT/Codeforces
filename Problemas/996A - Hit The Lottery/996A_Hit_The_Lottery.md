@@ -7,10 +7,10 @@ Tienes N cantidad de dinero en el banco. Puedes sacarlo en billetes de 1,5,10,20
 ¿Cuál es el menor número de billetes que necesitas para sacar tu dinero?
 
 ## Input
-Una sola línea con un número entero N (1 <= N <= 10^9) - La cantidad de dinero en el banco
+Una sola línea con un número entero N (1 <= N <= 10^9) -- La cantidad de dinero en el banco
 
 ## Output
-Imprime un número entero - El mínimo número de billetes que necesitas para sacar el dinero del banco
+Imprime un número entero -- El mínimo número de billetes que necesitas para sacar el dinero del banco
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |
