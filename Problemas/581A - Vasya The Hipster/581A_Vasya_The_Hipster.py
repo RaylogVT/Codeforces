@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/581/A
 
 # Inputs:
-# 1) Número de calcetines rojos
-# 2) Número de calcetines azules
+# 1) calcetines_rojos = Número de calcetines rojos
+# 2) calcetines_azules = Número de calcetines azules
 calcetines_rojos, calcetines_azules = map(int, input().split())
 
 # Calcula el número de días en los que Vasya usará calcetines distintos
