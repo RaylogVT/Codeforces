@@ -7,10 +7,10 @@ La función F está definida como F(N) = -1+2-3+...+n(-1)^n \
 Dado un número N, calcula F(N)
 
 ## Input
-Un número entero N (1 <= N <= 10^15)
+Una sola línea con un número entero N (1 <= N <= 10^15) -- El número N
 
 ## Output
-Imprime el resultado de F(N)
+Imprime un número entero -- El resultado de F(N)
 
 ## Ejemplos
 | Input   | Razonamiento                | Output  |
@@ -52,6 +52,6 @@ Ej. +2-3 = -1, +4-5 = -1, +N-(N+1) = -1 \
 Entonces basta con contar la **cantidad de pares par-impar que dan -1 entre 2-N, y sumar 1 por el -1 del inicio**. Dicha cantidad de pares es la mitad (N/2), y como **los -1 son negativos**, entonces nuestro resultado debe ser **negativo**.
 
 ## Algoritmo
-1) Recibe N
-2) Si N es par, entonces F(N) = N/2
-3) Si N es impar, entonces F(N) = -((N+1)/2)
+1) Revisa N \
+a) Si N es par, entonces F(N) = N/2 \
+b) Si N es impar, entonces F(N) = -((N+1)/2)
