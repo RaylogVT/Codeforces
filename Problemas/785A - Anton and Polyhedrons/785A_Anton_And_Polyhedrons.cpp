@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número de poliedros
+    // 1) poliedros = Número de poliedros a revisar
     int poliedros;
     cin >> poliedros;
 
@@ -21,7 +21,7 @@ int main(){
     for(int poliedro_indice = 0; poliedro_indice < poliedros; poliedro_indice++) {
 
         // Inputs:
-        // 2) Poliedro actual
+        // 2) poliedro_actual = Poliedro actual a revisar
         string poliedro_actual;
         cin >> poliedro_actual;
 
