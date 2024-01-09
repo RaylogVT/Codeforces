@@ -9,7 +9,7 @@ Un año es hermoso si tiene todos sus dígitos distintos. Determina el próximo 
 Un número entero N (1000 <= N <= 9000) -- El año de inicio para buscar un año hermoso
 
 ## Output
-Imprime el próximo año hermoso después del año dado
+Imprime un número entero o string - El próximo año hermoso después del año dado
 
 ## Ejemplos
 | Input  | Razonamiento  | Output    |
@@ -42,6 +42,6 @@ Una vez que tienes los 4 dígitos, simplemente los comparas entre sí. Si detect
 1) Empieza a iterar sobre el año posterior al del input
 2) Convierte el año en un string
 3) Inserta el año en un set()
-4) Calcula el tamaño del set()
-5) Si el tamaño del set() es menor que 4, entonces suma 1 al año y repite los pasos 2-4
-6) Si el tamaño del set() es igual a 4, entonces devuelve el año
+4) Calcula el tamaño del set() \
+a) Si el tamaño del set() es menor que 4, entonces suma 1 al año y repite los pasos 2-4 \
+b) Si el tamaño del set() es igual a 4, entonces devuelve el año
