@@ -9,20 +9,20 @@ using namespace std;
 int main(){
 
     // Inputs:
-    // 1) Peso de Limak (a) 
-    // 2) Peso de Bob (b)
-    int limak, bob;
-    cin >> limak >> bob;
+    // 1) Peso de Limak
+    // 2) Peso de Bob
+    int peso_limak, peso_bob;
+    cin >> peso_limak >> peso_bob;
 
     // Numero de años pasados
     int anios = 0;
 
     // Mientras Limak pese menos que Bob:
     // Suma 1 año, multiplica x3 el peso de Limak y x2 el de Bob
-    while(limak <= bob) {
+    while(peso_limak <= peso_bob) {
         anios++;
-        limak = limak * 3;
-        bob = bob * 2;
+        peso_limak = peso_limak * 3;
+        peso_bob = peso_bob * 2;
     }
 
     // Imprime el número de años que pasaron para que Limak pesara más que Bob
