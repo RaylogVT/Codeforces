@@ -9,8 +9,8 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Posición del amigo
+    // Input:
+    // 1) posicion_amigo = Posición del amigo
     int posicion_amigo;
     cin >> posicion_amigo;
 
