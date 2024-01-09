@@ -44,7 +44,7 @@ int main(){
 int main(){
 
     // Inputs:
-    // 1) Año inicial
+    // 1) anio = Año inicial
     int anio;
     cin >> anio;
 
