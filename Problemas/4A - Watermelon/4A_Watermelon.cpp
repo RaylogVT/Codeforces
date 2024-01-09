@@ -8,8 +8,8 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Peso de sandía (w)
+    // Input:
+    // 1) peso_sandia = Peso de sandía 
     int peso_sandia;
     cin >> peso_sandia;
 
