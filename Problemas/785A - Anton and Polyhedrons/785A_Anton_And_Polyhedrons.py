@@ -2,7 +2,7 @@
 # https://codeforces.com/problemset/problem/785/A
 
 # Input:
-# 1) Número de poliedros
+# 1) poliedros = Número de poliedros a revisar
 poliedros = int(input())
 
 # Número de caras entre todos los poliedros
@@ -11,7 +11,7 @@ caras = 0
 for poliedro in range(0,poliedros):
 
     # Inputs:
-    # 2) Poliedro actual
+    # 2) poliedro_actual = Poliedro actual a revisar
     poliedro_actual = input()
 
     # Detecta el tipo de poliedro
