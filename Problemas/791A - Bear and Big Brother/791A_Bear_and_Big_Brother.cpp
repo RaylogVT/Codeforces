@@ -9,12 +9,12 @@ using namespace std;
 int main(){
 
     // Inputs:
-    // 1) Peso de Limak
-    // 2) Peso de Bob
+    // 1) peso_limak = Peso de Limak
+    // 2) peso_bob = Peso de Bob
     int peso_limak, peso_bob;
     cin >> peso_limak >> peso_bob;
 
-    // Numero de años pasados
+    // Numero de años transcurridos
     int anios = 0;
 
     // Mientras Limak pese menos que Bob:
