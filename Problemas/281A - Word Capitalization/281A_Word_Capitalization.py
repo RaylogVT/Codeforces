@@ -1,7 +1,8 @@
 # 281A - Word Capitalization
 # https://codeforces.com/problemset/problem/281/A
 
-# Palabra a capitalizar
+# Input:
+# 1) palabra - Palabra a capitalizar
 palabra = input()
 
 # Convierte la primera letra a mayúsculas
