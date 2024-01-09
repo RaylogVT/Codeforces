@@ -9,10 +9,10 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Precio de la 1° banana
-    // 2) Dólares que el soldado tiene
-    // 3) Número de bananas a comprar
+    // Input:
+    // 1) precio_banana = Precio de la 1° banana
+    // 2) dolares_actuales = Dólares que el soldado tiene
+    // 3) numero_bananas = Número de bananas a comprar
     int precio_banana, dolares_actuales, numero_bananas;
     cin >> precio_banana >> dolares_actuales >> numero_bananas;
 
