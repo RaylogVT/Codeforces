@@ -10,8 +10,8 @@ using namespace std;
 int main(){
     
     // Input:
-    // 1) Número a restar
-    // 2) Números de restas a realizar
+    // 1) numero = Número a restar
+    // 2) cantidad_restas = Números de restas a realizar
     int numero, cantidad_restas;
     cin >> numero >> cantidad_restas;
 
