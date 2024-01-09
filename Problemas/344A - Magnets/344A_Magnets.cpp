@@ -49,7 +49,7 @@ int contarFrecuencias(string patron, string texto) {
 int main(){
 
     // Input:
-    // 1) Número de imanes
+    // 1) imanes = Número de imanes
     int imanes;
     cin >> imanes;
 
@@ -58,7 +58,7 @@ int main(){
 
     for(int num_iman = 0; num_iman < imanes; num_iman++) {
         // Input:
-        // 2) Imán (10 = -+, 01 = +-)
+        // 2) iman_actual = Imán (10 = -+, 01 = +-)
         string iman_actual;
         cin >> iman_actual;
 
