@@ -8,7 +8,7 @@ Las fichas no se pueden solapar ni salir del tablero. \
 Encuenta el máximo número de fichas con las que puedes rellenar el tablero.
 
 ## Input
-Dos números enteros M y N (1 <= M <= N <= 15), el ancho y alto del tablero.
+Dos números enteros M y N (1 <= M <= N <= 15) -- El ancho y alto del tablero.
 
 ## Output
 Imprime el número de fichas de dominó necesarias para llenar el tablero.
