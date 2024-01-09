@@ -21,8 +21,8 @@ int main(){
     while(num_cuartos--){
 
         // Input:
-        // 1) personas_viviendo = Número de personas viviendo en el cuarto
-        // 2) capacidad_cuarto = Número de personas que puede albergar el cuarto
+        // 2) personas_viviendo = Número de personas viviendo en el cuarto
+        // 3) capacidad_cuarto = Número de personas que puede albergar el cuarto
         int personas_viviendo, capacidad_cuarto;
         cin >> personas_viviendo >> capacidad_cuarto;
 
