@@ -1,13 +1,15 @@
 https://codeforces.com/problemset/problem/281/A
 
+# 281A - Word Capitalization
+
 ## Resumen del problema
 Capitaliza una palabra (convierte a mayúscula su primera letra)
 
 ## Input
-Un string de longitud N (1 <= N <= 1000) con mayúsculas y minúsculas
+Un string de longitud N (1 <= N <= 1000) con mayúsculas y minúsculas -- La palabra a capitalizar
 
 ## Output
-Imprime un string -- La palabra capitalizada.
+Imprime un string -- La palabra capitalizada
 
 ## Ejemplos
 | Input  | Razonamiento | Output        |
