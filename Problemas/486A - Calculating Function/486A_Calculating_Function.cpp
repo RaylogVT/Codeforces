@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Número (N)
+    // 1) N = Número
     int n;
     cin >> n;
 
