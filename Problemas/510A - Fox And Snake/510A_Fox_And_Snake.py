@@ -2,8 +2,8 @@
 # https://codeforces.com/problemset/problem/510/A
 
 # Input:
-# 1) n = Filas
-# 2) m = Columnas
+# 1) n_filas = Número de filas en el tablero
+# 2) m_columnas = Número de columnas en el tablero
 n_filas, m_columnas = map(int, input().split())
 
 # Construye la serpiente
@@ -19,7 +19,7 @@ for fila in range(1, n_filas+1):
     # Imprime la serpiente moviéndose del lado derecho
     if fila % 2 == 0 and fila % 4 != 0:
          
-        # Llena la fila de . excepto la última columna
+        # Llena la fila de puntos excepto en la última columna
         for columa in range(1, m_columnas+1):
             if columa == m_columnas:
                 print('#', end="")
@@ -29,7 +29,7 @@ for fila in range(1, n_filas+1):
     # Imprime la serpiente moviéndose del lado izquierdo
     if fila % 4 == 0:
          
-        # Llena la fila de . excepto la primera columna
+        # Llena la fila de puntos excepto en la primera columna
         for columa in range(1, m_columnas+1):
             if columa == 1:
                 print('#', end="")
