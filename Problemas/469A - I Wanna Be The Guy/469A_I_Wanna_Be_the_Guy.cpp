@@ -10,29 +10,29 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) N - Número de niveles
+    // 1) niveles = Número de niveles
     int niveles;
     cin >> niveles;
 
     // Input:
-    // 2) X - Cantidad de niveles que X puede pasarse
+    // 2) num_nivelesX = Cantidad de niveles que X puede pasarse
     int num_nivelesX;
     cin >> num_nivelesX;
 
     // Input:
-    // 3) NivelesX - Niveles que X puede pasarse
+    // 3) lista_nivelesX = Niveles que X puede pasarse
     int lista_nivelesX[num_nivelesX];
     for(int nivel = 0; nivel < num_nivelesX; nivel++) {
         cin >> lista_nivelesX[nivel];
     }
 
     // Input:
-    // 4) Y - Cantidad de niveles que Y puede pasarse
+    // 4) num_nivelesY = Cantidad de niveles que Y puede pasarse
     int num_nivelesY;
     cin >> num_nivelesY;
 
     // Input:
-    // 5) NivelesY - Niveles que Y puede pasarse
+    // 5) lista_nivelesY = Niveles que Y puede pasarse
     int lista_nivelesY[num_nivelesY];
     for(int nivel = 0; nivel < num_nivelesY; nivel++) {
         cin >> lista_nivelesY[nivel];
