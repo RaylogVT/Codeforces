@@ -1,15 +1,15 @@
 # 71A - Way Too Long Words
 # https://codeforces.com/problemset/problem/71/A
 
-# Inputs:
-# 1) Numero de palabras a abreviar
+# Input:
+# 1) palabras = Numero de palabras a abreviar
 palabras = int(input())
 
-# Procesa cada palabra
+# Itera cada palabra
 for i in range(0, palabras):
 
-    # Inputs:
-    # 2) Palabra a abreviar
+    # Input:
+    # 2) palabra_abreviar = Palabra a abreviar
     palabra_abreviar = input()
 
     # Si la palabra tiene más de 10 letras, entonces se abrevia
@@ -17,6 +17,7 @@ for i in range(0, palabras):
 
         # Abreviacion = Primera letra + (Longitud de palabra - 2) + Última palabra
         abreviacion = palabra_abreviar[0] + str(len(palabra_abreviar) - 2) + palabra_abreviar[-1]
+        
     else:
 
         # Si la palabra tiene menos de 10 letras, entonces no se abrevia
