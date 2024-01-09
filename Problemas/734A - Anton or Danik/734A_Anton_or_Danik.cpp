@@ -10,12 +10,12 @@ using namespace std;
 int main(){
 
     // Inputs:
-    // 1) Número de partidas de ajedrez jugadas
+    // 1) partidas = Número de partidas de ajedrez jugadas
     int partidas;
     cin >> partidas;
 
     // Inputs:
-    // 2) Quién ganó cada partida
+    // 2) victorias = Quién ganó cada partida
     string victorias;
     cin >> victorias;
 
@@ -30,7 +30,7 @@ int main(){
             victorias_anton++;
         }
 
-        // Si la letra es igual a 'D', entonces ganó Anton la partida
+        // Si la letra es igual a 'D', entonces ganó Danik la partida
         if(victorias[letra] == 'D') {
             victorias_danik++;
         }
