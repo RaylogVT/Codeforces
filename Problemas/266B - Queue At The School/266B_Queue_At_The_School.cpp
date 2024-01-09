@@ -9,13 +9,14 @@ using namespace std;
 
 int main(){
 
-    // Inputs
-    // 1) Número de chicos en la fila
-    // 2) Segundos a transcurrir
-    // 3) Alineación de la fila (B = Boy, G = Girl)
+    // Input:
+    // 1) chicos = Número de chicos en la fila
+    // 2) Segundos = Segundos a transcurrir
     int chicos, segundos;
     cin >> chicos >> segundos;
 
+    // Input:
+    // fila = 3) Alineación de la fila (B = Boy, G = Girl)
     string fila;
     cin >> fila;
 
