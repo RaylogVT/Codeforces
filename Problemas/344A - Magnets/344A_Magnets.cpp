@@ -71,9 +71,10 @@ int main(){
     int repele00 = contarFrecuencias("00", fila_imanes);
     int repele11 = contarFrecuencias("11", fila_imanes);
 
-    // Imprime el número de grupos de imanes
-    // Grupo inicial + Grupos nuevos por repele de ++ (00) + Grupos nuevos por repele de -- (11)
+    // Grupos totales = Grupo inicial + Grupos nuevos por repele de ++ (00) + Grupos nuevos por repele de -- (11)
     int grupos = repele00 + repele11 + 1;
+
+    // Imprime el número de grupos de imanes
     cout << grupos << endl;
 
     return 0;
