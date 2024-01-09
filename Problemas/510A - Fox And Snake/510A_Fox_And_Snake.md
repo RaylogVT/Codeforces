@@ -4,7 +4,7 @@ https://codeforces.com/problemset/problem/510/A
 
 ## Resumen del problema
 Deseas dibujar una serpiente con gatos (#) en un tablero (n,m). Leyendo el tablero hacia abajo, la serpiente empieza en (1,1) y avanza hacia (1,m), luego baja 2 filas  hacia (3,m), después se mueve a (3,1), baja otras dos filas y repite el proceso. Las celdas sobre la cual no pasa la serpiente se representan con puntos (.) \
-Dadas las dimensiones del tablero, construye la serpiente
+Dadas las dimensiones del tablero, construye la serpiente.
 
 ## Input
 Una sola línea con 2 números enteros N y M (3 <= N,M <= 50) - El número de filas y columnas del tablero, respectivamente. \
