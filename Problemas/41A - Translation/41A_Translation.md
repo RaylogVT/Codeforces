@@ -6,8 +6,8 @@ https://codeforces.com/problemset/problem/41/A
 Dadas 2 palabras, determina si la 2° es una inversión de la 1°
 
 ## Input
-La 1° línea contiene un string de longitud N (1 <= N <= 100) - La palabra escrita al derecho \
-La 2° línea contiene un string de longitud N (1 <= N <= 100) - La palabra escrita al revés
+La 1° línea contiene un string de longitud N (1 <= N <= 100) -- La palabra escrita al derecho \
+La 2° línea contiene un string de longitud N (1 <= N <= 100) -- La palabra escrita al revés
 
 ## Output
 Imprime 'YES' si la 1° palabra es una inversión de la 2°, de lo contrario imprime 'NO'
