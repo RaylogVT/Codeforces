@@ -9,8 +9,8 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // 1) Suma a ordenar
+    // Input:
+    // 1) suma = Suma a ordenar
     string suma;
     cin >> suma;
 
@@ -36,7 +36,7 @@ int main(){
     // Cantidad de números ordenados
     int conteo_numeros = 0;
 
-    // Recorre el arreglo de números de la suma
+    // Itera sobre el arreglo de números de la suma
     for(int num: numeros) {
 
         // Imprime el número 
@@ -47,7 +47,7 @@ int main(){
             cout << '+';
         }
 
-        // Suma 1 número ordenado a la suma
+        // Suma un número ordenado a la suma
         conteo_numeros++;
     }
 
