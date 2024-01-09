@@ -1,19 +1,20 @@
 # 266A - Stones on the Table
 # https://codeforces.com/problemset/problem/266/A
 
-# Inputs:
-# 1) Número de piedras
-# 2) Colores de piedras
+# Input:
+# 1) num_piedras = Número de piedras
+# 2) RGB = Colores de piedras
 num_piedras = int(input())
 RGB = input()
 
 # Número de piedras nuevas a añadir
 piedras_nuevas = 0
 
-# Compara dos piedras vecinas
+# Itera sobre las piedras
 for piedra in range(1,num_piedras):
-
-    # Si son iguales, añade una nueva piedra
+    
+    # Compara dos piedras vecinas
+    # Si son iguales, añade una nueva piedra, suma +1 al contador de piedras nuevas
     if RGB[piedra] == RGB[piedra-1]:
         piedras_nuevas += 1
 
