@@ -10,8 +10,8 @@ using namespace std;
 int main(){
 
     // Input:
-    // 1) Precio de pala
-    // 2) Denominacion de moneda de R pesos
+    // 1) precio_pala = Precio de pala
+    // 2) r_moneda = Denominacion de moneda de R pesos
     int precio_pala, r_moneda;
     cin >> precio_pala >> r_moneda;
 
