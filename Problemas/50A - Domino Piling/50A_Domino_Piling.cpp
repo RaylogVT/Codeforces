@@ -9,9 +9,9 @@ using namespace std;
 
 int main(){
 
-    // Inputs:
-    // m = Ancho
-    // n = Alto
+    // Input:
+    // 1) m = Ancho
+    // 2) n = Alto
     int m, n;  
     cin >> m >> n;
 
