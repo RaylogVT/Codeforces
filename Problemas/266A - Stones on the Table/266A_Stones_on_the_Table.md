@@ -6,11 +6,11 @@ https://codeforces.com/problemset/problem/266/A
 Tienes una fila de piedras de color rojo (R), azul (B) o verde (G). Quieres añadir más piedras a la fila para que no haya dos piedras adyacentes entre que sean del mismo color. ¿Cuántas piedras debe añadir para cumplir dicha condición?
 
 ## Input
-La primera línea es un número N (1 <= N <= 100) - El número de piedras en la pila
-La segunda línea es un string con las letras R, G, B - La fila de piedras con el color respectivo de cada una
+La 1° línea es un número N (1 <= N <= 100) -- El número de piedras en la pila \
+La 2° línea es un string con las letras R, G, B -- La fila de piedras con el color respectivo de cada una
 
 ## Output
-Imprime el número que nuevas piedras que necesitas para que dos piedras adyacentes no sean del mismo color
+Imprime un número entero -- El número que nuevas piedras que necesitas para que dos piedras adyacentes no sean del mismo color
 
 ## Ejemplos
 | Input     | Razonamiento                                                                              | Output    |
@@ -27,6 +27,6 @@ Mediante las localidades del string que representa las piedras, podemos checar l
 
 ## Algoritmo
 1) Recorre la fila de piedras
-2) Compara la piedra actual contra la anterior o posterior a ella (a elección)
-3) Si las piedras son del mismo color, entonces suma 1 a un contador de nuevas piedras a añadir
-4) Imprime el número de nuevas piedras que debes añadir para cumplir con la condición
+2) Compara la piedra actual contra la anterior o posterior a ella (a elección) \
+a) Si las piedras son del mismo color, entonces suma 1 a un contador de nuevas piedras a añadir
+3) Imprime el número de nuevas piedras que debes añadir para cumplir con la condición
