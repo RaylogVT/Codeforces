@@ -6,7 +6,7 @@ https://codeforces.com/problemset/problem/758/A
 En el Día de la Igualdad de Berland, el rey decide igualar el patrimonio de todos los ciudadanos. El reino tiene N ciudadanos, donde cada uno tiene A rublos. Dado que el rey no puede quitar rublos a los ciudadanos, ¿cuánto es el mínimo de rublos que debe entregar para que el patrimonio de todos los ciudadanos sea el mismo?
 
 ## Input
-La 1° línea contiene un número entero N (1 <= N <= 100) -- El número de ciudadanos en Berland
+La 1° línea contiene un número entero N (1 <= N <= 100) -- El número de ciudadanos en Berland \
 La 2° línea contiene N número enteros Ai (1 <= Ai <= 1000000) -- La cantidad de rublos que tiene cada ciudadano
 
 ## Output
@@ -22,7 +22,7 @@ Imprime un número entero S -- La cantidad de rublos total a entregar a los ciud
 ## Forma de resolverlo
 Para resolver este problema, primero tenemos que saber la cantidad de dinero que cada ciudadano deberá tener al final de la entrega de rublos. El problema dice que **no podemos quitar dinero a un ciudadano**, eso significa que sólo podemos **darle o no darle dinero a un ciudadano** (es decir, un ciudadano puede no recibir nada de dinero y quedarse con su misma cantidad).
 
-Puesto que queremos entregar la menor cantidad de rublos posibles dadas las restricciones, lo mejor será saber quién es **el ciudadano con la mayor cantidad de rublos**, puesto que este será el punto de referencia sobre **cuántos rublos deberá tener cada ciudadano al final**. Una vez obtenido este valor, simplemente calculamos cuántos rublos le faltan a cada ciudadano para alcanzar esa cantidad y lo vamos sumando a un contador.
+Puesto que queremos entregar la menor cantidad de rublos posibles dadas las restricciones, lo mejor será saber quién es **el ciudadano con la mayor cantidad de rublos**, puesto que este será el punto de referencia sobre **cuántos rublos deberá tener cada ciudadano al final**. Con este valor, simplemente calculamos cuántos rublos le faltan a cada ciudadano para alcanzar esa cantidad y lo vamos sumando a un contador.
 
 ## Algoritmo
 1) Calcula el máximo de rublos que tiene un ciudadano
