@@ -16,7 +16,7 @@ Imprime un número entero -- El índice del número distinto en el arreglo
 ## Ejemplos
 | Input             | Razonamiento  | Output    |
 | ----------------- | :------------ | --------- |
-| 4 <br> 4 <br> 11 13 11 11 <br> 5 <br> 1 4 4 4 4 <br> 10 <br> 3 3 3 3 10 3 3 3 3 3 <br> 3 <br> 20 20 10 | 11 13 11 11 <br> 1 **2** 3 4 <br> 1 4 4 4 4 <br> **1** 2 3 4 5 <br> 3 3 3 3 10 3 3 3 3 3 <br> 1 2 3 4 **5** 6 7 8 9 10 <br> 20 20 10 <br> 1 2 **3** | **2** <br><br> **1** <br><br> **5** <br><br> **3** |
+| 4 <br> 4 <br> 11 13 11 11 <br><br> 5 <br> 1 4 4 4 4 <br><br> 10 <br> 3 3 3 3 10 3 3 3 3 3 <br><br> 3 <br> 20 20 10 | <br><br><br> 11 13 11 11 <br> 1 **2** 3 4 <br><br> 1 4 4 4 4 <br> **1** 2 3 4 5 <br><br> 3 3 3 3 10 3 3 3 3 3 <br> 1 2 3 4 **5** 6 7 8 9 10 <br><br> 20 20 10 <br> 1 2 **3** | <br><br><br><br> **2** <br><br><br> **1** <br><br><br> **5** <br><br><br> **3** |
 
 ## Forma de resolverlo
 Para resolver este problema, podemos iterar sobre los números del arreglo y ver si la cantidad de veces que aparece en el mismo es igual a **1** (puesto que el **número repetido aparece N-1 veces** y el **número distinto aparece sólo 1 vez**). Para ello podemos usar la función **count()**, la cual detecta el número de instancias de un valor en un arreglo. Una vez que encontramos el número distinto, simplemente devolvemos su **índice o localidad + 1** (porque los índices empiezan en 0).
