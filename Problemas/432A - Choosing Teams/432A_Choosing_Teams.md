@@ -8,7 +8,7 @@ La universidad de Saratov tiene N estudiantes. De cada uno sabes la cantidad de 
 El director de la universidad desea armar equipos para el campeonato. Cada equipo debe estar conformado por 3 personas, y una persona no puede estar en 2 equipos a la vez. ¿Cuál es la cantidad máxima de equipos que se pueden formar de tal manera que cada equipo participe en el campeonato K veces?
 
 ## Input
-La 1° línea contiene 2 números enteros N y K (1 <= N <= 2000, 1 <= K <= 5) -- El número de estudiantes y el número de veces que un equipo debe participar, respectivamente.
+La 1° línea contiene 2 números enteros N y K (1 <= N <= 2000, 1 <= K <= 5) -- El número de estudiantes y el número de veces que un equipo debe participar, respectivamente \
 La 2° línea contiene N números enteros Y (0 <= Y <= 5) -- El número de veces que el i-ésimo estudiante ha participado en el campeonato internacional anteriormente
 
 ## Output
