@@ -9,7 +9,7 @@ Dado un número N >= 12, busca 2 números compuestos (X,Y) tal que X + Y = N
 Una sola línea con un número entero N (12 <= N <= 1000000) -- El número a descomponer
 
 ## Output
-Imprime 2 números enteros compuestos X y Y (1 < X,Y < N) tal que X + Y = N
+Imprime 2 números enteros compuestos X y Y (1 < X, Y < N) tal que X + Y = N
 
 ## Ejemplos
 | Input    | Razonamiento  | Output    |
@@ -64,7 +64,7 @@ Analicemos si (8, N - 8) y (9, N - 9) son buenos valores de X y Y para satisface
 14 = 8 + 6 \
 15 = 9 + 6 \
 16 = 8 + 8 \
-17 = 9 + 8 \
+17 = 9 + 8 
 
 Como podemos ver, el hecho de que **N >= 12** y **X = 8 o 9** en función de si **N es par o impar** garantiza que **Y >= 4 y par**. Por lo tanto, para resolver el problema, simplemente tenemos que checar la **paridad de N** para saber si **(X,Y) = (8, N - 8) o (9, N - 9)**.
 
