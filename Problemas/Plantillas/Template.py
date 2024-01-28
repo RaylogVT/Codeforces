@@ -1,5 +1,5 @@
 # XXXA - 
 # https://codeforces.com/problemset/problem/XXX/A
 
-# Inputs:
+# Input:
 # 1) 

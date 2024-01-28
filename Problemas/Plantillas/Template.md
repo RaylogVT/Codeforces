@@ -1,6 +1,6 @@
 https://codeforces.com/problemset/problem/XXX/A
 
-# Problema
+# XXXA - 
 
 ## Resumen del problema
 
@@ -14,6 +14,9 @@ https://codeforces.com/problemset/problem/XXX/A
 |                   |               |           |
 
 ## Forma de resolverlo
+Para resolver este problema, 
 
 
 ## Algoritmo
+1)
+2)
