@@ -10,7 +10,6 @@ En este repositorio guardamos la solución a todos los problemas de Codeforces r
 
 ## Agenda de sesiones
 > Los directos de Codeforces son los **martes** desde [Twitch](https://www.twitch.tv/raylogvt)
->
 > Consulta la agenda en [Twitter](https://twitter.com/RaylogVT) para saber la hora del directo.
 
 ## Cómo participar
