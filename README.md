@@ -16,6 +16,7 @@ En este repositorio guardamos la solución a todos los problemas de Codeforces r
 ## Cómo participar
 
 ## Tutorial de Git/Github
+(Próximamente...)
 
 ## Nombres de carpetas
 Si tienes dudas con el nombre de carpeta de algún lenguajes, consulta su nombre de referencia:
