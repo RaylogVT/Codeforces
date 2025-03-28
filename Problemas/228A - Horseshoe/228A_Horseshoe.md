@@ -26,9 +26,9 @@ Para más información sobre los sets, consulta las siguientes páginas: \
 Python - https://www.w3schools.com/python/python_sets.asp \
 C++ - https://www.geeksforgeeks.org/set-in-cpp-stl/
 
-El set() guardará la cantidad de colores distintos que tenemos en nuestras herraduras. Como queremos saber cuántas necesitamos comprar para tener 4 de distinto color, simplemente debemos restar **4 - (Número de colores únicos que inicialmente tenemos)** para saber la cantidad.
+El set() guardará la cantidad de colores distintos que tenemos en nuestras herraduras. Para saber cuántas necesitamos comprar para tener 4 de distinto color, simplemente restamos **4 - (Número de colores únicos que inicialmente tenemos)**.
 
 ## Algoritmo
 1) Mete las 4 herraduras en un set 
 2) Calcula el tamaño del set 
-3) Resta (4 - Tamaño del set) para calcular el número de herraduras de distinto color que debes comprar
+3) Calcula (4 - Tamaño del set) para calcular el número de herraduras de distinto color que debes comprar

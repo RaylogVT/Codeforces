@@ -15,7 +15,7 @@ int main(){
     cin >> pruebas;
 
     // Realiza cada caso de prueba
-    for(int prueba = 0; prueba < pruebas; prueba++) {
+    for(int indice_prueba = 0; indice_prueba < pruebas; indice_prueba++) {
 
         // Input:
         // 2) a = Valor a convertir

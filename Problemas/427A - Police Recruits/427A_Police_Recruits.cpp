@@ -17,8 +17,8 @@ int main(){
     // Input:
     // 2) lista_eventos = Lista de eventos
     int lista_eventos[10001];
-    for(int evento_actual = 0; evento_actual < eventos; evento_actual++) {
-        cin >> lista_eventos[evento_actual];
+    for(int indice_evento = 0; indice_evento < eventos; indice_evento++) {
+        cin >> lista_eventos[indice_evento];
     }
 
     // Número de policías en servicio
@@ -28,18 +28,18 @@ int main(){
     int crimenes_sin_tratar = 0;
 
     // Itera sobre los eventos
-    for(int evento_actual = 0; evento_actual < eventos; evento_actual++) {
+    for(int indice_evento = 0; indice_evento < eventos; indice_evento++) {
         
         // Si el evento es un número positivo, entonces es una contratación de policías
         // Añade los policías al número de policías
-        if(lista_eventos[evento_actual] > 0) {
-            policias_disponibles = policias_disponibles + lista_eventos[evento_actual];
+        if(lista_eventos[indice_evento] > 0) {
+            policias_disponibles = policias_disponibles + lista_eventos[indice_evento];
         }
 
         // Si el evento es igual a -1, entonces es un crimen
-        if(lista_eventos[evento_actual] == -1) {
+        if(lista_eventos[indice_evento] == -1) {
 
-            // Si no hay policias disponibles, entonces el crimen no se trata
+            // Si no hay policias disponibles, entonces el crimen no se atiende
             if(policias_disponibles == 0) {
                 crimenes_sin_tratar = crimenes_sin_tratar + 1;
             } 

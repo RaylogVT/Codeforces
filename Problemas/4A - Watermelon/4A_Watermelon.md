@@ -6,7 +6,7 @@ https://codeforces.com/problemset/problem/4/A
 Dado el peso de una sandía (w), determina si la puedes partir en dos de tal manera que cada parte pese una cantidad par y positiva
 
 ## Input
-Un número entero (1 <= w <= 100) -- El peso de la sandía
+La única línea contiene un número entero W (1 <= W <= 100) -- El peso de la sandía
 
 ## Output
 Imprime 'YES' si la sandía puede partirse en partes pares, de lo contrario imprime 'NO'

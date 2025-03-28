@@ -11,7 +11,7 @@ La 1° línea contiene un número entero N (2 <= N <= 30) -- El número de equip
 Las siguientes N líneas contienen dos números enteros A y B (1 <= A,B <= 100) -- El índice del color del uniforme de local (A) y visitante (B) de cada equipo, respectivamente. Está garantizado que A y B tienen valores distintos.
 
 ## Output
-Imprime el número de juegos en los que el equipo local tendrá que ponerse su uniforme de visitante.
+Imprime un número entero -- El número de juegos en los que el equipo local tendrá que ponerse su uniforme de visitante.
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |

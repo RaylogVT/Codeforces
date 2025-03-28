@@ -6,7 +6,7 @@
 pruebas = int(input())
 
 # Itera sobre cada prueba
-for prueba in range(0, pruebas):
+for indice_prueba in range(0, pruebas):
 
     # Input:
     # 2) elementos = Número de elementos en el arreglo

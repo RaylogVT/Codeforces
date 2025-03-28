@@ -9,7 +9,7 @@ Un año es hermoso si tiene todos sus dígitos distintos. Determina el próximo 
 Un número entero N (1000 <= N <= 9000) -- El año de inicio para buscar un año hermoso
 
 ## Output
-Imprime un número entero o string - El próximo año hermoso después del año dado
+Imprime un número entero o string -- El próximo año hermoso después del año dado
 
 ## Ejemplos
 | Input  | Razonamiento  | Output    |

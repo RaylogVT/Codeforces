@@ -12,7 +12,7 @@ La 1° línea es un número entero N (1 <= N <= 100) -- El número de palabras a
 Las siguientes N líneas son strings de longitud L (1 <= L <= 100) -- Las palabras a abreviar
 
 ## Output
-Imprime N líneas -- La i-ésima línea es la abreviación de la i-ésima palabra del input
+Imprime N líneas -- La i-ésima línea es la abreviación de la i-ésima palabra.
 
 ## Ejemplos
 | Input         | Razonamiento                                  | Output        |
@@ -22,12 +22,12 @@ Imprime N líneas -- La i-ésima línea es la abreviación de la i-ésima palabr
 
 ## Forma de resolverlo
 Para resolver este problema, debemos buscar una manera de calcular el número de letras que hay entre la primera y última letra de una palabra con más de 10 caracteres. \
-Pensemos en lo siguiente: Al descartar la primera y última letra de una palabra, estamos restando **2 letras** a la misma, lo cual nos da las letras que están en medio. \
-Con base en esto, podemos concluir que el número de letras en medio de una palabra es **(Longitud de palabra - 2)**
+Pensemos en lo siguiente: Al descartar la primera y última letra de una palabra, estamos restando **2 letras** a la misma, lo cual nos da la cantidad de letras que están en medio. \
+Con base en esto, podemos concluir que el número de letras internas de una palabra es **(Longitud de palabra - 2)**
 
 ## Algoritmo
 1) Determina si la palabra tiene más de 10 caracteres. \
-a) Si la palabra tiene más de 10 caracteres, entonces se va al siguiente paso \
+a) Si la palabra tiene más de 10 caracteres, entonces ejecuta el Paso #2 \
 b) Si la palabra tiene 10 o menos de 10 caracteres, entonces la palabra no se abrevia, se imprime como tal
 2) Extrae el 1° y último carácter de la palabra 
 3) Calcula el número de letras en medio (Longitud de palabra - 2)

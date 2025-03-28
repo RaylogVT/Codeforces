@@ -17,29 +17,29 @@ dragones = int(input())
 dragones_k = []
 
 # Saca los dragones atacados con sartén (k)
-for d in range(k,dragones+1,k):
-    dragones_k.append(d)
+for dragon in range(k,dragones+1,k):
+    dragones_k.append(dragon)
 
 # Lista de dragones arrojados al balcón (l)
 dragones_l = []
 
 # Saca los dragones arrojados al balcón (l)
-for d in range(l,dragones+1,l):
-    dragones_l.append(d)
+for dragon in range(l,dragones+1,l):
+    dragones_l.append(dragon)
 
 # Lista de dragones aplastados con tacón (m)
 dragones_m = []
 
 # Saca los dragones aplastados con tacón (m)
-for d in range(m,dragones+1,m):
-    dragones_m.append(d)
+for dragon in range(m,dragones+1,m):
+    dragones_m.append(dragon)
 
 # Lista de dragones que huyeron (n)
 dragones_n = []
 
 # Saca los dragones que huyeron (n)
-for d in range(n,dragones+1,n):
-    dragones_n.append(d)
+for dragon in range(n,dragones+1,n):
+    dragones_n.append(dragon)
 
 # Saca la unión de las 4 listas 
 # La unión (U) eliminará los duplicados

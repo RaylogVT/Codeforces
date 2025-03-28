@@ -11,11 +11,11 @@ En Berland, la representación de números ternarios en alfabeto Borze se realiz
 Dado un código Borze, descrifra el número ternario que representa
 
 ## Input
-Una sola línea con un string de longitud N (1 <= N <= 200) -- El código Borze
+La única línea contiene un string de longitud N (1 <= N <= 200) -- El código Borze
 Está garantizado que el código Borze es válido. También puede empezar con ceros.
 
 ## Output
-Imprime un string o número entero -- El número ternario descifrado
+Imprime el número ternario descifrado
 
 ## Ejemplos
 | Input    | Razonamiento  | Output    |
@@ -35,9 +35,9 @@ Ej. ---.. (¿El 3° guión es parte de un 1 o 2?)
 c) Si empezamos por 2, entonces podemos convertir cualquier instancia de dos guiones. En instancias donde haya guiones consecutivos, una cantidad par representaría siempre 2s, mientras que una cantidad impar tendría un 1 al final (puesto que después del último guión le seguiría un punto).
 Ej. ---.. (Los primeros dos guiones son un 2, el 3° es parte de un 1)
 
-Por lo tanto, el hecho de usar el mismo carácter dos veces hace al **2** el mejor candidato para ser **convertido primero**. \
+Por lo tanto, el hecho de usar el mismo carácter dos veces hace al **2** el mejor candidato para convertir primero. \
 
-¿Ahora cuál sigue, 0 o 1? Considerando que 1 usa dos caracteres **distintos** y todavía tenemos el problema de identificar puntos, el **1** es mejor para **convertir segundo**. Finalmente, con 1 y 2 ya convertidos, sólo nos quedarán puntos, los cuales podemos confiar que en realidad son 0s, así que **0** es el **último número a convertir**:
+¿Ahora cuál sigue, 0 o 1? Considerando que 1 usa dos caracteres **distintos** y todavía tenemos el problema de identificar puntos, el **1** es mejor para convertir segundo. Finalmente, con 1 y 2 ya convertidos, sólo nos quedarán puntos, los cuales podemos confiar que en realidad son 0s, así que **0** es el último número a convertir.
 
 ### Algoritmo
 1) Convierte los '--' a 2

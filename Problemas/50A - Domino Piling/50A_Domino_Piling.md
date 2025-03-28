@@ -8,7 +8,7 @@ Las fichas no se pueden solapar ni salir del tablero. \
 Encuenta el máximo número de fichas con las que puedes rellenar el tablero.
 
 ## Input
-Dos números enteros M y N (1 <= M <= N <= 15) -- El ancho y alto del tablero.
+La única línea contiene dos números enteros M y N (1 <= M <= N <= 15) -- El ancho y alto del tablero.
 
 ## Output
 Imprime el número de fichas de dominó necesarias para llenar el tablero.
@@ -21,10 +21,8 @@ Imprime el número de fichas de dominó necesarias para llenar el tablero.
 
 ## Forma de resolverlo
 El área del tablero es M x N cuadrados \
-El área de una ficha de dominó es 2 cuadrados (2 x 1) 
-
-Por lo tanto, el número de fichas es **(M * N) / 2**
-
+El área de una ficha de dominó es 2 cuadrados (2 x 1). \
+Por lo tanto, el número de fichasa usar es **(M * N) / 2** \
 Independientemente de cómo acomodes las fichas, el resultado es el mismo. \
 En aquellos tableros cuya área es **impar**, siempre quedará **un cuadrado que las fichas no podrán cubrir**. \
 Dependiendo el lenguaje, deberás asegurar que este siempre **redondee hacia abajo** el resultado de la división para que sea correcto.

@@ -11,7 +11,7 @@ Las siguientes N líneas contienen el string '01' o '10', la forma en la que cad
 0 representa el polo positivo y 1 respresenta el número negativo
 
 ## Output
-Imprime un número entero - El número de grupos de imanes generados
+Imprime un número entero -- El número de grupos de imanes generados
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |

@@ -8,7 +8,7 @@ Un tren atraviesa N estaciones para mover pasajeros. En cada estación salen A p
 
 ## Input
 La 1° línea contiene un número entero N (2 <= N <= 1000) -- El número de estaciones que el tren cruza \
-Las siguientes N líneas contienen dos números enteros A y B (0 <= A,B <= 1000) -- El número de pasajeros que salen del tren en la n-ésima estación, el número de pasajeros que entran al tren en la n-ésima estación. 
+Las siguientes N líneas contienen dos números enteros A y B (0 <= A,B <= 1000) -- El número de pasajeros que salen del tren en la n-ésima estación, el número de pasajeros que entran al tren en la n-ésima estación, respectivamente. 
 
 Está garantizado que:
 - 0 pasajeros salen del tren en la 1° estación
@@ -17,7 +17,7 @@ Está garantizado que:
 - Todos los pasajeros restantes salen en la última estación
 
 ## Output
-Imprime un número entero - El número máximo de pasajeros que el tren tuvo durante su viaje
+Imprime un número entero -- El número máximo de pasajeros que el tren tuvo durante su viaje
 
 ## Ejemplos
 | Input   | Razonamiento                                   | Output |

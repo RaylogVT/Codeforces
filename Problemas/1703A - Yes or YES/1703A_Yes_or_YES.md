@@ -6,8 +6,8 @@ https://codeforces.com/problemset/problem/1703/A
 Dado un string de 3 caracteres, determina si este es igual a la palabra "YES" (independientemente de si usa minúsculas y mayúsculas).
 
 ## Input
-La 1° línea contiene un número enteno T (1 <= T <= 1000) - El número de casos de prueba
-Las siguientes T líneas contienen un string de 3 caracteres - El string a identificar
+La 1° línea contiene un número enteno T (1 <= T <= 1000) -- El número de casos de prueba
+Las siguientes T líneas contienen un string de 3 caracteres -- El string a identificar
 
 ## Output
 Imprime "YES" si el string es igual a alguna variación de "YES", de lo contrario, imprime "NO"

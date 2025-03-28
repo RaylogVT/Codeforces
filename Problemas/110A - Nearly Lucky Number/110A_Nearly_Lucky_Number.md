@@ -8,7 +8,7 @@ Un número casi-de-la-suerte es aquél que tiene un número de dígitos igual a 
 Determina si un número es un número casi-de-la-suerte.
 
 ## Input
-Una línea con un número entero N (1 <= N <= 10^18) -- El número a evaluar
+La única línea contiene un número entero N (1 <= N <= 10^18) -- El número a evaluar
 
 ## Output
 Imprime 'YES' si el número es casi-de-la-suerte, de lo contrario, imprime 'NO'
@@ -25,7 +25,7 @@ Para este problema, lo fácil es contar cuántos dígitos son 4 o 7. \
 Sin embargo, **¿cómo sabemos si dicha cantidad de dígitos es un número de la suerte?** \
 Pensemos lo siguiente: ¿Cuántos dígitos tiene el número más grande posible como nuestro input? \
 10^18 tiene **19 dígitos** (Un 1, 18 0s). Entre el 0-19, los únicos números de la suerte que hay son el **4 y 7**. \
-Entonces, si nuestro número tiene 4 o 7 dígitos de la suerte, entonces es un número casi-de-la-suerte.
+Entonces, **si nuestro número tiene 4 o 7 dígitos de la suerte, entonces es un número casi-de-la-suerte.**
 
 Sabiendo esto, **¿cómo extraemos los dígitos del número?**
 ### a) String (Python)

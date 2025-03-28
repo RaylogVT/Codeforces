@@ -15,7 +15,7 @@ int main(){
     cin >> pruebas;
 
     // Realiza cada caso de prueba
-    for(int prueba_actual = 0; prueba_actual < pruebas; prueba_actual++) {
+    for(int indice_prueba = 0; indice_prueba < pruebas; indice_prueba++) {
 
         // Input
         // 2) a, b, c = Números a sumar

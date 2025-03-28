@@ -2,14 +2,14 @@
 # https://codeforces.com/problemset/problem/151/A
 
 # Input:
-# 1) Número de amigos
-# 2) Número de botellas
-# 3) Mililitros por botella
-# 4) Número de limones
-# 5) Número de trozos de limones
-# 6) Gramos de sal
-# 7) Mínimo de mililitros para brindas
-# 8) Mínimo de sal para brindas
+# 1) amigos = Número de amigos
+# 2) botellas = Número de botellas
+# 3) mililitros = Mililitros por botella
+# 4) limones = Número de limones
+# 5) trozos = Número de trozos de limones
+# 6) gramos_sal = Gramos de sal
+# 7) minimo_mililitros = Mínimo de mililitros para brindas
+# 8) minimo_sal ) Mínimo de sal para brindas
 amigos, botellas, mililitros, limones, trozos, sal, minimo_mililitros, minimo_sal = map(int, input().split())
 
 # Calcula el número de brindis que se pueden realizar con los mililitros de bebida disponibles

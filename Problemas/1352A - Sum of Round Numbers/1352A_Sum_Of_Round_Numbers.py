@@ -6,7 +6,7 @@
 pruebas = int(input())
 
 # Realiza cada prueba
-for prueba_actual in range(0,pruebas):
+for indice_prueba in range(0,pruebas):
 
     # Input:
     # 2) numero = Número a descomponer

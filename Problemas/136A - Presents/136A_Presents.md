@@ -4,14 +4,14 @@ https://codeforces.com/problemset/problem/136/A
 
 ## Resumen del problema
 Petya observa cómo sus amigos se dan regalos entre sí. Para monitorearlos, decide asignarle un número a cada amigo. \ 
-Sabiendo quién le dió a quién, encuentra de qué amigo cada quién recibió regalo
+Sabiendo quién le dió a quién, encuentra de qué amigo cada quién recibió regalo.
 
 ## Input
-La 1° línea contiene un número entero N (1 <= N <= 100) - El número de amigos de Petya \
-La 2° línea contiene N números enteros P (1 <= P <= N) - El número del amigo que recibió regalo del amigo cuyo número es el del índice de números de la línea
+La 1° línea contiene un número entero N (1 <= N <= 100) -- El número de amigos de Petya \
+La 2° línea contiene N números enteros P (1 <= P <= N) -- El número del amigo que recibió regalo del amigo cuyo número es el del índice de números de la línea
 
 ## Output
-Imprime N números - El número del amigo que le dió regalo al amigo cuyo número es el del índice de números de la línea
+Imprime N números -- El número del amigo que le dió regalo al amigo cuyo número es el del índice de números de la línea
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |

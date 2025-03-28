@@ -8,7 +8,7 @@ Dos letras equivalen lo mismo, independientemente de si están en mayúsculas o 
 Determina el string más grande.
 
 ## Input
-Dos strings de longitud N (1 <= N <= 100). \
+La única línea contiene dos strings de longitud N (1 <= N <= 100). \
 Está garantizado que tienen la misma longitud y constan de mayúsculas y minúsculas.
 
 ## Output
@@ -25,9 +25,9 @@ Imprime 0 si los dos strings son iguales.
 
 ## Forma de resolverlo
 Si bien la primera idea que se nos vendría a la cabeza es comparar directamente los strings, tenemos que considerar que las letras mayúsculas y minúsculas no tienen el mismo valor lexicográfico. \
-Si consultamos la tabla ASCII (https://elcodigoascii.com.ar/), observamos que las mayúsculas tienen un valor de 65-90, mientras que las minúsculas tienen uno de 97-122. Al hacer la comparación con los valores ASCII, se notaría la diferencia lexicográfica entre mayúsculas y minúsculas, y el problema estipula que no la hay. 
+Si consultamos la tabla ASCII (https://elcodigoascii.com.ar/), observamos que las **mayúsculas tienen un valor de 65-90**, mientras que las **minúsculas tienen uno de 97-122**. Al hacer la comparación con los valores ASCII, se notaría la diferencia lexicográfica entre mayúsculas y minúsculas, y el problema estipula que no la hay. 
 
-Si queremos buscar letras distintas, primero tenemos que normalizar los dos strings para que tengan todas sus letras ya sea en minúsculas o mayúsculas. Afortunadamente, los lenguajes de programación tienen funciones para convertir caracteres en mayúsculas y minúsculas.
+Si queremos buscar letras distintas, primero tenemos que **normalizar los dos strings** para que tengan todas sus letras ya sea en minúsculas o mayúsculas. Afortunadamente, los lenguajes de programación tienen funciones para convertir caracteres en mayúsculas y minúsculas.
 
 Python -- **upper()** o **lower()** \
 C++ -- **toupper()** o **tolower()**

@@ -6,7 +6,7 @@
 pruebas = int(input())
 
 # Realiza cada caso de prueba
-for prueba in range(0, pruebas):
+for indice_prueba in range(0, pruebas):
 
     # Input:
     # 2) yes = String de 3 caracteres

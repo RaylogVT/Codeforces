@@ -12,10 +12,10 @@ Para hacer un brindis, cada amigo necesita NL mililitros de alcohol, un trozo de
 ¿Cuántos brindis pueden realizar?
 
 ## Input
-Una sola línea que contiene 8 números enteros N, K, L, C, D, P, NL, NP (1 <= N,K,L,C,D,P,NL,NP <= 1000) - El número de amigos, el número de botellas de alcohol, los mililitros de cada botella, el número de limones, el número de trozos de cada limón, los gramos de sal, el mínimo de mililitros de alcohol de una bebida y el mínimo de gramos de sal de una bebida, respectivamente.
+La única línea contiene contiene 8 números enteros N, K, L, C, D, P, NL, NP (1 <= N,K,L,C,D,P,NL,NP <= 1000) -- El número de amigos, el número de botellas de alcohol, los mililitros de cada botella, el número de limones, el número de trozos de cada limón, los gramos de sal, el mínimo de mililitros de alcohol de una bebida y el mínimo de gramos de sal de una bebida, respectivamente.
 
 ## Output
-Imprime un número entero - El número de brindis que los amigos pueden realizar.
+Imprime un número entero -- El número de brindis que los amigos pueden realizar.
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |

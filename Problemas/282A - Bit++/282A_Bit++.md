@@ -34,7 +34,7 @@ Existen dos maneras de leer los statements:
 Si tu lenguaje maneja strings fácilmente (Ej. Python), puedes separar el ++ o -- de la X para la detección. 
 
 **b) Lectura intuitiva** \
-Como podemos ver, todos los statements constan de 3 caracteres, y curiosamente la X siempre tiene que estar al **inicio** o al **final** del mismo. \
+Como podemos ver, todos los statements constan de 3 caracteres, y la X siempre está al **inicio** o al **final** de estos. \
 Un statement como **+X+** o **-X-** no son válidos porque el lenguaje Bit++ exige que la operación sea ++ o --. \
 Viendo todas las combinaciones de strings restantes posibles, los statements pueden ser X++, ++X, X--, --X. \
 Si los analizamos, vemos que **el caracter de en medio siempre es + o -, por lo que bastaría con hacer esta detección para saber si el statement suma o resta a X**. De esta manera evitamos leer el string completo para buscar la operación completa.
@@ -45,3 +45,21 @@ Cuenta cuántos statements tienen ++ y -- y resta el conteo de los dos
 | Statement   | Cálculos                               | 
 | :----   | :--------------------------------------------  | 
 | 3 <br> X++ <br> ++X <br> --X | Número de statements (++) = 2 <br> Número de statements (--) = 1 <br> 2 - 1 = 1 <br> **X = 1** |  
+
+## Algoritmo
+### a) Secuencial 
+1) Itera sobre los statements
+2) Detecta los signos del statement \
+a) Si el statement tiene '++', entonces suma +1 a X \
+b) Si el statement tiene '--', entonces resta -1 a X 
+3) Devuelve el valor de X
+
+### b) Integradora
+1) Genera un contador de Sumas y Restas
+2) Itera sobre los statements
+3) Detecta los signos del statement \
+a) Si el statement tiene '++', entonces suma +1 al contador de Sumas \
+b) Si el statement tiene '--', entonces suma +1 al contador de Restas 
+4) Calcula (Sumas - Restas)
+
+

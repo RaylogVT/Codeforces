@@ -6,7 +6,7 @@
 pruebas = int(input())
 
 # Itera sobre cada caso de prueba
-for prueba_actual in range(0, pruebas):
+for indice_prueba in range(0, pruebas):
 
     # Input:
     # 2) númoero = Cantidad de números en el arreglo

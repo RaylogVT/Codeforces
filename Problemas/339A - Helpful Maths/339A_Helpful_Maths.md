@@ -7,10 +7,10 @@ Xenia tiene que resolver una suma, sin embargo, sólo lo puede hacer si los núm
 Reordena los números de la suma para que Xenia pueda resolverla.
 
 ## Input
-Un string de longitud N (1 <= N <= 1000) con los números 1,2,3 y símbolos de suma (+)
+La única línea contiene un string de longitud N (1 <= N <= 1000) con los números 1,2,3 y símbolos de suma (+)
 
 ## Output
-Imprime un string - La suma ordenada
+Imprime un string -- La suma ordenada
 
 ## Ejemplos
 | Input     | Razonamiento                | Output          |

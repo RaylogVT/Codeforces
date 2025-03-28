@@ -17,7 +17,7 @@ int main() {
     int x = 0;           
 
     // Lee cada statement
-    for(int statement_actual = 0; statement_actual < statements; statement_actual++) {
+    for(int indice_statement = 0; indice_statement < statements; indice_statement++) {
 
         // Inputs:
         // 2) operacion = Statement (X++, X--, ++X, --X)

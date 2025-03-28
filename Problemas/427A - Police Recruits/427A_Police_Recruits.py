@@ -14,15 +14,15 @@ policias_disponibles = 0
 crimenes_sin_tratar = 0
 
 # Itera sobre los eventos
-for evento in lista_eventos:
+for indice_evento in lista_eventos:
 
     # Si el evento es un número positivo, entonces es una contratación de policías
     # Añade los policías al número de policías
-    if evento > 0:
-        policias_disponibles += evento
+    if indice_evento > 0:
+        policias_disponibles += indice_evento
 
     # Si el evento es igual a -1, entonces es un crimen
-    if evento == -1:
+    if indice_evento == -1:
 
         # Si no hay policias disponibles, entonces suma +1 al número de crímenes sin tratar
         if policias_disponibles == 0:

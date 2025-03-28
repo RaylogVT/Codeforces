@@ -12,7 +12,7 @@ La 1° linea contiene un número N (2 <= N <= 100) -- El número de soldados en 
 La 2° línea contiene N números enteros A1, ..., An (1 <= Ai <= 100) -- Las alturas de los soldados
 
 ## Output
-Imprime un número entero -- El mínimo número de segundos necesario para ordenar a los soldados
+Imprime un número entero -- El mínimo número de segundos necesario para ordenar a los soldados.
 
 ## Ejemplos
 | Input                       | Razonamiento  | Output    |

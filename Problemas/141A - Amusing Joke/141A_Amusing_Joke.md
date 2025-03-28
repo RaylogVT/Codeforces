@@ -13,7 +13,7 @@ La 2° línea contiene un string de longitud N (1 <= N <= 100) -- Las letras del
 La 3° línea contiene un string de longitud N (1 <= N <= 100) -- La pila de letras encontradas al día siguiente
 
 ## Output
-Imprime YES si se pueden reconstruir los letreros con la pila encontrada. De lo contrario, imprime NO.
+Imprime 'YES' si se pueden reconstruir los letreros con la pila encontrada, de lo contrario, imprime 'NO'.
 
 ## Ejemplos
 | Input             | Razonamiento  | Output    |

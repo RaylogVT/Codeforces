@@ -6,7 +6,7 @@
 palabras = int(input())
 
 # Itera cada palabra
-for i in range(0, palabras):
+for palabra in range(0,palabras):
 
     # Input:
     # 2) palabra_abreviar = Palabra a abreviar

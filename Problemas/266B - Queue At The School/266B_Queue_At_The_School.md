@@ -6,8 +6,8 @@ https://codeforces.com/problemset/problem/266/B
 La fila de la cafetería está compuesta de alumnos. Con cada segundo que pasa, los chicos se incomodan de estar frente a las chicas, así que deciden invertir lugares. ¿Cómo se ve la fila después de X segundos?
 
 ## Input
-La 1° línea contiene dos números enteros N y T (1 <= N,T <= 1000) - La cantidad de alumnos en la fila, el número de segundos \
-La 2° línea contiene un string de longitud N - La alineación inicial de la fila \
+La 1° línea contiene dos números enteros N y T (1 <= N,T <= 1000) -- La cantidad de alumnos en la fila, el número de segundos \
+La 2° línea contiene un string de longitud N -- La alineación inicial de la fila \
 Los chicos están representados como (B), las chicas están representados como (G)
 
 ## Output

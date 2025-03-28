@@ -39,5 +39,5 @@ Aquí el índice (i) ahora empieza con un valor de (longitud de la palabra - 1) 
 Entonces, ajustando los parámetros de un ciclo, podemos buscar maneras más ingeniosas de realizar una acción repetidas veces.
 
 ## Algoritmo
-1) Invierte la 1° palabra
+1) Invierte la 1° palabra con un ciclo invertido
 2) Si la inversión es igual a la 2° palabra, imprime 'YES', de lo contrario imprime 'NO'

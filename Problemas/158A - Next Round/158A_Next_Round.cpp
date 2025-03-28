@@ -18,8 +18,8 @@ int main(){
     // Input:
     // 3) lista_participantes = Arreglo de puntuaciones de participantes
     int lista_participantes[100];
-    for(int i = 0; i < num_participantes; i++) {
-        cin >> lista_participantes[i];
+    for(int participante = 0; participante < num_participantes; participante++) {
+        cin >> lista_participantes[participante];
     }
 
     // Puntuación del k-esimo participante
