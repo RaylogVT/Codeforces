@@ -9,6 +9,7 @@ import glob
 from google import genai
 from pathlib import Path
 import sys
+import time
 
 # Configuración
 PROBLEMAS_ROOT = "Problemas"
@@ -202,6 +203,11 @@ def generate_documentation(client, target_folder, examples):
                 "max_output_tokens": 1500
             }
         )
+
+        # Verificar que la respuesta no sea None
+        if response.text is None:
+            print(f"⚠️  Respuesta vacía de la API para {target_folder}")
+            return False
 
         content = response.text.strip()
 

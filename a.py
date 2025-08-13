@@ -92,6 +92,7 @@ def create_main_script():
     from google import genai
     from pathlib import Path
     import sys
+    import time
 
     # Configuración
     PROBLEMAS_ROOT = "Problemas"
@@ -285,6 +286,11 @@ def create_main_script():
                     "max_output_tokens": 1500
                 }
             )
+            
+            # Verificar que la respuesta no sea None
+            if response.text is None:
+                print(f"⚠️  Respuesta vacía de la API para {target_folder}")
+                return False
             
             content = response.text.strip()
             
