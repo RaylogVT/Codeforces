@@ -16,6 +16,8 @@ PROBLEMAS_ROOT = "Problemas"
 MIN_MD_SIZE = 10
 EXAMPLES_MIN_SIZE = 50
 MAX_EXAMPLES = 5
+MAX_RETRIES = 3
+BASE_DELAY = 45  # Segundos
 
 def setup_gemini():
     """Configura Gemini API"""
@@ -189,43 +191,63 @@ Instrucciones:
     return prompt
 
 def generate_documentation(client, target_folder, examples):
-    """Genera documentación usando Gemini"""
+    """Genera documentación usando Gemini con reintentos"""
     print(f"📝 Generando documentación para: {target_folder}")
 
-    try:
-        prompt = build_prompt(target_folder, examples)
+    for attempt in range(MAX_RETRIES):
+        try:
+            if attempt > 0:
+                # Delay incremental: 45s, 75s, 120s
+                delay = BASE_DELAY + (attempt * 30)
+                print(f"🔄 Intento {attempt + 1}/{MAX_RETRIES} - Esperando {delay}s antes del reintento...")
+                time.sleep(delay)
 
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt,
-            config={
-                "temperature": 0.2,
-                "max_output_tokens": 1500
-            }
-        )
+            prompt = build_prompt(target_folder, examples)
 
-        # Verificar que la respuesta no sea None
-        if response.text is None:
-            print(f"⚠️  Respuesta vacía de la API para {target_folder}")
-            return False
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config={
+                    "temperature": 0.2,
+                    "max_output_tokens": 1500
+                }
+            )
 
-        content = response.text.strip()
+            # Verificar que la respuesta no sea None
+            if response.text is None:
+                print(f"⚠️  Intento {attempt + 1}: Respuesta vacía de la API")
+                if attempt == MAX_RETRIES - 1:
+                    print(f"❌ Agotados los {MAX_RETRIES} intentos para {target_folder}")
+                    return False
+                continue
 
-        if len(content) < MIN_MD_SIZE:
-            print(f"⚠️  Contenido muy corto para {target_folder}")
-            return False
+            content = response.text.strip()
 
-        # Escribir archivo
-        md_path = os.path.join(target_folder, "README.md")
-        with open(md_path, 'w', encoding='utf-8') as f:
-            f.write(content)
+            if len(content) < MIN_MD_SIZE:
+                print(f"⚠️  Intento {attempt + 1}: Contenido muy corto ({len(content)} chars)")
+                if attempt == MAX_RETRIES - 1:
+                    print(f"❌ Agotados los {MAX_RETRIES} intentos para {target_folder}")
+                    return False
+                continue
 
-        print(f"✅ Generado: {md_path}")
-        return True
+            # Éxito: escribir archivo
+            md_path = os.path.join(target_folder, "README.md")
+            with open(md_path, 'w', encoding='utf-8') as f:
+                f.write(content)
 
-    except Exception as e:
-        print(f"❌ Error generando {target_folder}: {str(e)}")
-        return False
+            success_msg = f"✅ Generado: {md_path}"
+            if attempt > 0:
+                success_msg += f" (exitoso en intento {attempt + 1})"
+            print(success_msg)
+            return True
+
+        except Exception as e:
+            print(f"⚠️  Intento {attempt + 1}: Error - {str(e)}")
+            if attempt == MAX_RETRIES - 1:
+                print(f"❌ Agotados los {MAX_RETRIES} intentos para {target_folder}")
+                return False
+
+    return False
 
 def main():
     """Función principal"""
