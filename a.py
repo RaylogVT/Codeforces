@@ -82,6 +82,7 @@ def create_main_script():
     """
     Script principal de auto-documentación
     Escanea carpetas, encuentra ejemplos, genera .md con Gemini 2.5 Flash
+    Solo acepta respuestas terminadas naturalmente (finish_reason=STOP)
     """
 
     import os
@@ -97,7 +98,9 @@ def create_main_script():
     EXAMPLES_MIN_SIZE = 50
     MAX_EXAMPLES = 5
     MAX_RETRIES = 3
-    BASE_DELAY = 45  # Segundos
+    BASE_DELAY = 15  # Segundos (15s, 30s, 45s para reintentos)
+    TIMEOUT_SECONDS = 30  # Timeout como respaldo
+    INTER_FOLDER_DELAY = 20  # Segundos entre carpetas
 
     def setup_gemini():
         """Configura Gemini API"""
@@ -270,28 +273,62 @@ def create_main_script():
         
         return prompt
 
+    def get_finish_reason(response):
+        """Extrae el finish_reason de la respuesta de Gemini"""
+        try:
+            if hasattr(response, 'candidates') and response.candidates:
+                candidate = response.candidates[0]
+                if hasattr(candidate, 'finish_reason'):
+                    return candidate.finish_reason
+            return None
+        except:
+            return None
+
     def generate_documentation(client, target_folder, examples):
-        """Genera documentación usando Gemini con reintentos"""
+        """Genera documentación usando Gemini con verificación de finish_reason"""
         print(f"📝 Generando documentación para: {target_folder}")
         
         for attempt in range(MAX_RETRIES):
             try:
                 if attempt > 0:
-                    # Delay incremental: 45s, 75s, 120s
-                    delay = BASE_DELAY + (attempt * 30)
+                    # Delay incremental: 15s, 30s, 45s
+                    delay = BASE_DELAY + (attempt * 15)
                     print(f"🔄 Intento {attempt + 1}/{MAX_RETRIES} - Esperando {delay}s antes del reintento...")
                     time.sleep(delay)
                 
                 prompt = build_prompt(target_folder, examples)
                 
+                # Llamada con timeout como respaldo
                 response = client.models.generate_content(
                     model="gemini-2.5-flash",
                     contents=prompt,
                     config={
                         "temperature": 0.2,
                         "max_output_tokens": 1500
+                    },
+                    request_options={
+                        "timeout": TIMEOUT_SECONDS  # Timeout de respaldo
                     }
                 )
+                
+                # Verificar finish_reason primero
+                finish_reason = get_finish_reason(response)
+                print(f"🔍 Finish reason: {finish_reason}")
+                
+                if finish_reason != 'STOP':
+                    if finish_reason == 'MAX_TOKENS':
+                        print(f"⚠️  Intento {attempt + 1}: Respuesta truncada por límite de tokens")
+                    elif finish_reason == 'SAFETY':
+                        print(f"⚠️  Intento {attempt + 1}: Bloqueado por filtros de seguridad")
+                    elif finish_reason == 'RECITATION':
+                        print(f"⚠️  Intento {attempt + 1}: Bloqueado por detección de plagio")
+                    else:
+                        print(f"⚠️  Intento {attempt + 1}: Terminación no natural ({finish_reason})")
+                    
+                    if attempt == MAX_RETRIES - 1:
+                        print(f"❌ Agotados los {MAX_RETRIES} intentos para {target_folder}")
+                        return False
+                    continue
                 
                 # Verificar que la respuesta no sea None
                 if response.text is None:
@@ -310,12 +347,12 @@ def create_main_script():
                         return False
                     continue
                     
-                # Éxito: escribir archivo
+                # ✅ Éxito: respuesta completa y terminada naturalmente
                 md_path = os.path.join(target_folder, "README.md")
                 with open(md_path, 'w', encoding='utf-8') as f:
                     f.write(content)
                 
-                success_msg = f"✅ Generado: {md_path}"
+                success_msg = f"✅ Generado: {md_path} ({len(content)} chars, terminación natural)"
                 if attempt > 0:
                     success_msg += f" (exitoso en intento {attempt + 1})"
                 print(success_msg)
@@ -332,6 +369,8 @@ def create_main_script():
     def main():
         """Función principal"""
         print("🚀 Iniciando auto-documentación...")
+        print("✋ Solo se aceptan respuestas terminadas naturalmente (finish_reason=STOP)")
+        print("⏱️ Delays de reintento: 15s, 30s, 45s | Entre carpetas: 20s")
         
         # Setup
         client = setup_gemini()
@@ -360,12 +399,13 @@ def create_main_script():
             if generate_documentation(client, target, examples):
                 success_count += 1
             
-            # Esperar 30 segundos antes del siguiente (excepto en el último)
+            # Delay entre carpetas cuando no ha terminado naturalmente
             if i < total_targets:
-                print("⏳ Esperando 30s antes del siguiente para evitar rate limits...")
-                time.sleep(30)
+                print(f"⏳ Pausa de {INTER_FOLDER_DELAY}s antes de la siguiente carpeta...")
+                time.sleep(INTER_FOLDER_DELAY)
         
         print(f"\\n🎉 Completado: {success_count}/{total_targets} documentos generados")
+        print("📊 Solo se guardaron documentos completos y terminados naturalmente")
 
     if __name__ == "__main__":
         main()
@@ -406,11 +446,14 @@ def main():
     print("1. Agrega GEMINI_API_KEY a los secrets de GitHub")
     print("2. Haz push de los archivos creados")
     print("3. El sistema se activará automáticamente en CUALQUIER push")
-    print("4. Puedes eliminar este script generador")
+    print("4. Solo acepta documentación terminada naturalmente (finish_reason=STOP)")
+    print("5. Reintentos: 15s, 30s, 45s | Entre carpetas: 20s")
+    print("6. Timeout de 30s como respaldo para conexiones perdidas")
+    print("7. Puedes eliminar este script generador")
     print()
     print("🔧 Para probar localmente:")
     print("   export GEMINI_API_KEY='tu_api_key'")
-    print("   python tools/gen_docs.py.")
+    print("   python tools/gen_docs.py")
 
 if __name__ == "__main__":
     main()
