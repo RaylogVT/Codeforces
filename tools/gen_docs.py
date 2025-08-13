@@ -232,7 +232,7 @@ def generate_documentation(client, target_folder, examples):
                 contents=prompt,
                 config={
                     "temperature": 0.3,
-                    "max_output_tokens": 4000
+                    "max_output_tokens": 7000
                 }
             ):
                 if chunk.text:
