@@ -410,7 +410,7 @@ def main():
     print()
     print("🔧 Para probar localmente:")
     print("   export GEMINI_API_KEY='tu_api_key'")
-    print("   python tools/gen_docs.py")
+    print("   python tools/gen_docs.py.")
 
 if __name__ == "__main__":
     main()
