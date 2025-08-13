@@ -2,9 +2,6 @@ name: Auto-generar documentación
 
 on:
   push:
-    paths:
-      - 'Problemas/**'
-      - '!**/*.md'
   workflow_dispatch:
 
 jobs:

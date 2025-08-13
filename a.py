@@ -26,9 +26,6 @@ def create_workflow_file():
 
     on:
       push:
-        paths:
-          - 'Problemas/**'
-          - '!**/*.md'
       workflow_dispatch:
 
     jobs:
@@ -333,11 +330,20 @@ def create_main_script():
         
         # Generar documentación
         success_count = 0
-        for target in targets:
+        total_targets = len(targets)
+        
+        for i, target in enumerate(targets, 1):
+            print(f"\\n[{i}/{total_targets}] Procesando: {os.path.basename(target)}")
+            
             if generate_documentation(client, target, examples):
                 success_count += 1
+            
+            # Esperar 30 segundos antes del siguiente (excepto en el último)
+            if i < total_targets:
+                print("⏳ Esperando 30s antes del siguiente para evitar rate limits...")
+                time.sleep(30)
         
-        print(f"\\n🎉 Completado: {success_count}/{len(targets)} documentos generados")
+        print(f"\\n🎉 Completado: {success_count}/{total_targets} documentos generados")
 
     if __name__ == "__main__":
         main()
@@ -377,7 +383,7 @@ def main():
     print("📋 Próximos pasos:")
     print("1. Agrega GEMINI_API_KEY a los secrets de GitHub")
     print("2. Haz push de los archivos creados")
-    print("3. El sistema se activará automáticamente en futuros pushes a Problemas/")
+    print("3. El sistema se activará automáticamente en CUALQUIER push")
     print("4. Puedes eliminar este script generador")
     print()
     print("🔧 Para probar localmente:")

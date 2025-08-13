@@ -250,11 +250,20 @@ def main():
 
     # Generar documentación
     success_count = 0
-    for target in targets:
+    total_targets = len(targets)
+
+    for i, target in enumerate(targets, 1):
+        print(f"\n[{i}/{total_targets}] Procesando: {os.path.basename(target)}")
+
         if generate_documentation(client, target, examples):
             success_count += 1
 
-    print(f"\n🎉 Completado: {success_count}/{len(targets)} documentos generados")
+        # Esperar 30 segundos antes del siguiente (excepto en el último)
+        if i < total_targets:
+            print("⏳ Esperando 30s antes del siguiente para evitar rate limits...")
+            time.sleep(30)
+
+    print(f"\n🎉 Completado: {success_count}/{total_targets} documentos generados")
 
 if __name__ == "__main__":
     main()
