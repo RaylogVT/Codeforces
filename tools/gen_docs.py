@@ -3,6 +3,7 @@
 Script principal de auto-documentación
 Escanea carpetas, encuentra ejemplos, genera .md con Gemini 2.5 Flash
 Solo acepta respuestas terminadas naturalmente (finish_reason=STOP)
+Usa streaming para mejor manejo de pausas entre tokens
 """
 
 import os
@@ -18,9 +19,9 @@ MIN_MD_SIZE = 10
 EXAMPLES_MIN_SIZE = 50
 MAX_EXAMPLES = 5
 MAX_RETRIES = 3
-BASE_DELAY = 15  # Segundos (15s, 30s, 45s para reintentos)
+BASE_DELAY = 30  # Segundos (15s, 30s, 45s para reintentos)
 TIMEOUT_SECONDS = 30  # Timeout como respaldo
-INTER_FOLDER_DELAY = 20  # Segundos entre carpetas
+INTER_FOLDER_DELAY = 40  # Segundos entre carpetas
 
 def setup_gemini():
     """Configura Gemini API"""
@@ -29,7 +30,11 @@ def setup_gemini():
         print("❌ GEMINI_API_KEY no encontrada")
         sys.exit(1)
 
-    return genai.Client(api_key=api_key)
+    from google.genai import types
+    return genai.Client(
+        api_key=api_key,
+        http_options=types.HttpOptions(timeout=TIMEOUT_SECONDS * 1000)  # timeout en milisegundos
+    )
 
 def find_md_files(folder_path):
     """Encuentra archivos .md en una carpeta"""
@@ -205,7 +210,7 @@ def get_finish_reason(response):
         return None
 
 def generate_documentation(client, target_folder, examples):
-    """Genera documentación usando Gemini con verificación de finish_reason"""
+    """Genera documentación usando Gemini con verificación de finish_reason y streaming"""
     print(f"📝 Generando documentación para: {target_folder}")
 
     for attempt in range(MAX_RETRIES):
@@ -218,21 +223,27 @@ def generate_documentation(client, target_folder, examples):
 
             prompt = build_prompt(target_folder, examples)
 
-            # Llamada con timeout como respaldo
-            response = client.models.generate_content(
+            # Usar streaming para mejor manejo de pausas entre tokens
+            response_chunks = []
+            last_chunk = None
+
+            for chunk in client.models.generate_content_stream(
                 model="gemini-2.5-flash",
                 contents=prompt,
                 config={
-                    "temperature": 0.2,
-                    "max_output_tokens": 1500
-                },
-                request_options={
-                    "timeout": TIMEOUT_SECONDS  # Timeout de respaldo
+                    "temperature": 0.3,
+                    "max_output_tokens": 4000
                 }
-            )
+            ):
+                if chunk.text:
+                    response_chunks.append(chunk.text)
+                last_chunk = chunk
 
-            # Verificar finish_reason primero
-            finish_reason = get_finish_reason(response)
+            # Reconstruir respuesta completa
+            full_text = ''.join(response_chunks) if response_chunks else None
+
+            # Verificar finish_reason del último chunk
+            finish_reason = get_finish_reason(last_chunk) if last_chunk else None
             print(f"🔍 Finish reason: {finish_reason}")
 
             if finish_reason != 'STOP':
@@ -251,14 +262,14 @@ def generate_documentation(client, target_folder, examples):
                 continue
 
             # Verificar que la respuesta no sea None
-            if response.text is None:
+            if full_text is None:
                 print(f"⚠️  Intento {attempt + 1}: Respuesta vacía de la API")
                 if attempt == MAX_RETRIES - 1:
                     print(f"❌ Agotados los {MAX_RETRIES} intentos para {target_folder}")
                     return False
                 continue
 
-            content = response.text.strip()
+            content = full_text.strip()
 
             if len(content) < MIN_MD_SIZE:
                 print(f"⚠️  Intento {attempt + 1}: Contenido muy corto ({len(content)} chars)")
@@ -291,6 +302,7 @@ def main():
     print("🚀 Iniciando auto-documentación...")
     print("✋ Solo se aceptan respuestas terminadas naturalmente (finish_reason=STOP)")
     print("⏱️ Delays de reintento: 15s, 30s, 45s | Entre carpetas: 20s")
+    print("🌊 Usando streaming para mejor tolerancia a pausas entre tokens")
 
     # Setup
     client = setup_gemini()
@@ -326,6 +338,7 @@ def main():
 
     print(f"\n🎉 Completado: {success_count}/{total_targets} documentos generados")
     print("📊 Solo se guardaron documentos completos y terminados naturalmente")
+    print("🌊 Streaming utilizado para mejor tolerancia a pausas entre tokens")
 
 if __name__ == "__main__":
     main()
