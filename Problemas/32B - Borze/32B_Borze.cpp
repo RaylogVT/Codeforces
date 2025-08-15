@@ -19,6 +19,7 @@ int main(){
 
     // Itera sobre los caracteres del código
     for(int caracter = 0; caracter < longitud_codigo; caracter++) {
+        
         // Si el caracter es un punto, entonces es un 0
         if(borze[caracter] == '.') {
             cout << "0";

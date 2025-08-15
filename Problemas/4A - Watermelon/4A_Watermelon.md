@@ -3,7 +3,7 @@ https://codeforces.com/problemset/problem/4/A
 # 4A - Watermelon
 
 ## Resumen del problema
-Dado el peso de una sandía (w), determina si la puedes partir en dos de tal manera que cada parte pese una cantidad par y positiva
+Dado el peso de una sandía (w), determina si la puedes partir en dos de tal manera que cada parte pese una cantidad par y positiva.
 
 ## Input
 La única línea contiene un número entero W (1 <= W <= 100) -- El peso de la sandía
@@ -24,9 +24,9 @@ Sin embargo, **esto no aplica** para una sandía de peso igual a **2**, puesto q
 
 ### b) Dividir una parte en 2
 Puedes partir la sandía de tal manera que las partes pesen 2 y w-2. Si la parte w-2 es par y positiva, entonces se puede partir en partes pares. \
-Ej. 2 ---> 2-2=0 ---> (2,0) = NO \
-Ej. 6 ---> 6-2=4 ---> (2,4) = YES \
-Ej. 9 ---> 9-2=7 ---> (2,7) = NO \
+Ej. 2 ---> 2 - 2 = 0 ---> (2,0) = NO \
+Ej. 6 ---> 6 - 2 = 4 ---> (2,4) = YES \
+Ej. 9 ---> 9 - 2 = 7 ---> (2,7) = NO
 
 ## Algoritmo
 a) Si el peso de la sandía es **par y mayor a 2**, entonces el output es **YES**, de lo contrario es **NO**. \

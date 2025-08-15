@@ -8,7 +8,7 @@ Si la palabra tiene más letras mayúsculas que minúsculas, entonces convierte 
 Si la palabra tiene menos o el mismo número de letras mayúsculas que minúsculas, entonces convierte la palabra entera a minúscula.
 
 ## Input
-La única línea contiene un string de longitud N (1 <= N <= 1000) con mayúsculas y minúsculas -- La palabra a normalizar
+La única línea contiene un string de longitud `N` (`1 <= N <= 1000`) con mayúsculas y minúsculas -- La palabra a normalizar
 
 ## Output
 Imprime la palabra normalizada

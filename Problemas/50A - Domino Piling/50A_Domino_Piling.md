@@ -8,10 +8,10 @@ Las fichas no se pueden solapar ni salir del tablero. \
 Encuenta el máximo número de fichas con las que puedes rellenar el tablero.
 
 ## Input
-La única línea contiene dos números enteros M y N (1 <= M <= N <= 15) -- El ancho y alto del tablero.
+La única línea contiene dos números enteros `M` y `N` (`1 <= M <= N <= 15`) -- El ancho y alto del tablero.
 
 ## Output
-Imprime el número de fichas de dominó necesarias para llenar el tablero.
+Imprime un número entero -- El número de fichas de dominó necesarias para llenar el tablero.
 
 ## Ejemplos
 | Input | Razonamiento          | Output    |
@@ -28,4 +28,4 @@ En aquellos tableros cuya área es **impar**, siempre quedará **un cuadrado que
 Dependiendo el lenguaje, deberás asegurar que este siempre **redondee hacia abajo** el resultado de la división para que sea correcto.
 
 ## Algoritmo
-Calcula (M * N) / 2
+1) Calcula (M * N) / 2

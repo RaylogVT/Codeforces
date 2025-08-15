@@ -3,19 +3,19 @@ https://codeforces.com/problemset/problem/32/B
 # 32B - Borze
 
 ## Resumen del problema
-En Berland, la representación de números ternarios en alfabeto Borze se realiza de la siguiente forma:
-1) . = 0
-2) -. = 1
-3) -- = 2
+En Berland, la representación de números ternarios en alfabeto Borze se realiza de la siguiente forma: \
+`. = 0` \
+`-. = 1` \
+`-- = 2`
 
 Dado un código Borze, descrifra el número ternario que representa
 
 ## Input
-La única línea contiene un string de longitud N (1 <= N <= 200) -- El código Borze
+La única línea contiene un string de longitud `N` (`1 <= N <= 200`) -- El código Borze \
 Está garantizado que el código Borze es válido. También puede empezar con ceros.
 
 ## Output
-Imprime el número ternario descifrado
+Imprime un string -- El número ternario descifrado
 
 ## Ejemplos
 | Input    | Razonamiento  | Output    |
@@ -26,7 +26,7 @@ Imprime el número ternario descifrado
 ## Forma de resolverlo
 Para resolver este problema, simplemente debemos buscar una manera de detectar la equivalencia de los números ternarios en Borze y realizar la conversión. Dependiendo del lenguaje de programación, existen dos aproximaciones para esta tarea.
 
-### Python
+## Python
 En Python, podemos utilizar la función **replace()*** para realizar la conversión de Borze a ternario. Sin embargo, ¿Con qué número empezamos? \
 a) Si empezamos por 0, tendríamos el problema de identificar si un punto es un 0 o parte de la representación de un 1. \
 Ej. ---.. (¿El 1° punto es un 0 o es parte de un 1?) \
@@ -44,7 +44,7 @@ Por lo tanto, el hecho de usar el mismo carácter dos veces hace al **2** el mej
 2) Convierte los '-.' a 1
 3) Convierte los '.' a 0
 
-### C++
+## C++
 En C++, no tenemos una función para reemplazar strings, así que debemos tomar otra aproximación al problema. Si iteramos de forma normal, entonces tendríamos que **detectar el valor del caracter actual**. Si el caracter es un **punto**, entonces podemos confiar en que es un **0**. Sin embargo, ¿qué pasa si es un guión? Puesto que **1 y 2 empiezan con un guión y ambos usan dos caracteres**, es imposible saber el valor del guión hasta revisar el caracter que le sigue. Lo que podemos hacer es **avanzar una localidad más en el string y detectar el valor del próximo carácter**. Si el caracter es un **punto**, entonces es un **1**, de lo contrario, es un **guión**, que es un **2**. 
 
 ### Algoritmo

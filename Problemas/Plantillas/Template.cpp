@@ -1,5 +1,5 @@
-// XXXA - 
-// https://codeforces.com/problemset/problem/XXX/A
+// XXXA -  
+// https://codeforces.com/problemset/problem/1858/A
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,11 +16,6 @@ int main(){
 
     // Itera sobre cada caso de prueba
     for(int indice_prueba = 0; indice_prueba < pruebas; indice_prueba++) {
-
-        // Input:
-        // 2) variable
-        int variable;
-        cin >> variable;
 
     }
 

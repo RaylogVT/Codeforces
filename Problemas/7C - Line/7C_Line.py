@@ -24,7 +24,7 @@ a,b,c = map(int, input().split())
 # Obtén el GCD y los coeficientes (x,y) del EEA de a y b
 gcd,x,y = gcdExtended(a,b)
 
-# Si el GCD es divisible con C, entonces sí hay unas coordenadas (x,y) enteras que pasan por la ecuación lineal, de lo contrario, no hay
+# Si el GCD es divisible con C, entonces sí hay coordenadas (x,y) enteras que pasan por la ecuación lineal
 if c % gcd == 0:
 
     # Calcula (x,y) que pasan por la ecuación lineal

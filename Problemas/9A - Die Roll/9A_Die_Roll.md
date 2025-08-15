@@ -9,12 +9,12 @@ Después de que Yakko y Wakko lanzaran el dado, Dot se pregunta cuáles son sus 
 Sabiendo el valor del dado de Yakko y Wakko, ¿cuál es la probabilidad de que Dot gane?
 
 ## Input
-La única línea contiene dos números enteros Y y W (1 <= Y,W <= 6) -- El valor del dado de Yakko y Wakko, respectivamente. \
+La única línea contiene dos números enteros `Y` y `W` (`1 <= Y,W <= 6`) -- El valor del dado de Yakko y Wakko, respectivamente. \
 
 ## Output
-Imprime la probabilidad de que Dot gane en formato de fracción simplificada (A/B). \
-Si la probabilidad es 0, entonces imprime 0/1. \
-Si la probabilidad es 1, entonces imprime 1/1. 
+Imprime la probabilidad de que Dot gane en formato de fracción simplificada (`A/B`). \
+Si la probabilidad es 0, entonces imprime `0/1`. \
+Si la probabilidad es 1, entonces imprime `1/1`. 
 
 ## Ejemplos
 | Input              | Razonamiento  | Output    |
