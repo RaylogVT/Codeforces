@@ -1,0 +1,47 @@
+name: Auto-generar documentación
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install google-genai requests
+
+      - name: Generate documentation
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python tools/gen_docs.py
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions[bot]"
+
+          if [[ -n $(git status --porcelain) ]]; then
+            git add **/*.md
+            git commit -m "docs: generate documentation [docs-bot]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
